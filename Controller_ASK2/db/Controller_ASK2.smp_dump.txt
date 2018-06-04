@@ -1,0 +1,19 @@
+
+State Machine - |Controller_ASK2|AD7687:inst1|state
+Name state.S6 state.S5 state.S4 state.S3 state.S2 state.S1 state.000 
+state.000 0 0 0 0 0 0 0 
+state.S1 0 0 0 0 0 1 1 
+state.S2 0 0 0 0 1 0 1 
+state.S3 0 0 0 1 0 0 1 
+state.S4 0 0 1 0 0 0 1 
+state.S5 0 1 0 0 0 0 1 
+state.S6 1 0 0 0 0 0 1 
+
+State Machine - |Controller_ASK2|cpu_ASK2:inst2|cpu_ASK2_nios2_qsys_0:nios2_qsys_0|cpu_ASK2_nios2_qsys_0_nios2_oci:the_cpu_ASK2_nios2_qsys_0_nios2_oci|cpu_ASK2_nios2_qsys_0_jtag_debug_module_wrapper:the_cpu_ASK2_nios2_qsys_0_jtag_debug_module_wrapper|cpu_ASK2_nios2_qsys_0_jtag_debug_module_tck:the_cpu_ASK2_nios2_qsys_0_jtag_debug_module_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 

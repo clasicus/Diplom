@@ -1,0 +1,140 @@
+//--Программа запуска и чтения АЦП AD7687-16--
+//написанный Ильницкой Л.Л. 05.2018г.
+module AD7687
+(
+//input wire BUSY, //выходы АЦП
+input wire RESET,
+input wire CLK,
+input wire DATA_IN,
+
+output reg CNV,//входа АЦП
+output wire SCK,
+output wire sr_out,
+output wire [4:0] port_b,
+output wire [1:0] port_a,//output reg RDL,
+output reg [4:0] ST,
+output reg [15:0] SHIFT_REG_REC,
+output reg [15:0]DATA_OUT_DAC
+);
+//input wire SDO_ADC,
+//output reg  SDI_ADC,//вход АЦП
+//output wire RESET_OUT,//выходной резет
+//output reg [7:0]SHIFT_REG_TRANS,
+//output reg [7:0]CONFIGURATION_WORD,//слова, задающие режимы работы АЦП
+//output reg [15:0]DATA_OUT_DAC1,
+//output reg [15:0]DATA_OUT_DAC2,
+//output reg [15:0]DATA_OUT_DAC3,
+//output reg [7:0]DATA_C7_C0,
+//tput reg [3:0] DATA_A,
+//utput reg DATA_SOS,
+//output reg [1:0] DATA_R1_R0
+
+
+reg enable;
+reg [1:0] ST_1;
+reg [2:0] state;
+initial 
+begin
+ ST <= 0;//присваиваем начальные значения регистрам
+ ST_1 <= 0;
+ state<=0;
+ enable<=0;
+ CNV<=0;
+ SHIFT_REG_REC<=0;
+ DATA_OUT_DAC<=0;
+  
+end
+//описание счетчика ST для подсчета принятых SPI бит(16)
+//счетчик обнуляется по !RESET 
+always @(posedge CLK or posedge !RESET)
+begin
+	if (!RESET)
+		ST<=0;
+		else if (enable ==1'b0)
+		ST<=0;
+		else if (enable ==1'b1)
+		ST<=ST+1;
+	end
+	//ss mashine с состоянием S1,S2,S3,S4,S5,S6
+parameter S0=0,S1=1,S2=2,S3=3,S4=4,S5=5,S6=6;
+//организация клока для SPI
+assign SCK = (state==S5) ? (~CLK&&state) : 1;		
+//описание сдвигового регистра получателя
+	always@(posedge CLK)
+	begin 
+		if(!RESET)
+			SHIFT_REG_REC<=0;
+		else if (state==S5)
+			begin
+				SHIFT_REG_REC[15:1]=SHIFT_REG_REC[14:0];
+				SHIFT_REG_REC[0]=DATA_IN;
+			end	
+	end
+	always@(posedge CLK)
+			begin 
+				if (state==S6)
+					begin					
+					DATA_OUT_DAC=SHIFT_REG_REC[15:0];//записываем в нужные регистры значения контрольного слова
+					end
+			end		
+	//описание машины состояния устройства
+		always@(posedge CLK)
+			begin
+				if(!RESET)//исходное состояние -обнуляем счетчик и 
+					state<=S0;
+				else 
+				case(state)
+					S0:
+						state<=S1;
+					S1://если DATA_IN=1 переходим в состояние  s2, иначе возвращаемся в S0 
+					begin
+						if(!DATA_IN)
+						state<=S0;
+						else
+						state<=S2;
+					end						
+					S2:	
+						state<=S3;
+					S3://если ложное срабатывание DATA_IN(0 после 1)- сидим в S3, иначе переход в S4						
+						begin
+							if(!DATA_IN)
+							state<=S3;
+							else
+							state<=S4;
+						end
+					S4:
+						state<=S5;
+					S5:
+					begin
+						if(ST<14)
+							state<=S5;//выдача SCK, считывание D15..D0
+						else
+							state<=S6;//возврат в состояние  S0
+					end		
+					S6:
+						state<=S0;
+				endcase
+			end
+		always@(posedge CLK) //разрешение на включение шифтового регистра
+			begin
+				if(state==S5)
+					enable<=1;
+				else
+					enable<=0;
+			end
+	//операции в каждом состоянии
+		always@(posedge CLK)
+			begin
+				if(state==S6)
+				   CNV<=0;
+				else
+					CNV<=1;
+			end
+			
+assign port_b = ST;
+//assign port_a = ST_1;
+//assign RESET_OUT = RESET;
+assign sr_out = SHIFT_REG_REC[15];
+//assign sr_in =	SHIFT_REG_TRANS[7];				
+	endmodule			
+				

@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed May 30 13:04:30 2018
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
+Revision Name : Controller_ASK2
+Top-level Entity Name : Controller_ASK2
+Family : Cyclone III
+Device : EP3C25E144I7
+Timing Models : Final
+Total logic elements : 2,849 / 24,624 ( 12 % )
+    Total combinational functions : 2,580 / 24,624 ( 10 % )
+    Dedicated logic registers : 1,853 / 24,624 ( 8 % )
+Total registers : 1853
+Total pins : 51 / 83 ( 61 % )
+Total virtual pins : 0
+Total memory bits : 110,208 / 608,256 ( 18 % )
+Embedded Multiplier 9-bit elements : 4 / 132 ( 3 % )
+Total PLLs : 1 / 4 ( 25 % )

@@ -1,0 +1,410 @@
+
+#include "sys/alt_stdio.h"
+#include "system.h"
+#include "alt_types.h"
+#include "altera_avalon_pio_regs.h"
+#include "resolver.h"
+#include "ACK2_main.h"
+#include "LCD.h"
+//extern  alt_u8 ready;
+//--------------------------------------------------------------------
+//Функция передачи инструкции
+void FUNCTION_SET(alt_8 instruction)
+{
+
+	  //Объявляем двунаправленный порт в режим вывода (все 8 выводов)
+	     IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_LCD_DATA_BASE,LCD_DIRECTION_8BIT_OUTPUT_MASK);
+	     //Записываем в порт данных 0х3с=111100-установка режима 2-линии и дисплей включен
+	    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_DATA_BASE,instruction);
+	     //Записываем в порт RS и R/NOTW 0
+	     IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 );
+	     	 //Устанавливаем вывод Е в 1
+	     IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 |LCD_E_MASK );
+	     //Задержка 400нс
+	     for (i=0;i<5;i++)  asm ("nop");
+	     //обнуляем управляющие выводы RS_R/NOTW/E
+	     IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 );
+}
+
+//--------------------------------------------------------------------
+//Функция инициализации LCD индикатора
+void LCD_INITIALIZATION()
+{
+	int i;
+	//Записываем в порт RS и R/NOTW E 0
+	    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 );
+	//задержка на 40 милисекунды (требуется после включения питания)
+    Delay_for_microsec (40*MILI/(DELAY_KOEFF));
+    //инициализация ЖКИ-модуля
+    //передаем комманду 0х38(8-bit,1,5*7 dot,2 lines)
+    FUNCTION_SET(0x38);
+    ////задержка на 5 милисекунд (busy flag not available)
+    Delay_for_microsec (5*MILI/(DELAY_KOEFF));
+    FUNCTION_SET(0x38);//(8-bit,1,5*7 dot,2 lines)
+    //задержка на 160us (busy flag not available)
+    Delay_for_microsec (2*MILI/(DELAY_KOEFF));
+    //Записываем в порт данных 0х0C=1100 DISPLAY ON, Cursor ON, BLINK OFF
+       FUNCTION_SET(0x0C);
+       //задержка на 160us (busy flag not available)
+      Delay_for_microsec (2*MILI/(DELAY_KOEFF));
+       //Записываем в порт данных 0х01=0001 clear display
+     FUNCTION_SET(0x01);
+     //задержка на 160us (busy flag not available)
+     Delay_for_microsec (2*MILI/(DELAY_KOEFF));
+     //Записываем в порт данных 0х06=0110 entry mode set, cursor moves to right
+          FUNCTION_SET(0x06);
+
+
+    //Записываем в порт RS и R/NOTW 0
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 );
+    //Объявляем двунаправленный порт в режим вывода (все 8 выводов)
+    IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_LCD_DATA_BASE,LCD_DIRECTION_8BIT_OUTPUT_MASK);
+    //Записываем в порт данных 0х3с=111100-установка режима 2-линии и дисплей включен
+    //
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_DATA_BASE,0x3c);
+    //Задержка 400нс
+    for (i=0;i<5;i++)  asm ("nop");
+    //Устанавливаем вывод Е в 1
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 |LCD_E_MASK );
+    //Задержка 400нс
+    for (i=0;i<5;i++)  asm ("nop");
+    //обнуляем управляющие выводы RS_R/NOTW/E
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 );
+    //Задержка 40 микросекунд,требуемая в инструкции
+     Delay_for_microsec (40*MICRO/(DELAY_KOEFF));
+   // for (i=0;i<500;i++)  asm ("nop");
+    //обнуляем управляющие выводы RS_R/NOTW/E
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 );
+    //Записываем в порт данных 0х0f=1111-дисплей включен,курсор отключен,мигание отключено
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_DATA_BASE,0xc);
+    //Задержка 400нс
+    //Delay_for_microsec (50*MICRO/(DELAY_KOEFF));
+    for (i=0;i<5;i++)  asm ("nop");
+    //Устанавливаем вывод Е в 1
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 |LCD_E_MASK );
+    //Задержка 400нс
+    for (i=0;i<5;i++)  asm ("nop");
+    //обнуляем управляющие выводы RS_R/NOTW/E
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 );
+    //Задержка 40 микросекунд,требуемая в инструкции
+    //Delay_for_microsec (40*MICRO/(DELAY_KOEFF));
+    for (i=0;i<500;i++)  asm ("nop");
+    //обнуляем управляющие выводы RS_R/NOTW/E
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 );
+    //Записываем в порт данных 0х01=экран очистить
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_DATA_BASE,0x01);
+    //Задержка 400нс
+    for (i=0;i<5;i++)  asm ("nop");
+    //Устанавливаем вывод Е в 1
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 |LCD_E_MASK );
+    //Задержка 400нс
+    for (i=0;i<5;i++)  asm ("nop");
+    //обнуляем управляющие выводы RS_R/NOTW/E
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 );
+    //Задержка 2 милисекунды,требуемые в инструкции
+    //Delay_for_microsec (2*MILI/(DELAY_KOEFF));
+    for (i=0;i<25000;i++)  asm ("nop");
+    //обнуляем управляющие выводы RS_R/NOTW/E
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 );
+    //Записываем в порт данных 0х06=режим инкрементирования адреса,сдвиг экрана выключен
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_DATA_BASE,0x06);
+    //Задержка 400нс
+    for (i=0;i<5;i++)  asm ("nop");
+    //Устанавливаем вывод Е в 1
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 |LCD_E_MASK );
+    //Задержка 400нс
+    for (i=0;i<5;i++)  asm ("nop");
+    //обнуляем управляющие выводы RS_R/NOTW/E
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 );
+    //Объявляем двунаправленный порт в режим ввода (все 8 выводов)
+    IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_LCD_DATA_BASE,0);
+}		//Конец функции инициализации индикатора
+
+/*************************************************************************************
+Функция вывода на экран 16-ти разрядного числа, занимает 5 позиций на экране
+ей передается число (но не больше 65535 ) которое нужно вывести на индикатор,
+адрес-соответствующий позиции на экране
+0- первый символ первой строчки,64-первый символ второй строчки,16-первый символ третьей строчки,
+80-первый символ четвертой строчки).Point_position-положение запятой (отсчитывается справа).Если
+Point_position=1, то с одним знаком после запятой, если 2- то с 2-мя.
+Для того,чтобы напечатать с одним знаком после запятой-нужно его предварительно
+умножить на 10, если с двумя знаками-то на 100-соответственно.
+***************************************************************************************/
+
+void LCD_print_digital_number_on_screen (alt_16 value,alt_u8 address,alt_u8 point_position)
+{
+	alt_u8 i;
+    alt_u8 k;
+    i=0;
+    k=0;
+     //Определяем знак числа
+    if (value&LCD_MINUS_NUMBER_MASK)       
+    {
+    	value=(~value +1);
+        LCD_print_symbol_in_position(0x2d,address);
+        address++;
+    }
+    else
+    {
+    	LCD_print_symbol_in_position(0x20,address);
+    	address++;
+    }
+    // если количество знаков,после запятой=5, то печатаем запятую
+    if (point_position==5)
+    {
+    	LCD_print_symbol_in_position(0x2e,address);
+    	address++;
+    	k=1;
+    }
+    //Определяем количество 10000 в числе
+    while (value>=10000)
+    {
+    	k=1;
+        value = value-10000;
+        i++;
+    }
+    //если число меньше,чем 10000-печатаем пробел
+    if (k==0) LCD_print_symbol_in_position(0x20,address);
+    //если число больше,чем 10000-печатаем количество 10000 в этом числе
+    else   LCD_print_symbol_in_position(i+0x30,address);
+    i=0;
+    // если количество знаков,после запятой=4, то печатаем запятую
+    if (point_position==4)
+    {
+    	LCD_print_symbol(0x2e);
+    	k=1;
+    }
+    //Определяем количество 1000 в числе 
+    while (value>=1000)
+    {
+    	k=1;
+        value = value-1000;
+        i++;
+    }
+    //если число меньше,чем 1000 и мы не напечатали ни одного знака перед-печатаем пробел
+    if (k==0) LCD_print_symbol (0x20);
+    //если число больше,чем 1000-печатаем количество 1000 в этом числе
+    else   LCD_print_symbol(i+0x30);
+    i=0;
+    // если число знаков,после запятой=3, то печатаем запятую
+    if (point_position==3)
+    {
+    	LCD_print_symbol(0x2e);
+    	k=1;
+    }
+    //Определяем количество 100 в числе
+    while (value>=100)
+    {
+    	k=1;
+        value = value-100;
+        i++;
+    }
+    //если число меньше,чем 100 и мы не напечатали ни одного знака перед-печатаем пробел
+    if (k==0) LCD_print_symbol (0x20);
+    //если число больше,чем 100-печатаем количество 100 в этом числе
+    else   LCD_print_symbol(i+0x30);
+    // если количество знаков,после запятой=2, то печатаем запятую 
+    if (point_position==2)
+    {
+    	LCD_print_symbol(0x2e);
+    	k=1;
+    }
+    i=0;
+    //Определяем количество 10 в числе
+    while (value>=10)
+    {
+        k=1;
+        value = value-10;
+        i++;
+    }
+    //если число меньше,чем 10 и мы не напечатали ни одного знака перед-печатаем пробел
+    if (k==0) LCD_print_symbol (0x20);
+    //если число больше,чем 10-печатаем количество 10 в этом числе
+    else   LCD_print_symbol(i+0x30);
+    // если количество знаков,после запятой=1, то печатаем запятую
+    if (point_position==1)
+    {
+    	LCD_print_symbol(0x2e);
+    	k=1;
+    } 
+    //печатаем количество единиц в этом числе
+    LCD_print_symbol(value+0x30);
+}		//конец функции
+      
+ 
+/********************************************************************************
+Функция вывода на экран символа,в конкретную позицию соответствующего адресу
+Мы ей передаем число,которое нужно напечатать и адрес-соответствующей позиции,
+куда следует вывести это число.
+********************************************************************************/
+
+void LCD_print_symbol_in_position (alt_u8 code, alt_u8 address)
+{
+    int A;
+    alt_u8 BF;
+    alt_u8 k;
+    int i;
+    //Считывание флажка занятости
+    //Установка выводов R/nW в значение 1
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0|LCD_R_NOTW_MASK );
+    //задержка 80нс
+    for (i=0;i<5;i++)  asm ("nop");
+    //Установка выводов E и R/NOTW в значение 11
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 |LCD_E_MASK|LCD_R_NOTW_MASK  );
+    for (A=0;A<9;A++)  asm ("nop");
+    do
+    {                
+    	BF =  IORD_ALTERA_AVALON_PIO_DATA(PIO_LCD_DATA_BASE);
+    	k = BF & LCD_BF_MASK;
+    }
+    while (k);
+    //Записываем в порт RS 0 и R/NOTW 0
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 );
+    //Объявляем двунаправленный порт в режим вывода (все 8 выводов)
+    IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_LCD_DATA_BASE,LCD_DIRECTION_8BIT_OUTPUT_MASK);
+    //Записываем в порт данных aдрес позиции курсора
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_DATA_BASE,LCD_BF_MASK | (address & LCD_ADDRESS_MASK));
+    //Задержка 400нс
+    for (A=0;A<5;A++)  asm ("nop");
+    //Устанавливаем вывод Е в 1
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 |LCD_E_MASK  );
+    //Задержка 400нс
+    for (A=0;A<5;A++)  asm ("nop");
+    //обнуляем управляющие выводы RS_R/NOTW/E
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 );
+    //Задержка 40 микросекунд,требуемая в инструкции
+    // Delay_for_microsec (40*MICRO/(DELAY_KOEFF));
+    for (i=0;i<500;i++)  asm ("nop");
+    //Установка выводов двунаправленного порта в режим входа
+    IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_LCD_DATA_BASE,0x00);
+    LCD_print_symbol(code);
+}
+
+/******************************************************************************
+Функция вывода на экран символа-соответствующего коду,передаваемого функции
+код следует писать в кодах ASCII в 16-ричном масштабе (0-0x30,1-0x31).
+*******************************************************************************/
+void LCD_print_symbol(alt_u8 code)
+{
+   int A;
+   alt_u8 BF;
+   alt_u8 k;
+   int i;
+   //Считывание флажка занятости
+   //Установка выводов R/nW в значение 1
+   IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0|LCD_R_NOTW_MASK );
+   //задержка 40нс
+   //Delay_for_microsec((1*MICRO/DELAY_KOEFF));
+   for (i=0;i<5;i++)  asm ("nop");
+   //Установка выводов E и R/NOTW в значение 11
+   IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 |LCD_E_MASK|LCD_R_NOTW_MASK );
+   for (A=0;A<9;A++)  asm ("nop");
+   do
+    {                
+	   BF =  IORD_ALTERA_AVALON_PIO_DATA(PIO_LCD_DATA_BASE);
+	   k = BF & LCD_BF_MASK;
+	   //  for (A=0;A<9;A++)  asm ("nop");
+	   //  #ifdef ALT_DEBUG
+	   //       alt_printf("1Ст %x \n",k);
+	   //  #endif
+     }
+   while (k);
+   //  #ifdef ALT_DEBUG     
+   //     alt_printf("2Ст %x \n",k);  
+   //   #endif
+   //Задержка на 32 милисекунды (требуется после включения питания)
+   //Delay_for_microsec (1*MILI/(DELAY_KOEFF));
+   //Записываем в порт RS -1 и R/NOTW 0
+   IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0|LCD_RS_MASK );
+   //Объявляем двунаправленный порт в режим вывода (все 8 выводов)
+   IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_LCD_DATA_BASE,LCD_DIRECTION_8BIT_OUTPUT_MASK);
+   //Записываем в порт данных 0х30=число 0
+   IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_DATA_BASE,code);
+   //Задержка 400нс
+   for (A=0;A<5;A++)  asm ("nop");
+   //Устанавливаем вывод Е в 1
+   IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 |LCD_E_MASK | LCD_RS_MASK );
+   //Задержка 400нс
+   for (A=0;A<5;A++)  asm ("nop");
+   //обнуляем управляющие выводы RS_R/NOTW/E
+   IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 );
+   //Задержка 40 микросекунд,требуемая в инструкции
+   // Delay_for_microsec (40*MICRO/(DELAY_KOEFF));
+   for (i=0;i<500;i++)  asm ("nop");
+   //Установка выводов двунаправленного порта в режим входа
+   IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_LCD_DATA_BASE,0x00);
+}//конец функции
+
+
+/*****************************************************************************************
+Функция,осуществляющая задержку на n микросекунд.Ей передается количество микросекунд для
+ осуществления задержки
+******************************************************************************************/
+void Delay_for_microsec (alt_u32 amount_us)
+ {
+    int i;
+
+    //дисассемблирование показало,что процессор на выполнение этого цикла тратит 9 тактов
+    // время одного такта CPU_CYCLE_DELAY_nS =40нс, поэтому время выполнения цикла = 40*9=380нс
+    //amount_us-количество микросекунд задержки.Минимальная задержка 1 микросекунда.
+    // (1000*MILI/(DELAY_KOEFF))-пример задания аргумента функции , если необходима задержка
+    //в микросекундах, то (число*MICRO/(DELAY_KOEFF))
+
+    for (i=0;i<(amount_us);i++);
+ }
+//---------------------------------------------------------------------------------------
+//конец функции
+
+void Out_SET_SW1(void) //Печатаем слово SET_SW1
+{
+	LCD_print_symbol_in_position (0x53,0x47);//S
+	LCD_print_symbol(0x45);//E
+	LCD_print_symbol(0x54);//T
+	LCD_print_symbol(0x5f);//_
+	LCD_print_symbol(0x53);//S
+	LCD_print_symbol(0x57);//W
+	LCD_print_symbol(0x31);//1
+}
+void Out_SET_SW2(void)  //Печатаем слово SET_SW2
+{
+	LCD_print_symbol_in_position (0x53,0x47);//S
+	LCD_print_symbol(0x45);//E
+	LCD_print_symbol(0x54);//T
+	LCD_print_symbol(0x5f);//_
+	LCD_print_symbol(0x53);//S
+	LCD_print_symbol(0x57);//W
+	LCD_print_symbol(0x32);//2
+}
+void Out_SET_SW3(void)  //Печатаем слово SET_SW3
+{
+	LCD_print_symbol_in_position (0x53,0x47);//S
+	LCD_print_symbol(0x45);//E
+	LCD_print_symbol(0x54);//T
+	LCD_print_symbol(0x5f);//_
+	LCD_print_symbol(0x53);//S
+	LCD_print_symbol(0x57);//W
+	LCD_print_symbol(0x33);//3
+}
+void Out_EROOR_CONECT(void)	//Печатаем слово EROOR_CONECT
+{
+	LCD_print_symbol_in_position (0x45,0x44);//E
+	LCD_print_symbol(0x52);//R
+	LCD_print_symbol(0x52);//R
+	LCD_print_symbol(0x4f);//O
+	LCD_print_symbol(0x52);//R
+	LCD_print_symbol(0x5f);//_
+	LCD_print_symbol(0x43);//C
+	LCD_print_symbol(0x4f);//O
+	LCD_print_symbol(0x4e);//N
+	LCD_print_symbol(0x45);//E
+	LCD_print_symbol(0x43);//C
+	LCD_print_symbol(0x54);//T
+}
+
+//void Out_EXIT_to_SET_SW1_or_SW2(void);
+//void Out_EXIT_to_SET_SW1_or_SW3(void);
+//void Out_EXIT_to_SET_SW2_or_SW3(void);
+//void Out_Angle_X(void);
+//void Out_Angle_Y(void);
+//void Out_Angle_Z(void);
+//void Out_Angle(void);

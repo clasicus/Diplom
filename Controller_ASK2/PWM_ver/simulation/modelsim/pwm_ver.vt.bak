@@ -1,0 +1,106 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "04/02/2018 18:00:31"
+                                                                                
+// Verilog Test Bench template for design : pwm_ver
+// 
+// Simulation tool : ModelSim-Altera (Verilog)
+// 
+
+`timescale 1 ns/ 1 ps
+module pwm_ver_vlg_tst();
+// constants                                           
+// general purpose registers
+//reg eachvec;
+// test vector input registers
+reg [11:0] Pwm_in=0;
+reg RESET=1'b0;
+reg i_clk=0;
+reg [15:0] I_max=0;  //
+reg [15:0] I_in=0; //
+// wires                                               
+wire [10:0]  Count;
+wire DIR;
+wire PWM_out;
+wire OFF;
+
+// assign statements (if any)                          
+pwm_ver i1 (
+// port map - connection between master ports and signals/registers   
+	.Count(Count),
+	.PWM_out(PWM_out),
+	.Pwm_in(Pwm_in),
+	.RESET(RESET),
+	.i_clk(i_clk),
+	.I_in(I_in),
+   .I_max(I_max),  //максимальный ток с АЦП 
+	.DIR(DIR),
+   .OFF(OFF)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin                          
+                                                       
+// --> end 
+                          
+$display("Running testbench");                       
+end                                                    
+always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin                          
+ #8333 i_clk = ~ i_clk; 
+                                            
+//@eachvec;                                              
+// --> end                                             
+end
+
+always @(posedge(i_clk))
+begin
+ 
+#100 RESET=1'b1;
+//if(I_in[15]==1)
+    
+  //    if(I_in[14:0]>800)
+        
+     //    I_in=0;        
+        
+ //end 
+//#100 Pwm_in=0;
+
+
+always @(posedge(Count==20))
+  begin  
+  Pwm_in=Pwm_in+200; 
+   I_max=500;
+   I_in=I_in-100;
+ end
+  
+ //  Pwm_in=200;    
+//  #800000 Pwm_in=300; 
+//  #800000 Pwm_in=-50;  
+//  #800000 Pwm_in=4000;
+//  #800000 Pwm_in=-4000;
+                                                       
+endmodule
+

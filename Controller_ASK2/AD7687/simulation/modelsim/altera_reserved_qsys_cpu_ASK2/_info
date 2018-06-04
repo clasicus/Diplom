@@ -1,0 +1,990 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\work\RADIONIX\KOORDINATOR\ALTERA_13\Controller_ASK2\AD7687\simulation\modelsim
+valtera_avalon_sc_fifo
+Z1 IaJeBHnz^UQSUCfj:bcODQ0
+Z2 VjOzUMS5nAQIa6?lLKEfID0
+Z3 dD:\work\RADIONIX\KOORDINATOR\ALTERA_13\Controller_ASK2\AD7687\simulation\modelsim
+Z4 w1527674575
+Z5 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_avalon_sc_fifo.v
+Z6 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_avalon_sc_fifo.v
+L0 21
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-vlog01compat -work altera_reserved_qsys_cpu_ASK2 -O0
+Z9 !s100 ?;hEJ^W7^:PcZ4`R9D[HM0
+Z10 !s108 1527675163.405000
+Z11 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_avalon_sc_fifo.v|
+Z12 !s90 -reportprogress|300|-vlog01compat|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_avalon_sc_fifo.v|
+Z13 !s92 -vlog01compat -work altera_reserved_qsys_cpu_ASK2 +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules -O0
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_merlin_arb_adder
+Z14 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z15 IlQI0zWU?S4VVVamhSU^4=2
+Z16 VeEm48mj>0hhNR4acO5n:k1
+Z17 !s105 altera_merlin_arbitrator_sv_unit
+S1
+R3
+R4
+Z18 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_arbitrator.sv
+Z19 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_arbitrator.sv
+Z20 L0 228
+R7
+r1
+31
+Z21 !s108 1527675165.466000
+Z22 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_arbitrator.sv|
+Z23 !s90 -reportprogress|300|-sv|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_arbitrator.sv|
+Z24 o-sv -work altera_reserved_qsys_cpu_ASK2 -O0
+Z25 !s92 -sv -work altera_reserved_qsys_cpu_ASK2 +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules -O0
+Z26 !s100 gB=5>B:1CAflj9flQFVM@1
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_merlin_arbitrator
+R14
+Z27 ITGe5HZZ`@zA9<m09R7@6m0
+Z28 VkoHZHN`N_KjQAPBBQ3eh^0
+R17
+S1
+R3
+R4
+R18
+R19
+Z29 L0 103
+R7
+r1
+31
+R21
+R22
+R23
+R24
+R25
+Z30 !s100 Si0_l<f1YaSYd757CIVT40
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_merlin_burst_uncompressor
+R14
+Z31 ITj0Z^LQQVJMI]GK9b;YC[2
+Z32 Vk1gIA`RY2OQ1N9QbTULJo2
+S1
+R3
+R4
+Z33 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_burst_uncompressor.sv
+Z34 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_burst_uncompressor.sv
+L0 40
+R7
+r1
+31
+R24
+R25
+Z35 !s100 In^m5KClF44IzR?4FPP]J1
+Z36 !s105 altera_merlin_burst_uncompressor_sv_unit
+Z37 !s108 1527675165.683000
+Z38 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_burst_uncompressor.sv|
+Z39 !s90 -reportprogress|300|-sv|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_burst_uncompressor.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_merlin_master_agent
+R14
+Z40 I4UB?XWb4bZe0fiM^dH:KS1
+Z41 VG[gHYg_J=R2@KnI_[bEjA0
+S1
+R3
+R4
+Z42 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_master_agent.sv
+Z43 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_master_agent.sv
+L0 28
+R7
+r1
+31
+R24
+R25
+Z44 !s100 Z1cHUF3SFYNPWdI@:OlER0
+Z45 !s105 altera_merlin_master_agent_sv_unit
+Z46 !s108 1527675165.812000
+Z47 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_master_agent.sv|
+Z48 !s90 -reportprogress|300|-sv|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_master_agent.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_merlin_master_translator
+R14
+Z49 IEEo5:gm@V=DXPPV?D6;dB2
+Z50 V0KIH7<bW[IFhHJBzB4US?0
+S1
+R3
+R4
+Z51 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_master_translator.sv
+Z52 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_master_translator.sv
+L0 30
+R7
+r1
+31
+R24
+R25
+Z53 !s100 JZ2J]DJZN`zI3mXUHLeWT0
+Z54 !s105 altera_merlin_master_translator_sv_unit
+Z55 !s108 1527675165.942000
+Z56 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_master_translator.sv|
+Z57 !s90 -reportprogress|300|-sv|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_master_translator.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_merlin_slave_agent
+R14
+Z58 I?kW6^V;aOCmP8mm^49nBN0
+Z59 VekU5U46jGhemBCkL?m_og2
+S1
+R3
+R4
+Z60 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_slave_agent.sv
+Z61 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_slave_agent.sv
+L0 34
+R7
+r1
+31
+R24
+R25
+Z62 !s100 0XB;>XC6TJKkBWG24O;Y@2
+Z63 !s105 altera_merlin_slave_agent_sv_unit
+Z64 !s108 1527675166.074000
+Z65 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_slave_agent.sv|
+Z66 !s90 -reportprogress|300|-sv|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_slave_agent.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_merlin_slave_translator
+R14
+Z67 IklHObQ<HdidjeIJf@Kc=F1
+Z68 VA6G6lglY;QOHbkKlTEAXC0
+S1
+R3
+R4
+Z69 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_slave_translator.sv
+Z70 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_slave_translator.sv
+L0 35
+R7
+r1
+31
+R24
+R25
+Z71 !s100 W[lY_lDK=d8>=mz2Yl>dj1
+Z72 !s105 altera_merlin_slave_translator_sv_unit
+Z73 !s108 1527675166.235000
+Z74 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_slave_translator.sv|
+Z75 !s90 -reportprogress|300|-sv|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_slave_translator.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_merlin_traffic_limiter
+R14
+Z76 I82Y_fbXFPK;2FIWMY7jPh3
+Z77 VFToJ:O^P1mK>hGEjaBQXC3
+S1
+R3
+R4
+Z78 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_traffic_limiter.sv
+Z79 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_traffic_limiter.sv
+L0 44
+R7
+r1
+31
+R24
+R25
+Z80 !s100 ?bN]P4j`YkfLKe<Qkn`3;0
+Z81 !s105 altera_merlin_traffic_limiter_sv_unit
+Z82 !s108 1527675166.365000
+Z83 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_traffic_limiter.sv|
+Z84 !s90 -reportprogress|300|-sv|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_merlin_traffic_limiter.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_reset_controller
+Z85 I=8?GYC;ZoK6nAeVWgHaIQ2
+Z86 V:mR1fj3Rf>NGziDN_:U030
+R3
+R4
+Z87 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_reset_controller.v
+Z88 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_reset_controller.v
+L0 28
+R7
+r1
+31
+R8
+R13
+Z89 !s100 2QjRjZX`zg<lJd<TZ4o_i0
+Z90 !s108 1527675163.633000
+Z91 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_reset_controller.v|
+Z92 !s90 -reportprogress|300|-vlog01compat|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_reset_controller.v|
+!i10b 1
+!s85 0
+!s101 -O0
+valtera_reset_synchronizer
+Z93 ITIJRoH@OH^6WRnThYCF9>0
+Z94 V3CjoOZCIEdzCJgPn8]D7`2
+R3
+R4
+Z95 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_reset_synchronizer.v
+Z96 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_reset_synchronizer.v
+L0 24
+R7
+r1
+31
+R8
+R13
+Z97 !s100 coof[kD9[_jH5DfU?oX`n2
+Z98 !s108 1527675163.756000
+Z99 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_reset_synchronizer.v|
+Z100 !s90 -reportprogress|300|-vlog01compat|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/altera_reset_synchronizer.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2
+Z101 IMKB5glZ6NYVNOAZ>I=BCV0
+Z102 VKN<;kHbZ4MGEa[_;KKhR53
+R3
+Z103 w1527674551
+Z104 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/cpu_ASK2.v
+Z105 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/cpu_ASK2.v
+L0 6
+R7
+r1
+31
+R8
+Z106 ncpu_@a@s@k2
+Z107 !s100 HW=VOTbKf=DOm?JFc35MZ3
+Z108 !s108 1527675163.103000
+Z109 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/cpu_ASK2.v|
+Z110 !s90 -reportprogress|300|-vlog01compat|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/cpu_ASK2.v|
+Z111 !s92 -vlog01compat -work altera_reserved_qsys_cpu_ASK2 +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2 -O0
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_addr_router
+R14
+Z112 IRj_zCH5UE6^lXOGMSYLD^0
+Z113 Ve6M?YC7?9D13WeBCO;EMC2
+Z114 !s105 cpu_ASK2_addr_router_sv_unit
+S1
+R3
+R4
+Z115 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_addr_router.sv
+Z116 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_addr_router.sv
+L0 86
+R7
+r1
+31
+Z117 !s108 1527675166.499000
+Z118 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_addr_router.sv|
+Z119 !s90 -reportprogress|300|-sv|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_addr_router.sv|
+R24
+R25
+Z120 ncpu_@a@s@k2_addr_router
+Z121 !s100 KZUM:7EQSjT=DfYlO6f5e0
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_addr_router_001
+R14
+Z122 I?`^mIdY>JS5OVB`Z`V4N`1
+Z123 VinoAVU[ID^fA@^SY;NK?72
+Z124 !s105 cpu_ASK2_addr_router_001_sv_unit
+S1
+R3
+R4
+Z125 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_addr_router_001.sv
+Z126 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_addr_router_001.sv
+L0 86
+R7
+r1
+31
+Z127 !s108 1527675166.637000
+Z128 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_addr_router_001.sv|
+Z129 !s90 -reportprogress|300|-sv|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_addr_router_001.sv|
+R24
+R25
+Z130 ncpu_@a@s@k2_addr_router_001
+Z131 !s100 7`E]UciWFmiJfd;QCGgNl1
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_addr_router_001_default_decode
+R14
+Z132 IM1iNPk_AFlY8;WN6^Dhi62
+Z133 VGTm@l66I;SW6Kl@8^IhU@3
+R124
+S1
+R3
+R4
+R125
+R126
+L0 45
+R7
+r1
+31
+R127
+R128
+R129
+R24
+R25
+Z134 ncpu_@a@s@k2_addr_router_001_default_decode
+Z135 !s100 ?_9Ua<Rd;6:zhPac>h5kV3
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_addr_router_default_decode
+R14
+Z136 I7V5[513;>]UXW[`lVF32E0
+Z137 VV]fRNgDZDmL>PQ:4:]ieX2
+R114
+S1
+R3
+R4
+R115
+R116
+L0 45
+R7
+r1
+31
+R117
+R118
+R119
+R24
+R25
+Z138 ncpu_@a@s@k2_addr_router_default_decode
+Z139 !s100 h0el5QQQXGV<[iEez3FR51
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_cmd_xbar_demux
+R14
+Z140 IERW6^4g^o>LDU;7@7_Z2X1
+Z141 V;TAcaNM5bNJlC8bd>L31L3
+S1
+R3
+R4
+Z142 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_cmd_xbar_demux.sv
+Z143 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_cmd_xbar_demux.sv
+L0 43
+R7
+r1
+31
+R24
+R25
+Z144 ncpu_@a@s@k2_cmd_xbar_demux
+Z145 !s100 @J9K;l4N81g6Q>z8QT`c61
+Z146 !s105 cpu_ASK2_cmd_xbar_demux_sv_unit
+Z147 !s108 1527675166.800000
+Z148 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_cmd_xbar_demux.sv|
+Z149 !s90 -reportprogress|300|-sv|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_cmd_xbar_demux.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_cmd_xbar_demux_001
+R14
+Z150 I<0RgPhYVakEUZ=<9LAk3C0
+Z151 Ve;XZ7a1MI;o1ESYdCL:LG3
+S1
+R3
+R4
+Z152 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_cmd_xbar_demux_001.sv
+Z153 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_cmd_xbar_demux_001.sv
+L0 43
+R7
+r1
+31
+R24
+R25
+Z154 ncpu_@a@s@k2_cmd_xbar_demux_001
+Z155 !s100 =f=F^4ondGFGV0DR@OXnn0
+Z156 !s105 cpu_ASK2_cmd_xbar_demux_001_sv_unit
+Z157 !s108 1527675166.917000
+Z158 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_cmd_xbar_demux_001.sv|
+Z159 !s90 -reportprogress|300|-sv|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_cmd_xbar_demux_001.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_cmd_xbar_mux
+R14
+Z160 INh^TC2OYekobQ7LmI3kiZ3
+Z161 VXbX^f[Nkzme4UdZkBzk8Q2
+S1
+R3
+R4
+Z162 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_cmd_xbar_mux.sv
+Z163 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_cmd_xbar_mux.sv
+L0 38
+R7
+r1
+31
+R24
+R25
+Z164 ncpu_@a@s@k2_cmd_xbar_mux
+Z165 !s100 b`AQIFG?kD>m@aF1e_9oE3
+Z166 !s105 cpu_ASK2_cmd_xbar_mux_sv_unit
+Z167 !s108 1527675167.048000
+Z168 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_cmd_xbar_mux.sv|
+Z169 !s90 -reportprogress|300|-sv|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_cmd_xbar_mux.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_id_router
+R14
+Z170 IajdMTj16cnMiWA<M0i:c72
+Z171 V:4beV?m2QMCeCFYn[I6;Y1
+Z172 !s105 cpu_ASK2_id_router_sv_unit
+S1
+R3
+R4
+Z173 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_id_router.sv
+Z174 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_id_router.sv
+L0 86
+R7
+r1
+31
+Z175 !s108 1527675167.181000
+Z176 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_id_router.sv|
+Z177 !s90 -reportprogress|300|-sv|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_id_router.sv|
+R24
+R25
+Z178 ncpu_@a@s@k2_id_router
+Z179 !s100 zDB0fBI1nlA:O4Wk[aUoc3
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_id_router_002
+R14
+Z180 IMm`LAJLmFQJ`_f@<NM1lY0
+Z181 V0DmTmd_WUTgnO@nlWSTEN2
+Z182 !s105 cpu_ASK2_id_router_002_sv_unit
+S1
+R3
+R4
+Z183 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_id_router_002.sv
+Z184 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_id_router_002.sv
+L0 86
+R7
+r1
+31
+Z185 !s108 1527675167.319000
+Z186 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_id_router_002.sv|
+Z187 !s90 -reportprogress|300|-sv|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_id_router_002.sv|
+R24
+R25
+Z188 ncpu_@a@s@k2_id_router_002
+Z189 !s100 HPm^FoaIVBle1ofg@05oO2
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_id_router_002_default_decode
+R14
+Z190 I@@MiBSkgdaT7aS1d2;H`a0
+Z191 VGgI9RKh8bPY0gkUoW8_:32
+R182
+S1
+R3
+R4
+R183
+R184
+L0 45
+R7
+r1
+31
+R185
+R186
+R187
+R24
+R25
+Z192 ncpu_@a@s@k2_id_router_002_default_decode
+Z193 !s100 z7O_7JEca`K5OH1RbZXN]3
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_id_router_default_decode
+R14
+Z194 Iz;:2b<J]eQf9@SE2Y7JEY3
+Z195 V@zUSHRG1aWLNl;EMC^2M_2
+R172
+S1
+R3
+R4
+R173
+R174
+L0 45
+R7
+r1
+31
+R175
+R176
+R177
+R24
+R25
+Z196 ncpu_@a@s@k2_id_router_default_decode
+Z197 !s100 Oz@e]hM9>=fHF<CcGf;eE0
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_irq_mapper
+R14
+Z198 Iag;C2IZhE8`WmgK9DMc5K0
+Z199 VNI1:CI`SWC>H?n9ja]0D40
+S1
+R3
+R4
+Z200 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_irq_mapper.sv
+Z201 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_irq_mapper.sv
+L0 31
+R7
+r1
+31
+R24
+R25
+Z202 ncpu_@a@s@k2_irq_mapper
+Z203 !s100 bdgoJCQ_i=F@:YUUM^G<J3
+Z204 !s105 cpu_ASK2_irq_mapper_sv_unit
+Z205 !s108 1527675167.454000
+Z206 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_irq_mapper.sv|
+Z207 !s90 -reportprogress|300|-sv|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_irq_mapper.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_jtag_uart_0
+Z208 I1iZz[bOZ]P^zM5]oEgk_n1
+Z209 VhnjB]YF:GfXa;>]EjPfXQ1
+R3
+Z210 w1527674570
+Z211 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_jtag_uart_0.v
+Z212 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_jtag_uart_0.v
+Z213 L0 327
+R7
+r1
+31
+Z214 !s108 1527675163.885000
+Z215 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_jtag_uart_0.v|
+Z216 !s90 -reportprogress|300|-vlog01compat|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_jtag_uart_0.v|
+R8
+R13
+Z217 ncpu_@a@s@k2_jtag_uart_0
+Z218 !s100 2N0=gX_9QT;3MmeP5^?@S0
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_jtag_uart_0_scfifo_r
+Z219 IW]1QlDGU;^PmG=<NX9HVV2
+Z220 VlDT1L8>=76mc[5Sj@Xii<0
+R3
+R210
+R211
+R212
+Z221 L0 240
+R7
+r1
+31
+R214
+R215
+R216
+R8
+R13
+Z222 ncpu_@a@s@k2_jtag_uart_0_scfifo_r
+Z223 !s100 ;Xz4TzlXiAe3_D6_i3G161
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_jtag_uart_0_scfifo_w
+Z224 IeC@Ig>bfD:G88GR@XTFTJ3
+Z225 V@XOe59E_gY0mJEO3Rem701
+R3
+R210
+R211
+R212
+L0 77
+R7
+r1
+31
+R214
+R215
+R216
+R8
+R13
+Z226 ncpu_@a@s@k2_jtag_uart_0_scfifo_w
+Z227 !s100 L@gP_HGH9Wj7V3YW0g3<B1
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_jtag_uart_0_sim_scfifo_r
+Z228 I>]nEbUdIJng]5bKeH5lhb2
+Z229 VY60LO8YEPhM79G:ekPZX?2
+R3
+R210
+R211
+R212
+Z230 L0 162
+R7
+r1
+31
+R214
+R215
+R216
+R8
+R13
+Z231 ncpu_@a@s@k2_jtag_uart_0_sim_scfifo_r
+Z232 !s100 UhL1Q7m5oA:32n<_]BX3c2
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_jtag_uart_0_sim_scfifo_w
+Z233 I28ci_8Sc0ZF4P<@eZKnHo0
+Z234 VHkEgDJUIXkZA7FPlPJ6Hc1
+R3
+R210
+R211
+R212
+L0 21
+R7
+r1
+31
+R214
+R215
+R216
+R8
+R13
+Z235 ncpu_@a@s@k2_jtag_uart_0_sim_scfifo_w
+Z236 !s100 QeP<gD^0aVYQ;CmA31@fz2
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_onchip_memory2_0
+Z237 I5`XRK@O4cAgKGMO2QfKCL0
+Z238 VP>mG^bh>7BYd^G[m[UzL53
+R3
+Z239 w1527674569
+Z240 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_onchip_memory2_0.v
+Z241 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_onchip_memory2_0.v
+L0 21
+R7
+r1
+31
+R8
+R13
+Z242 ncpu_@a@s@k2_onchip_memory2_0
+Z243 !s100 f]U0O2i`IazLP]R[HjbH52
+Z244 !s108 1527675164.082000
+Z245 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_onchip_memory2_0.v|
+Z246 !s90 -reportprogress|300|-vlog01compat|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_onchip_memory2_0.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_pio_A1_A0
+Z247 I6FIV[71:1UH`WQW47W[oT2
+Z248 VgDE84cI]dAJ=8;=BR48`10
+R3
+Z249 w1527674573
+Z250 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_A1_A0.v
+Z251 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_A1_A0.v
+L0 21
+R7
+r1
+31
+R8
+R13
+Z252 ncpu_@a@s@k2_pio_@a1_@a0
+Z253 !s100 [^EEBkCDRj>ANE4d0M;jA3
+Z254 !s108 1527675164.221000
+Z255 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_A1_A0.v|
+Z256 !s90 -reportprogress|300|-vlog01compat|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_A1_A0.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_pio_angle
+Z257 Io5[]639`2@51U;=XVF2WT1
+Z258 VeP0iz[[IF2@FaMT<cHNUf3
+R3
+Z259 w1527674571
+Z260 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_angle.v
+Z261 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_angle.v
+L0 21
+R7
+r1
+31
+R8
+R13
+Z262 ncpu_@a@s@k2_pio_angle
+Z263 !s100 nUVGGz9YIQn@HcdVN8GFY3
+Z264 !s108 1527675164.591000
+Z265 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_angle.v|
+Z266 !s90 -reportprogress|300|-vlog01compat|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_angle.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_pio_I_max
+Z267 IH?4WLk3@i:>LVLHRCk;eE0
+Z268 V;KXN48>7X:aT=fkV9OnGS1
+R3
+R4
+Z269 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_I_max.v
+Z270 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_I_max.v
+L0 21
+R7
+r1
+31
+R8
+R13
+Z271 ncpu_@a@s@k2_pio_@i_max
+Z272 !s100 PVV22UgZRfZAI;4[SjleU0
+Z273 !s108 1527675164.355000
+Z274 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_I_max.v|
+Z275 !s90 -reportprogress|300|-vlog01compat|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_I_max.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_pio_keyboard_SW6_SW1
+Z276 I`:4EjnEJF^jT61CUhXkM[2
+Z277 V>j5<1j]jY[Rl1=VJU;Uo21
+R3
+Z278 w1527674574
+Z279 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_keyboard_SW6_SW1.v
+Z280 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_keyboard_SW6_SW1.v
+L0 21
+R7
+r1
+31
+R8
+R13
+Z281 ncpu_@a@s@k2_pio_keyboard_@s@w6_@s@w1
+Z282 !s100 IT0IPAAkfYDKieh[d4Te22
+Z283 !s108 1527675164.699000
+Z284 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_keyboard_SW6_SW1.v|
+Z285 !s90 -reportprogress|300|-vlog01compat|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_keyboard_SW6_SW1.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_pio_lcd_control
+Z286 I5J`8@fLaP8kD5YJU=5KD`1
+Z287 V09MVK54KWWl@7FI[mdmnX1
+R3
+Z288 w1527674572
+Z289 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_lcd_control.v
+Z290 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_lcd_control.v
+L0 21
+R7
+r1
+31
+R8
+R13
+Z291 ncpu_@a@s@k2_pio_lcd_control
+Z292 !s100 CbUA92fmzDca6@63JEcN[1
+Z293 !s108 1527675164.818000
+Z294 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_lcd_control.v|
+Z295 !s90 -reportprogress|300|-vlog01compat|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_lcd_control.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_pio_lcd_data
+Z296 IUJ7O@5bilfLdHZ9863dI`3
+Z297 VI7YO2JjJ3K:9h7SEhM=3h3
+R3
+R259
+Z298 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_lcd_data.v
+Z299 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_lcd_data.v
+L0 21
+R7
+r1
+31
+R8
+R13
+Z300 ncpu_@a@s@k2_pio_lcd_data
+Z301 !s100 209kLUnG?<lWKSi]dEmj03
+Z302 !s108 1527675164.958000
+Z303 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_lcd_data.v|
+Z304 !s90 -reportprogress|300|-vlog01compat|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_lcd_data.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_pio_res_nSOE
+Z305 I0GV`3JWJ>`7TLhQ@0iQgX3
+Z306 V[SHCeNED]ho[<6:0YE42z2
+R3
+R249
+Z307 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_res_nSOE.v
+Z308 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_res_nSOE.v
+L0 21
+R7
+r1
+31
+R8
+R13
+Z309 ncpu_@a@s@k2_pio_res_n@s@o@e
+Z310 !s100 9]G:_ckXmXJFANhGf9_`A3
+Z311 !s108 1527675165.066000
+Z312 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_res_nSOE.v|
+Z313 !s90 -reportprogress|300|-vlog01compat|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_res_nSOE.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_pio_res_nWr
+Z314 IUfdKcC[3T87OR3nnD=UK:0
+Z315 V`2O[8mjbeRUdW1kRi`ahb1
+R3
+R288
+Z316 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_res_nWr.v
+Z317 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_res_nWr.v
+L0 21
+R7
+r1
+31
+R8
+R13
+Z318 ncpu_@a@s@k2_pio_res_n@wr
+Z319 !s100 iClCgXkLcR5_RgTFlRb;[3
+Z320 !s108 1527675165.182000
+Z321 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_res_nWr.v|
+Z322 !s90 -reportprogress|300|-vlog01compat|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_res_nWr.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_pio_SDO_ADC
+Z323 IYBJbUiIZ=zhkPYQ_ndb6D0
+Z324 VD[_jzmIeP5T]6j@l[HZAT2
+R3
+R278
+Z325 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_SDO_ADC.v
+Z326 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_SDO_ADC.v
+L0 21
+R7
+r1
+31
+R8
+R13
+Z327 ncpu_@a@s@k2_pio_@s@d@o_@a@d@c
+Z328 !s100 8E?_Nnk^;M[fGF]S:Qf3m1
+Z329 !s108 1527675164.474000
+Z330 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_SDO_ADC.v|
+Z331 !s90 -reportprogress|300|-vlog01compat|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_pio_SDO_ADC.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_rsp_xbar_demux
+R14
+Z332 Ig>ZP28l;MPQ5P9PXieR@21
+Z333 V?:nO0NXTIQGQ<j4eeTY4O3
+S1
+R3
+R4
+Z334 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_rsp_xbar_demux.sv
+Z335 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_rsp_xbar_demux.sv
+L0 43
+R7
+r1
+31
+R24
+R25
+Z336 ncpu_@a@s@k2_rsp_xbar_demux
+Z337 !s100 U=:063:j1P:=__5L_?ART3
+Z338 !s105 cpu_ASK2_rsp_xbar_demux_sv_unit
+Z339 !s108 1527675167.576000
+Z340 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_rsp_xbar_demux.sv|
+Z341 !s90 -reportprogress|300|-sv|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_rsp_xbar_demux.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_rsp_xbar_demux_002
+R14
+Z342 I12NLHM_bNW7L=OgYU]82`3
+Z343 ViTVK[8o]Nk`D^cSRfG_O?0
+S1
+R3
+R4
+Z344 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_rsp_xbar_demux_002.sv
+Z345 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_rsp_xbar_demux_002.sv
+L0 43
+R7
+r1
+31
+R24
+R25
+Z346 ncpu_@a@s@k2_rsp_xbar_demux_002
+Z347 !s100 eX?6D34N5hb3lXWR4@Go>1
+Z348 !s105 cpu_ASK2_rsp_xbar_demux_002_sv_unit
+Z349 !s108 1527675167.712000
+Z350 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_rsp_xbar_demux_002.sv|
+Z351 !s90 -reportprogress|300|-sv|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_rsp_xbar_demux_002.sv|
+!i10b 1
+!s85 0
+!s101 -O0
+vcpu_ASK2_rsp_xbar_mux
+R14
+Z352 ILAGQeWSZmMndUMZ[e;UgC2
+Z353 V5nCKn3IKP4L4D1ZmgD[_R3
+S1
+R3
+R4
+Z354 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_rsp_xbar_mux.sv
+Z355 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_rsp_xbar_mux.sv
+L0 38
+R7
+r1
+31
+R24
+R25
+Z356 ncpu_@a@s@k2_rsp_xbar_mux
+!i10b 1
+Z357 !s100 7Y@TKXJ3O7=cAkERUPgVY3
+Z358 !s105 cpu_ASK2_rsp_xbar_mux_sv_unit
+!s85 0
+Z359 !s108 1527675167.837000
+Z360 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_rsp_xbar_mux.sv|
+Z361 !s90 -reportprogress|300|-sv|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_rsp_xbar_mux.sv|
+!s101 -O0
+vcpu_ASK2_rsp_xbar_mux_001
+R14
+!i10b 1
+!s100 lEH4jhhz0FU^2VfELl7c:0
+IWD5R^?Yd7h3mCRj@LAB1P1
+VG^0dST5H2?nlaY<DDL:j[2
+!s105 cpu_ASK2_rsp_xbar_mux_001_sv_unit
+S1
+R3
+R4
+8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_rsp_xbar_mux_001.sv
+FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_rsp_xbar_mux_001.sv
+L0 38
+R7
+r1
+!s85 0
+31
+!s108 1527675167.961000
+!s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_rsp_xbar_mux_001.sv|
+!s90 -reportprogress|300|-sv|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_rsp_xbar_mux_001.sv|
+!s101 -O0
+R24
+R25
+ncpu_@a@s@k2_rsp_xbar_mux_001
+vcpu_ASK2_sysid_qsys_0
+Z362 IKhcOjnc>EhfIYO]=eCeXg1
+Z363 VCg`a<OZED3]i^gEV?YoAB1
+R3
+R210
+Z364 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_sysid_qsys_0.v
+Z365 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_sysid_qsys_0.v
+L0 21
+R7
+r1
+31
+R8
+R13
+Z366 ncpu_@a@s@k2_sysid_qsys_0
+Z367 !s100 ]H[V5foZn<QCNRnUOZJF61
+Z368 !s108 1527675165.353000
+Z369 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_sysid_qsys_0.v|
+Z370 !s90 -reportprogress|300|-vlog01compat|-work|altera_reserved_qsys_cpu_ASK2|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/ip/cpu_ASK2/submodules/cpu_ASK2_sysid_qsys_0.v|
+!i10b 1
+!s85 0
+!s101 -O0

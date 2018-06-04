@@ -1,0 +1,75 @@
+# Reading C:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do SYS_REST_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+I:/SYS_REST {I:/SYS_REST/SYS_REST.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SYS_REST
+# 
+# Top level modules:
+# 	SYS_REST
+# 
+# vlog -vlog01compat -work work +incdir+I:/SYS_REST/simulation/modelsim {I:/SYS_REST/simulation/modelsim/SYS_REST.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SYS_REST_vlg_tst
+# 
+# Top level modules:
+# 	SYS_REST_vlg_tst
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxv_ver -L rtl_work -L work -voptargs="+acc"  test_1
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxv_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps test_1 
+# ** Error: (vsim-3170) Could not find 'I:/SYS_REST/simulation/modelsim/rtl_work.test_1'.
+# 
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./SYS_REST_run_msim_rtl_verilog.do PAUSED at line 12
+vlog -vlog01compat -work work +incdir+I:/SYS_REST -O0 I:/SYS_REST/SYS_REST.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SYS_REST
+# 
+# Top level modules:
+# 	SYS_REST
+vlog -vlog01compat -work work +incdir+I:/SYS_REST/simulation/modelsim -O0 I:/SYS_REST/simulation/modelsim/SYS_REST.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SYS_REST_vlg_tst
+# 
+# Top level modules:
+# 	SYS_REST_vlg_tst
+vsim work.SYS_REST_vlg_tst
+# vsim work.SYS_REST_vlg_tst 
+# Loading work.SYS_REST_vlg_tst
+# Loading work.SYS_REST
+add wave -position insertpoint  \
+sim:/SYS_REST_vlg_tst/REST_slave \
+sim:/SYS_REST_vlg_tst/REST_master \
+sim:/SYS_REST_vlg_tst/MASTER_OK \
+sim:/SYS_REST_vlg_tst/CLK_IN
+run
+run
+run
+run -all
+vlog -vlog01compat -work work +incdir+I:/SYS_REST/simulation/modelsim -O0 I:/SYS_REST/simulation/modelsim/SYS_REST.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SYS_REST_vlg_tst
+# 
+# Top level modules:
+# 	SYS_REST_vlg_tst
+vsim work.SYS_REST_vlg_tst
+# vsim work.SYS_REST_vlg_tst 
+# Loading work.SYS_REST_vlg_tst
+# Loading work.SYS_REST
+add wave -position insertpoint  \
+sim:/SYS_REST_vlg_tst/REST_slave \
+sim:/SYS_REST_vlg_tst/REST_master \
+sim:/SYS_REST_vlg_tst/MASTER_OK \
+sim:/SYS_REST_vlg_tst/CLK_IN
+run

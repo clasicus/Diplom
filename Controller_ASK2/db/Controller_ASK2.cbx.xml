@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="Controller_ASK2">
+		<CBX_INST_ENTRY INSTANCE_NAME="|Controller_ASK2|cpu_ASK2:inst2|cpu_ASK2_jtag_uart_0:jtag_uart_0|cpu_ASK2_jtag_uart_0_scfifo_w:the_cpu_ASK2_jtag_uart_0_scfifo_w|scfifo:wfifo" CBX_FILE_NAME="scfifo_aq21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Controller_ASK2|cpu_ASK2:inst2|cpu_ASK2_nios2_qsys_0:nios2_qsys_0|cpu_ASK2_nios2_qsys_0_mult_cell:the_cpu_ASK2_nios2_qsys_0_mult_cell|altera_mult_add:the_altmult_add_part_1" CBX_FILE_NAME="altera_mult_add_80u2.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Controller_ASK2|cpu_ASK2:inst2|cpu_ASK2_nios2_qsys_0:nios2_qsys_0|cpu_ASK2_nios2_qsys_0_register_bank_a_module:cpu_ASK2_nios2_qsys_0_register_bank_a|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_4hh1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Controller_ASK2|cpu_ASK2:inst2|cpu_ASK2_jtag_uart_0:jtag_uart_0|cpu_ASK2_jtag_uart_0_scfifo_r:the_cpu_ASK2_jtag_uart_0_scfifo_r|scfifo:rfifo" CBX_FILE_NAME="scfifo_aq21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Controller_ASK2|cpu_ASK2:inst2|cpu_ASK2_nios2_qsys_0:nios2_qsys_0|cpu_ASK2_nios2_qsys_0_mult_cell:the_cpu_ASK2_nios2_qsys_0_mult_cell|altera_mult_add:the_altmult_add_part_1|altera_mult_add_80u2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|lpm_mult:Mult0" CBX_FILE_NAME="mult_ao01.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Controller_ASK2|cpu_ASK2:inst2|cpu_ASK2_nios2_qsys_0:nios2_qsys_0|cpu_ASK2_nios2_qsys_0_mult_cell:the_cpu_ASK2_nios2_qsys_0_mult_cell|altera_mult_add:the_altmult_add_part_2" CBX_FILE_NAME="altera_mult_add_a0u2.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Controller_ASK2|cpu_ASK2:inst2|cpu_ASK2_onchip_memory2_0:onchip_memory2_0|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_i2d1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Controller_ASK2|cpu_ASK2:inst2|cpu_ASK2_nios2_qsys_0:nios2_qsys_0|cpu_ASK2_nios2_qsys_0_ic_data_module:cpu_ASK2_nios2_qsys_0_ic_data|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_3id1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Controller_ASK2|cpu_ASK2:inst2|cpu_ASK2_nios2_qsys_0:nios2_qsys_0|cpu_ASK2_nios2_qsys_0_ic_tag_module:cpu_ASK2_nios2_qsys_0_ic_tag|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_tqh1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Controller_ASK2|cpu_ASK2:inst2|cpu_ASK2_nios2_qsys_0:nios2_qsys_0|cpu_ASK2_nios2_qsys_0_nios2_oci:the_cpu_ASK2_nios2_qsys_0_nios2_oci|cpu_ASK2_nios2_qsys_0_nios2_ocimem:the_cpu_ASK2_nios2_qsys_0_nios2_ocimem|cpu_ASK2_nios2_qsys_0_ociram_sp_ram_module:cpu_ASK2_nios2_qsys_0_ociram_sp_ram|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_ld81.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Controller_ASK2|cpu_ASK2:inst2|cpu_ASK2_nios2_qsys_0:nios2_qsys_0|cpu_ASK2_nios2_qsys_0_register_bank_b_module:cpu_ASK2_nios2_qsys_0_register_bank_b|altsyncram:the_altsyncram" CBX_FILE_NAME="altsyncram_5hh1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Controller_ASK2|cpu_ASK2:inst2|cpu_ASK2_nios2_qsys_0:nios2_qsys_0|lpm_add_sub:Add8" CBX_FILE_NAME="add_sub_hui.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Controller_ASK2|pll0:inst|altpll:altpll_component" CBX_FILE_NAME="pll0_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|Controller_ASK2|cpu_ASK2:inst2|cpu_ASK2_nios2_qsys_0:nios2_qsys_0|cpu_ASK2_nios2_qsys_0_mult_cell:the_cpu_ASK2_nios2_qsys_0_mult_cell|altera_mult_add:the_altmult_add_part_2|altera_mult_add_a0u2:auto_generated|altera_mult_add_rtl:altera_mult_add_rtl1|ama_multiplier_function:multiplier_block|lpm_mult:Mult0" CBX_FILE_NAME="mult_av01.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

@@ -1,0 +1,68 @@
+#ifndef LCD_H_
+#define LCD_H_
+#define LCD_E_MASK 4
+#define LCD_R_NOTW_MASK 2
+#define LCD_RS_MASK 1
+#define LCD_BF_MASK 0x80 
+#define LCD_ADDRESS_MASK 0x7f
+#define LCD_DIRECTION_8BIT_OUTPUT_MASK 0xFF
+#define LCD_DIRECTION_8BIT_INTPUT_MASK 0
+#define LCD_MINUS_NUMBER_MASK  0x8000
+
+// время выполнения процессором одной команды
+//выполняется для рассчета задержки между командами
+#define CPU_CYCLE_DELAY_nS  45
+// коэффициент для определения задержки процедуры Delay_for_microsec
+// в микросекундах
+#define DELAY_KOEFF  (CPU_CYCLE_DELAY_nS*8)
+//коэффициент для задания задержки в микросекундах
+#define MICRO  1000
+//коэффициент для задания задержки в мили секундах
+#define MILI   1000000
+//функция для организации задержки не менее 1 микросекунды
+//определяем 180 градусов в 16-ричном коде
+#define GRAD_180 0x7FFF
+//#define pi_2     1.5707963267948966/0x7FFF
+//коэффициент перевода значения угла в градусах в шестнадцатиричный код
+// koef=0xFFFF/360=182=B6
+#define KOEF_TRANSFORM   0xB6
+
+//Функция передачи инструкции
+void FUNCTION_SET(alt_8 instruction);
+
+void Delay_for_microsec (alt_u32 amount_us);
+
+void LCD_INITIALIZATION();
+
+//---------------------------------------------------------------------------
+//Функция вывода на экран символа,заданного в ASCII-16-тиричном коде 
+void LCD_print_symbol(alt_u8 code);
+//---------------------------------------------------------------------------- 
+//Функция вывода на экран символа,в конкретную позицию соответствующего адресу
+//----------------------------------------------------------------------------
+void LCD_print_symbol_in_position (alt_u8 code, alt_u8 address);
+ //---------------------------------------------------------------------------- 
+//Функция вывода на экран 16-ти разрядного числа, занимает 5 позиций на экране
+//----------------------------------------------------------------------------
+void LCD_print_digital_number_on_screen (alt_16 value,alt_u8 address,alt_u8 point_position); 
+
+
+void Out_SET_SW1();
+void Out_SET_SW2();
+void Out_SET_SW3();
+void Out_EROOR_CONECT();
+void Out_EROOR_RESOLVER(void);
+void Out_WORKING(void);
+void Out_ANGLE_SETTING(void);
+void Out_CURRENT_SETTING(void);
+//void Out_EXIT_to_SET_SW1_or_SW2();
+//void Out_EXIT_to_SET_SW1_or_SW3();
+//void Out_EXIT_to_SET_SW2_or_SW3();
+//void Out_Angle_X();
+//void Out_Angle_Y();
+//void Out_Angle_Z();
+//void Out_Angle();
+extern alt_16 Angle_norm;
+extern alt_16 Current_norm;
+
+#endif /*LCD_H_*/

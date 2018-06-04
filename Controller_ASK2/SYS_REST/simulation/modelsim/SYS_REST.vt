@@ -1,0 +1,30 @@
+
+`timescale 1 ns/ 10 ps
+module SYS_REST_vlg_tst();
+
+reg CLK_IN;
+reg MASTER_OK;
+// wires                                               
+wire REST_master;
+wire REST_slave;
+
+// assign statements (if any)                          
+SYS_REST i1 
+(
+	.CLK_IN(CLK_IN),
+	.MASTER_OK(MASTER_OK),
+	.REST_master(REST_master),
+	.REST_slave(REST_slave)
+);
+initial 
+	begin                                                  
+		CLK_IN = 0;
+		MASTER_OK = 0;
+		#30000 MASTER_OK = 1;
+		#300 MASTER_OK = 0;
+	end 
+	
+	always #50 CLK_IN <= ~CLK_IN;                                                
+   
+endmodule
+

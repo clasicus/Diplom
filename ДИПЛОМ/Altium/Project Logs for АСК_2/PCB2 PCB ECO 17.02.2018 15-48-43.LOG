@@ -1,0 +1,82 @@
+Removed Pin From Net: NetName=NetDD1_7 Pin=R30-2
+Removed Pin From Net: NetName=NetDD1_9 Pin=R31-2
+Removed Pin From Net: NetName=NetDD1_11 Pin=R32-2
+Removed Pin From Net: NetName=NetDD1_13 Pin=R33-2
+Removed Pin From Net: NetName=NetDD1_4 Pin=R34-2
+Removed Pin From Net: NetName=NetDD1_6 Pin=R35-2
+Removed Pin From Net: NetName=NetDD1_15 Pin=R37-2
+Removed Pin From Net: NetName=NetDD1_8 Pin=R39-2
+Removed Pin From Net: NetName=NetDD1_10 Pin=R40-2
+Removed Pin From Net: NetName=NetDD1_14 Pin=R42-2
+Removed Pin From Net: NetName=NetDD1_5 Pin=R43-2
+Change Component DesignItemId : Designator=C64 Old DesignItemId=C_10mkF_1206 New DesignItemId=C_0.1mkF_0603
+Change Component Designator: OldDesignator=C19 NewDesignator=C21
+Change Component Designator: OldDesignator=C20 NewDesignator=C22
+Change Component Designator: OldDesignator=C21 NewDesignator=C23
+Change Component Designator: OldDesignator=C22 NewDesignator=C24
+Change Component Designator: OldDesignator=C23 NewDesignator=C25
+Change Component Designator: OldDesignator=C24 NewDesignator=C26
+Change Component Designator: OldDesignator=C25 NewDesignator=C27
+Change Component Designator: OldDesignator=C26 NewDesignator=C28
+Change Component Designator: OldDesignator=C27 NewDesignator=C29
+Change Component Designator: OldDesignator=C28 NewDesignator=C30
+Change Component Designator: OldDesignator=C29 NewDesignator=C31
+Change Component Designator: OldDesignator=C30 NewDesignator=C20
+Change Component Designator: OldDesignator=C31 NewDesignator=C32
+Change Component Designator: OldDesignator=C32 NewDesignator=C19
+Change Component Designator: OldDesignator=DD2 NewDesignator=DD1
+Change Component Designator: OldDesignator=DD3 NewDesignator=DD2
+Change Component Designator: OldDesignator=DD4 NewDesignator=DD3
+Change Component Designator: OldDesignator=DD5 NewDesignator=DD4
+Change Component Designator: OldDesignator=DD6 NewDesignator=DD5
+Change Component Designator: OldDesignator=DD7 NewDesignator=DD6
+Change Component Description : Designator=C64 Old Description=C_10mkF_1206 New Description=C_10mkF_0603
+Change Component Library : Designator=C64 Old Library=ภัส_1.SchLib New Library=ภัส_2.SCHLIB
+Added Pin To Net: NetName=NetDD1_8 Pin=R30-2
+Added Pin To Net: NetName=NetDD1_14 Pin=R31-2
+Added Pin To Net: NetName=NetDD1_15 Pin=R32-2
+Added Pin To Net: NetName=NetDD1_9 Pin=R33-2
+Added Pin To Net: NetName=NetDD1_6 Pin=R34-2
+Added Pin To Net: NetName=NetDD1_7 Pin=R35-2
+Added Pin To Net: NetName=NetDD1_10 Pin=R37-2
+Added Pin To Net: NetName=NetDD1_11 Pin=R39-2
+Added Pin To Net: NetName=NetDD1_4 Pin=R40-2
+Added Pin To Net: NetName=NetDD1_5 Pin=R42-2
+Added Pin To Net: NetName=NetDD1_13 Pin=R43-2
+Added Pin To Net: NetName=+3.3V Pin=RP1-2
+Added Pin To Net: NetName=PWM Pin=XP1-1
+Change Net Name : Old Net Name=NetC19_1 New Net Name=NetC21_1
+Change Net Name : Old Net Name=NetC19_2 New Net Name=NetC21_2
+Change Net Name : Old Net Name=NetC20_1 New Net Name=NetC22_1
+Change Net Name : Old Net Name=NetC20_2 New Net Name=NetC22_2
+Change Net Name : Old Net Name=NetC21_1 New Net Name=NetC23_1
+Change Net Name : Old Net Name=NetC25_1 New Net Name=NetC27_1
+Change Net Name : Old Net Name=NetC26_2 New Net Name=NetC28_2
+Change Net Name : Old Net Name=NetDD1_3 New Net Name=Net1_3
+Change Net Name : Old Net Name=NetDD1_4 New Net Name=Net1_10
+Change Net Name : Old Net Name=NetDD1_5 New Net Name=Net1_14
+Change Net Name : Old Net Name=NetDD1_6 New Net Name=Net1_4
+Change Net Name : Old Net Name=NetDD1_7 New Net Name=Net1_6
+Change Net Name : Old Net Name=NetDD1_8 New Net Name=Net1_7
+Change Net Name : Old Net Name=NetDD1_9 New Net Name=Net1_13
+Change Net Name : Old Net Name=NetDD1_10 New Net Name=Net1_15
+Change Net Name : Old Net Name=NetDD1_11 New Net Name=Net1_8
+Change Net Name : Old Net Name=NetDD1_12 New Net Name=Net1_12
+Change Net Name : Old Net Name=NetDD1_13 New Net Name=Net1_5
+Change Net Name : Old Net Name=NetDD1_14 New Net Name=Net1_9
+Change Net Name : Old Net Name=NetDD1_15 New Net Name=Net1_11
+Change Net Name : Old Net Name=NetDD5_7 New Net Name=NetDD4_7
+Change Net Name : Old Net Name=NetDD5_8 New Net Name=NetDD4_8
+Change Net Name : Old Net Name=NetDD5_15 New Net Name=NetDD4_15
+Change Net Name : Old Net Name=NetDD5_16 New Net Name=NetDD4_16
+Change Net Name : Old Net Name=NetDD6_9 New Net Name=NetDD5_9
+Change Net Name : Old Net Name=NetDD6_13 New Net Name=NetDD5_13
+Change Net Name : Old Net Name=NetDD6_14 New Net Name=NetDD5_14
+Change Net Name : Old Net Name=NetDD6_15 New Net Name=NetDD5_15
+Change Net Name : Old Net Name=NetDD6_16 New Net Name=NetDD5_16
+Change Net Name : Old Net Name=NetDD6_18 New Net Name=NetDD5_18
+Change Net Name : Old Net Name=NetDD6_20 New Net Name=NetDD5_20
+Change Net Name : Old Net Name=NetDD6_21 New Net Name=NetDD5_21
+Change Net Name : Old Net Name=NetDD6_92 New Net Name=NetDD5_92
+Change Net Name : Old Net Name=NetDD6_96 New Net Name=NetDD5_96
+Change Net Name : Old Net Name=NetDD7_3 New Net Name=NetDD6_3

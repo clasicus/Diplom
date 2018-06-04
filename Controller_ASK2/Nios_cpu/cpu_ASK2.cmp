@@ -1,0 +1,21 @@
+	component cpu_ASK2 is
+		port (
+			clk_clk                                         : in    std_logic                     := 'X';             -- clk
+			reset_reset_n                                   : in    std_logic                     := 'X';             -- reset_n
+			pio_angle_external_connection_export            : inout std_logic_vector(15 downto 0) := (others => 'X'); -- export
+			pio_lcd_control_external_connection_export      : out   std_logic_vector(2 downto 0);                     -- export
+			pio_lcd_data_external_connection_export         : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- export
+			pio_res_nwr_external_connection_export          : out   std_logic;                                        -- export
+			pio_res_nrd_external_connection_export          : out   std_logic;                                        -- export
+			pio_res_nsoe_external_connection_export         : inout std_logic                     := 'X';             -- export
+			pio_res_nsample_external_connection_export      : out   std_logic;                                        -- export
+			pio_res_ncs_external_connection_export          : out   std_logic;                                        -- export
+			pio_a1_a0_external_connection_export            : out   std_logic_vector(1 downto 0);                     -- export
+			pio_sdo_adc_external_connection_export          : in    std_logic_vector(15 downto 0) := (others => 'X'); -- export
+			pio_i_max_external_connection_export            : out   std_logic_vector(15 downto 0);                    -- export
+			pio_keyboard_sw6_sw1_external_connection_export : in    std_logic_vector(5 downto 0)  := (others => 'X'); -- export
+			pio_led2_led1_external_connection_export        : out   std_logic_vector(1 downto 0);                     -- export
+			pio_pwm_in_external_connection_export           : out   std_logic_vector(15 downto 0)                     -- export
+		);
+	end component cpu_ASK2;
+

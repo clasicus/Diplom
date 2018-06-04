@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed May 02 12:46:06 2018
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
+Revision Name : AD7687
+Top-level Entity Name : AD7687
+Family : Cyclone III
+Device : EP3C25E144I7
+Timing Models : Final
+Total logic elements : 33 / 24,624 ( < 1 % )
+    Total combinational functions : 33 / 24,624 ( < 1 % )
+    Dedicated logic registers : 26 / 24,624 ( < 1 % )
+Total registers : 26
+Total pins : 50 / 83 ( 60 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/project/preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.857089766/PATH/delimiter=;
+environment/project/preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.857089766/PATH/operation=replace
+environment/project/preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.857089766/PATH/value=D\:/altera/13.0/nios2eds/bin/cygpath;D\:/altera/13.0/quartus/bin;D\:/altera/13.0/quartus/sopc_builder/model/lib;d\:\\altera\\13.0\\quartus\\bin64\\;C\:\\Windows\\system32;C\:\\Windows;C\:\\Windows\\System32\\Wbem;C\:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C\:\\Program Files\\MATLAB\\R2015b\\runtime\\win64;C\:\\Program Files\\MATLAB\\R2015b\\bin;C\:\\Program Files\\MATLAB\\R2015b\\polyspace\\bin;C\:\\Users\\ilnitskaya-ll\\AppData\\Local\\Microsoft\\WindowsApps;D\:\\altera\\13.0\\quartus\\bin\\cygwin.orig\\bin
+environment/project/preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.857089766/append=true
+environment/project/preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.857089766/appendContributed=true

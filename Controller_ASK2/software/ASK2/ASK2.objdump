@@ -1,0 +1,2440 @@
+
+ASK2.elf:     file format elf32-littlenios2
+ASK2.elf
+architecture: nios2, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x00002020
+
+Program Header:
+    LOAD off    0x00001000 vaddr 0x00002000 paddr 0x00002000 align 2**12
+         filesz 0x00000020 memsz 0x00000020 flags r-x
+    LOAD off    0x00001020 vaddr 0x00002020 paddr 0x00002020 align 2**12
+         filesz 0x00000eb0 memsz 0x00000eb0 flags r-x
+    LOAD off    0x00001ed0 vaddr 0x00002ed0 paddr 0x00002ed4 align 2**12
+         filesz 0x00000004 memsz 0x00000004 flags rw-
+    LOAD off    0x00001ed8 vaddr 0x00002ed8 paddr 0x00002ed8 align 2**12
+         filesz 0x00000000 memsz 0x00000014 flags rw-
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .entry        00000020  00002000  00002000  00001000  2**5
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .text         00000eb0  00002020  00002020  00001020  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .rwdata       00000004  00002ed0  00002ed4  00001ed0  2**2
+                  CONTENTS, ALLOC, LOAD, DATA, SMALL_DATA
+  3 .bss          00000014  00002ed8  00002ed8  00001ed8  2**2
+                  ALLOC, SMALL_DATA
+  4 .comment      00000023  00000000  00000000  00001ed4  2**0
+                  CONTENTS, READONLY
+  5 .debug_aranges 000001a8  00000000  00000000  00001ef8  2**3
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_pubnames 0000041d  00000000  00000000  000020a0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_info   00000f55  00000000  00000000  000024bd  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_abbrev 000006d1  00000000  00000000  00003412  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_line   00001ffe  00000000  00000000  00003ae3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_frame  000003f8  00000000  00000000  00005ae4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_str    0000074d  00000000  00000000  00005edc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_loc    00000798  00000000  00000000  00006629  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .debug_alt_sim_info 00000020  00000000  00000000  00006dc4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .debug_ranges 00000020  00000000  00000000  00006de8  2**3
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .thread_model 00000003  00000000  00000000  00007f53  2**0
+                  CONTENTS, READONLY
+ 16 .cpu          0000000c  00000000  00000000  00007f56  2**0
+                  CONTENTS, READONLY
+ 17 .qsys         00000001  00000000  00000000  00007f62  2**0
+                  CONTENTS, READONLY
+ 18 .simulation_enabled 00000001  00000000  00000000  00007f63  2**0
+                  CONTENTS, READONLY
+ 19 .sysid_hash   00000004  00000000  00000000  00007f64  2**0
+                  CONTENTS, READONLY
+ 20 .sysid_base   00000004  00000000  00000000  00007f68  2**0
+                  CONTENTS, READONLY
+ 21 .sysid_time   00000004  00000000  00000000  00007f6c  2**0
+                  CONTENTS, READONLY
+ 22 .stderr_dev   0000000b  00000000  00000000  00007f70  2**0
+                  CONTENTS, READONLY
+ 23 .stdin_dev    0000000b  00000000  00000000  00007f7b  2**0
+                  CONTENTS, READONLY
+ 24 .stdout_dev   0000000b  00000000  00000000  00007f86  2**0
+                  CONTENTS, READONLY
+ 25 .sopc_system_name 00000008  00000000  00000000  00007f91  2**0
+                  CONTENTS, READONLY
+ 26 .quartus_project_dir 00000036  00000000  00000000  00007f99  2**0
+                  CONTENTS, READONLY
+ 27 .sopcinfo     00079e95  00000000  00000000  00007fcf  2**0
+                  CONTENTS, READONLY
+SYMBOL TABLE:
+00002000 l    d  .entry	00000000 .entry
+00002020 l    d  .text	00000000 .text
+00002ed0 l    d  .rwdata	00000000 .rwdata
+00002ed8 l    d  .bss	00000000 .bss
+00000000 l    d  .comment	00000000 .comment
+00000000 l    d  .debug_aranges	00000000 .debug_aranges
+00000000 l    d  .debug_pubnames	00000000 .debug_pubnames
+00000000 l    d  .debug_info	00000000 .debug_info
+00000000 l    d  .debug_abbrev	00000000 .debug_abbrev
+00000000 l    d  .debug_line	00000000 .debug_line
+00000000 l    d  .debug_frame	00000000 .debug_frame
+00000000 l    d  .debug_str	00000000 .debug_str
+00000000 l    d  .debug_loc	00000000 .debug_loc
+00000000 l    d  .debug_alt_sim_info	00000000 .debug_alt_sim_info
+00000000 l    d  .debug_ranges	00000000 .debug_ranges
+00002058 l       .text	00000000 alt_after_alt_main
+00000000 l    df *ABS*	00000000 ACK2_main.c
+00000000 l    df *ABS*	00000000 ANGLE_SETTING.c
+00000000 l    df *ABS*	00000000 LCD.c
+00000000 l    df *ABS*	00000000 SETTING.c
+00000000 l    df *ABS*	00000000 resolver.c
+00000000 l    df *ABS*	00000000 lib2-divmod.c
+00002c58 l     F .text	0000007c udivmodsi4
+00000000 l    df *ABS*	00000000 alt_load.c
+00002da4 l     F .text	00000020 alt_load_section
+00000000 l    df *ABS*	00000000 alt_main.c
+00000000 l    df *ABS*	00000000 alt_sys_init.c
+00000000 l    df *ABS*	00000000 alt_dcache_flush_all.c
+00000000 l    df *ABS*	00000000 alt_icache_flush_all.c
+00000000 l    df *ABS*	00000000 altera_nios2_qsys_irq.c
+00000000 l    df *ABS*	00000000 alt_icache_flush.c
+0000275c g     F .text	00000224 LCD_print_digital_number_on_screen
+00002e30 g     F .text	0000002c alt_main
+00002bf0 g     F .text	00000068 Resolver_read_byte_config_mode
+00002ed4 g       *ABS*	00000000 __flash_rwdata_start
+00002344 g     F .text	000000b4 Out_CURRENT_SETTING
+000022a0 g     F .text	000000a4 LCD_print_symbol_in_position
+00002704 g     F .text	00000058 Out_SET_SW1
+000025a4 g     F .text	000000b0 Out_EROOR_CONECT
+00002110 g     F .text	00000068 ANGLE_SETTING
+00002000 g     F .entry	0000001c __reset
+000023f8 g     F .text	000000a4 Out_ANGLE_SETTING
+00002020 g       *ABS*	00000000 __flash_exceptions_start
+0000249c g     F .text	00000060 Out_WORKING
+00002ee4 g     O .bss	00000004 alt_argv
+0000aed0 g       *ABS*	00000000 _gp
+00002000 g       *ABS*	00000000 __alt_mem_onchip_memory2_0
+00002d94 g     F .text	00000008 __udivsi3
+00002e98 g     F .text	00000038 alt_icache_flush
+000021cc g     F .text	000000d4 LCD_print_symbol
+00002eec g       *ABS*	00000000 __bss_end
+00002ab0 g     F .text	0000007c Resolver_initialization
+00002e80 g     F .text	00000004 alt_dcache_flush_all
+00002ed4 g       *ABS*	00000000 __ram_rwdata_end
+00002ed0 g       *ABS*	00000000 __ram_rodata_end
+00002ed0 g     O .rwdata	00000004 jtag_uart_0
+00002654 g     F .text	00000058 Out_SET_SW3
+00002d9c g     F .text	00000008 __umodsi3
+00002b2c g     F .text	000000c4 Resolver_read_position_in_normal_mode
+00002eec g       *ABS*	00000000 end
+00003fa0 g       *ABS*	00000000 __alt_stack_pointer
+00002020 g     F .text	0000003c _start
+000020a8 g     F .text	00000068 CURRENT_SETTING
+00002e5c g     F .text	00000004 alt_sys_init
+00002178 g     F .text	00000054 FUNCTION_SET
+00002068 g     F .text	00000040 MODE_FORMATION
+00002ed0 g       *ABS*	00000000 __ram_rwdata_start
+00002ed0 g       *ABS*	00000000 __ram_rodata_start
+00002eec g       *ABS*	00000000 __alt_stack_base
+00002064 g     F .text	00000004 Delay_for_microsec
+000024fc g     F .text	000000a8 Out_EROOR_RESOLVER
+00002ed8 g     O .bss	00000002 Angle_norm
+00002ed8 g       *ABS*	00000000 __bss_start
+0000205c g     F .text	00000008 main
+00002ee8 g     O .bss	00000004 alt_envp
+00002eda g     O .bss	00000001 setting_mode
+00002cd4 g     F .text	00000060 __divsi3
+00002edc g     O .bss	00000002 Current_norm
+00002ed0 g       *ABS*	00000000 __flash_rodata_start
+00002e60 g     F .text	00000020 alt_irq_init
+000026ac g     F .text	00000058 Out_SET_SW2
+00002ee0 g     O .bss	00000004 alt_argc
+00002020 g       *ABS*	00000000 __ram_exceptions_start
+00002ed4 g       *ABS*	00000000 _edata
+00002eec g       *ABS*	00000000 _end
+00002020 g       *ABS*	00000000 __ram_exceptions_end
+00002e90 g     F .text	00000008 altera_nios2_qsys_irq_init
+0000201c g       .entry	00000000 exit
+00002d34 g     F .text	00000060 __modsi3
+00003fa0 g       *ABS*	00000000 __alt_data_end
+0000201c g       .entry	00000000 _exit
+00002980 g     F .text	00000088 LCD_INITIALIZATION
+00002e84 g     F .text	0000000c alt_icache_flush_all
+00002a08 g     F .text	000000a8 Resolver_write_byte_config_mode
+00002dc4 g     F .text	0000006c alt_load
+
+
+
+Disassembly of section .entry:
+
+00002000 <__reset>:
+#if NIOS2_ICACHE_SIZE > 0 && defined(ALT_ALLOW_CODE_AT_RESET) && !defined(ALT_SIM_OPTIMIZE)
+    /* Assume the instruction cache size is always a power of two. */
+#if NIOS2_ICACHE_SIZE > 0x8000
+    movhi r2, %hi(NIOS2_ICACHE_SIZE)
+#else
+    movui r2, NIOS2_ICACHE_SIZE
+    2000:	00840014 	movui	r2,4096
+#endif
+
+0:
+    initi r2
+    2004:	1001483a 	initi	r2
+    addi r2, r2, -NIOS2_ICACHE_LINE_SIZE
+    2008:	10bff804 	addi	r2,r2,-32
+    bgt r2, zero, 0b
+    200c:	00bffd16 	blt	zero,r2,2004 <__reset+0x4>
+ * Jump to the _start entry point in the .text section if reset code
+ * is allowed or if optimizing for RTL simulation.
+ */
+#if defined(ALT_ALLOW_CODE_AT_RESET) || defined(ALT_SIM_OPTIMIZE)
+    /* Jump to the _start entry point in the .text section. */
+    movhi r1, %hi(_start)
+    2010:	00400034 	movhi	at,0
+    ori r1, r1, %lo(_start)
+    2014:	08480814 	ori	at,at,8224
+    jmp r1
+    2018:	0800683a 	jmp	at
+
+0000201c <_exit>:
+    201c:	00000000 	call	0 <__alt_mem_onchip_memory2_0-0x2000>
+
+Disassembly of section .text:
+
+00002020 <_start>:
+#if (NIOS2_NUM_OF_SHADOW_REG_SETS == 0)    
+    /*
+     * Now that the caches are initialized, set up the stack pointer.
+     * The value provided by the linker is assumed to be correctly aligned.
+     */
+    movhi sp, %hi(__alt_stack_pointer)
+    2020:	06c00034 	movhi	sp,0
+    ori sp, sp, %lo(__alt_stack_pointer)
+    2024:	decfe814 	ori	sp,sp,16288
+
+    /* Set up the global pointer. */
+    movhi gp, %hi(_gp)
+    2028:	06800034 	movhi	gp,0
+    ori gp, gp, %lo(_gp)
+    202c:	d6abb414 	ori	gp,gp,44752
+ */
+#ifndef ALT_SIM_OPTIMIZE
+    /* Log that the BSS is about to be cleared. */
+    ALT_LOG_PUTS(alt_log_msg_bss)
+
+    movhi r2, %hi(__bss_start)
+    2030:	00800034 	movhi	r2,0
+    ori r2, r2, %lo(__bss_start)
+    2034:	108bb614 	ori	r2,r2,11992
+
+    movhi r3, %hi(__bss_end)
+    2038:	00c00034 	movhi	r3,0
+    ori r3, r3, %lo(__bss_end)
+    203c:	18cbbb14 	ori	r3,r3,12012
+
+    beq r2, r3, 1f
+    2040:	10c00326 	beq	r2,r3,2050 <_start+0x30>
+
+0:
+    stw zero, (r2)
+    2044:	10000015 	stw	zero,0(r2)
+    addi r2, r2, 4
+    2048:	10800104 	addi	r2,r2,4
+    bltu r2, r3, 0b
+    204c:	10fffd36 	bltu	r2,r3,2044 <_start+0x24>
+     * section aren't defined until alt_load() has been called).
+     */
+    mov   et, zero
+#endif
+
+    call alt_load
+    2050:	0002dc40 	call	2dc4 <alt_load>
+
+    /* Log that alt_main is about to be called. */
+    ALT_LOG_PUTS(alt_log_msg_alt_main)
+
+    /* Call the C entry point. It should never return. */
+    call alt_main
+    2054:	0002e300 	call	2e30 <alt_main>
+
+00002058 <alt_after_alt_main>:
+
+    /* Wait in infinite loop in case alt_main does return. */
+alt_after_alt_main:
+    br alt_after_alt_main
+    2058:	003fff06 	br	2058 <alt_after_alt_main>
+
+0000205c <main>:
+ k=1;
+ }
+  	 */ return 0;
+  	   getchar();
+// }	//END WHILE(1)
+} //END MAIN()
+    205c:	0005883a 	mov	r2,zero
+    2060:	f800283a 	ret
+
+00002064 <Delay_for_microsec>:
+   //amount_us-количество микросекунд задержки.Минимальная задержка 1 микросекунда.
+   // (1000*MILI/(DELAY_KOEFF))-пример задания аргумента функции , если необходима задержка
+   //в микросекундах, то (число*MICRO/(DELAY_KOEFF))
+
+      for (i=0;i<(amount_us);i++);
+ }
+    2064:	f800283a 	ret
+
+00002068 <MODE_FORMATION>:
+ return (Current_norm);
+ }
+    //конец функции  alt_16 CURRENT_SETTING(alt_16 k)
+//функция настройки режима
+alt_u8 MODE_FORMATION(void)
+{
+    2068:	defffe04 	addi	sp,sp,-8
+    206c:	dc000015 	stw	r16,0(sp)
+if (SW2_MASK||IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)==0x1)
+  			   {
+  				  		  if(SW1_MASK||IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)==0x0)
+  				  		  {
+  				  			  //установить режим работа setting_mode=1
+  				  		        setting_mode=1;
+    2070:	00800044 	movi	r2,1
+    2074:	04000034 	movhi	r16,0
+    2078:	840bb684 	addi	r16,r16,11994
+    207c:	80800005 	stb	r2,0(r16)
+  				  		   //включить диод LED1
+  				  		     IOWR_ALTERA_AVALON_PIO_DATA(PIO_LED2_LED1_BASE,0x1);
+    2080:	00c00044 	movi	r3,1
+    2084:	00940004 	movi	r2,20480
+ return (Current_norm);
+ }
+    //конец функции  alt_16 CURRENT_SETTING(alt_16 k)
+//функция настройки режима
+alt_u8 MODE_FORMATION(void)
+{
+    2088:	dfc00115 	stw	ra,4(sp)
+  				  		  if(SW1_MASK||IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)==0x0)
+  				  		  {
+  				  			  //установить режим работа setting_mode=1
+  				  		        setting_mode=1;
+  				  		   //включить диод LED1
+  				  		     IOWR_ALTERA_AVALON_PIO_DATA(PIO_LED2_LED1_BASE,0x1);
+    208c:	10c00035 	stwio	r3,0(r2)
+  				  		timer=0;
+  				  	 else
+  				  	   timer++;
+  				  	    }
+  				  		//отображение режима работа на ЖКИ дисплее
+  				  	 Out_WORKING();
+    2090:	000249c0 	call	249c <Out_WORKING>
+  				  	  else
+  				  //установить режим "настройка угла"
+  				  			  setting_mode=3;
+  				    }
+  		return (setting_mode);
+   }
+    2094:	80800003 	ldbu	r2,0(r16)
+    2098:	dfc00117 	ldw	ra,4(sp)
+    209c:	dc000017 	ldw	r16,0(sp)
+    20a0:	dec00204 	addi	sp,sp,8
+    20a4:	f800283a 	ret
+
+000020a8 <CURRENT_SETTING>:
+	return (Angle_norm);
+}
+ //конец функции  alt_16 ANGLE_SETTING(alt_16 k)
+//функция настройки тока
+alt_16 CURRENT_SETTING(alt_16 k)
+{
+    20a8:	defffe04 	addi	sp,sp,-8
+    20ac:	dc000015 	stw	r16,0(sp)
+ //задержка 0,5с
+	while(timer==500000000) timer++;
+ 	//проверка SW_5" (ждем удержание клавиши)
+  	  if (SW5_MASK||IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)==0x0)
+  	  {
+  		Current_norm++;
+    20b0:	04000034 	movhi	r16,0
+    20b4:	840bb704 	addi	r16,r16,11996
+    20b8:	8080000b 	ldhu	r2,0(r16)
+  	    * (переведенный из 16-разрядного кода в угол
+  	    * (код*100(с двумя знаками после запятой)*360/65535,в первую строчку с 10-ой позиции
+  	    * с двумя знаками после запятой   				   */
+
+  	    				    //temp = PIO_2_ANGLE_BASE*100*360/65535;
+  	    	  LCD_print_digital_number_on_screen (Current_norm*100*360/65535,9,2);
+    20bc:	01232814 	movui	r4,36000
+    20c0:	017fffd4 	movui	r5,65535
+ //задержка 0,5с
+	while(timer==500000000) timer++;
+ 	//проверка SW_5" (ждем удержание клавиши)
+  	  if (SW5_MASK||IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)==0x0)
+  	  {
+  		Current_norm++;
+    20c4:	10800044 	addi	r2,r2,1
+  	    * (переведенный из 16-разрядного кода в угол
+  	    * (код*100(с двумя знаками после запятой)*360/65535,в первую строчку с 10-ой позиции
+  	    * с двумя знаками после запятой   				   */
+
+  	    				    //temp = PIO_2_ANGLE_BASE*100*360/65535;
+  	    	  LCD_print_digital_number_on_screen (Current_norm*100*360/65535,9,2);
+    20c8:	10ffffcc 	andi	r3,r2,65535
+    20cc:	18e0001c 	xori	r3,r3,32768
+    20d0:	18e00004 	addi	r3,r3,-32768
+    20d4:	1909383a 	mul	r4,r3,r4
+	return (Angle_norm);
+}
+ //конец функции  alt_16 ANGLE_SETTING(alt_16 k)
+//функция настройки тока
+alt_16 CURRENT_SETTING(alt_16 k)
+{
+    20d8:	dfc00115 	stw	ra,4(sp)
+ //задержка 0,5с
+	while(timer==500000000) timer++;
+ 	//проверка SW_5" (ждем удержание клавиши)
+  	  if (SW5_MASK||IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)==0x0)
+  	  {
+  		Current_norm++;
+    20dc:	8080000d 	sth	r2,0(r16)
+  	    * (переведенный из 16-разрядного кода в угол
+  	    * (код*100(с двумя знаками после запятой)*360/65535,в первую строчку с 10-ой позиции
+  	    * с двумя знаками после запятой   				   */
+
+  	    				    //temp = PIO_2_ANGLE_BASE*100*360/65535;
+  	    	  LCD_print_digital_number_on_screen (Current_norm*100*360/65535,9,2);
+    20e0:	0002cd40 	call	2cd4 <__divsi3>
+    20e4:	113fffcc 	andi	r4,r2,65535
+    20e8:	2120001c 	xori	r4,r4,32768
+    20ec:	21200004 	addi	r4,r4,-32768
+    20f0:	01400244 	movi	r5,9
+    20f4:	01800084 	movi	r6,2
+    20f8:	000275c0 	call	275c <LCD_print_digital_number_on_screen>
+  	    		perem_cycla=0;
+  	    			else
+  	    				perem_cycla=1;
+}
+ return (Current_norm);
+ }
+    20fc:	8080000f 	ldh	r2,0(r16)
+    2100:	dfc00117 	ldw	ra,4(sp)
+    2104:	dc000017 	ldw	r16,0(sp)
+    2108:	dec00204 	addi	sp,sp,8
+    210c:	f800283a 	ret
+
+00002110 <ANGLE_SETTING>:
+#include "LCD.h"
+#include "resolver.h"
+#include "ANGLE_SETTING.h"
+//функция настройки угла
+alt_16 ANGLE_SETTING(alt_16 k)
+{
+    2110:	defffe04 	addi	sp,sp,-8
+    2114:	dc000015 	stw	r16,0(sp)
+    //задержка 0,5с
+	while(timer==500000000)timer++;
+	//проверка SW_5" (ждем удержание клавиши)
+  	  if (SW5_MASK||IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)==0x0)
+  	  {
+  				  	   Angle_norm++;
+    2118:	04000034 	movhi	r16,0
+    211c:	840bb604 	addi	r16,r16,11992
+    2120:	8080000b 	ldhu	r2,0(r16)
+  	    				   * (переведенный из 16-разрядного кода в угол
+  	    				   * (код*100(с двумя знаками после запятой)*360/65535,в первую строчку с 10-ой позиции
+  	    				   * с двумя знаками после запятой   				   */
+
+  	    				    //temp = PIO_2_ANGLE_BASE*100*360/65535;
+  	    	  LCD_print_digital_number_on_screen (Angle_norm*100*360/65535,9,2);
+    2124:	01232814 	movui	r4,36000
+    2128:	017fffd4 	movui	r5,65535
+    //задержка 0,5с
+	while(timer==500000000)timer++;
+	//проверка SW_5" (ждем удержание клавиши)
+  	  if (SW5_MASK||IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)==0x0)
+  	  {
+  				  	   Angle_norm++;
+    212c:	10800044 	addi	r2,r2,1
+  	    				   * (переведенный из 16-разрядного кода в угол
+  	    				   * (код*100(с двумя знаками после запятой)*360/65535,в первую строчку с 10-ой позиции
+  	    				   * с двумя знаками после запятой   				   */
+
+  	    				    //temp = PIO_2_ANGLE_BASE*100*360/65535;
+  	    	  LCD_print_digital_number_on_screen (Angle_norm*100*360/65535,9,2);
+    2130:	10ffffcc 	andi	r3,r2,65535
+    2134:	18e0001c 	xori	r3,r3,32768
+    2138:	18e00004 	addi	r3,r3,-32768
+    213c:	1909383a 	mul	r4,r3,r4
+#include "LCD.h"
+#include "resolver.h"
+#include "ANGLE_SETTING.h"
+//функция настройки угла
+alt_16 ANGLE_SETTING(alt_16 k)
+{
+    2140:	dfc00115 	stw	ra,4(sp)
+    //задержка 0,5с
+	while(timer==500000000)timer++;
+	//проверка SW_5" (ждем удержание клавиши)
+  	  if (SW5_MASK||IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)==0x0)
+  	  {
+  				  	   Angle_norm++;
+    2144:	8080000d 	sth	r2,0(r16)
+  	    				   * (переведенный из 16-разрядного кода в угол
+  	    				   * (код*100(с двумя знаками после запятой)*360/65535,в первую строчку с 10-ой позиции
+  	    				   * с двумя знаками после запятой   				   */
+
+  	    				    //temp = PIO_2_ANGLE_BASE*100*360/65535;
+  	    	  LCD_print_digital_number_on_screen (Angle_norm*100*360/65535,9,2);
+    2148:	0002cd40 	call	2cd4 <__divsi3>
+    214c:	113fffcc 	andi	r4,r2,65535
+    2150:	2120001c 	xori	r4,r4,32768
+    2154:	21200004 	addi	r4,r4,-32768
+    2158:	01400244 	movi	r5,9
+    215c:	01800084 	movi	r6,2
+    2160:	000275c0 	call	275c <LCD_print_digital_number_on_screen>
+  	    		perem_cycla=1;
+  	    			else
+  	    		perem_cycla=0;
+	}
+	return (Angle_norm);
+}
+    2164:	8080000f 	ldh	r2,0(r16)
+    2168:	dfc00117 	ldw	ra,4(sp)
+    216c:	dc000017 	ldw	r16,0(sp)
+    2170:	dec00204 	addi	sp,sp,8
+    2174:	f800283a 	ret
+
+00002178 <FUNCTION_SET>:
+//Функция передачи инструкции
+void FUNCTION_SET(alt_8 instruction)
+{
+	    alt_u8 i;
+	  //Объявляем двунаправленный порт в режим вывода (все 8 выводов)
+	     IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_LCD_DATA_BASE,LCD_DIRECTION_8BIT_OUTPUT_MASK);
+    2178:	00c03fc4 	movi	r3,255
+    217c:	00943104 	movi	r2,20676
+    2180:	10c00035 	stwio	r3,0(r2)
+	     //Записываем в порт данных 0х3с=111100-установка режима 2-линии и дисплей включен
+	    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_DATA_BASE,instruction);
+    2184:	21003fcc 	andi	r4,r4,255
+    2188:	2100201c 	xori	r4,r4,128
+    218c:	213fe004 	addi	r4,r4,-128
+    2190:	00943004 	movi	r2,20672
+    2194:	11000035 	stwio	r4,0(r2)
+	     //Записываем в порт RS и R/NOTW 0
+	     IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 );
+    2198:	00d42c04 	movi	r3,20656
+    219c:	18000035 	stwio	zero,0(r3)
+	     	 //Устанавливаем вывод Е в 1
+	     IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 |LCD_E_MASK );
+    21a0:	00800104 	movi	r2,4
+    21a4:	18800035 	stwio	r2,0(r3)
+    21a8:	0009883a 	mov	r4,zero
+	     //Задержка 200нс (1 "nop" =20ns)
+	     for (i=0;i<10;i++) asm ("nop");
+    21ac:	0001883a 	nop
+    21b0:	21000044 	addi	r4,r4,1
+    21b4:	20c03fcc 	andi	r3,r4,255
+    21b8:	00800284 	movi	r2,10
+    21bc:	18bffb1e 	bne	r3,r2,21ac <FUNCTION_SET+0x34>
+	     //обнуляем управляющие выводы RS_R/NOTW/E
+	     IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 );
+    21c0:	00942c04 	movi	r2,20656
+    21c4:	10000035 	stwio	zero,0(r2)
+}
+    21c8:	f800283a 	ret
+
+000021cc <LCD_print_symbol>:
+   alt_u8 BF;
+   alt_u8 k;
+   int i;
+   //Считывание флажка занятости
+   //Установка выводов R/nW в значение 1
+   IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0|LCD_R_NOTW_MASK );
+    21cc:	00c00084 	movi	r3,2
+    21d0:	00942c04 	movi	r2,20656
+    21d4:	10c00035 	stwio	r3,0(r2)
+    21d8:	0007883a 	mov	r3,zero
+   //задержка 40нс
+   //Delay_for_microsec((1*MICRO/DELAY_KOEFF));
+   for (i=0;i<21;i++)  asm ("nop");
+    21dc:	0001883a 	nop
+    21e0:	00800544 	movi	r2,21
+    21e4:	18c00044 	addi	r3,r3,1
+    21e8:	18bffc1e 	bne	r3,r2,21dc <LCD_print_symbol+0x10>
+   //Установка выводов E и R/NOTW в значение 11
+   IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 |LCD_E_MASK|LCD_R_NOTW_MASK );
+    21ec:	00c00184 	movi	r3,6
+    21f0:	00942c04 	movi	r2,20656
+    21f4:	10c00035 	stwio	r3,0(r2)
+    21f8:	0007883a 	mov	r3,zero
+   for (A=0;A<9;A++)  asm ("nop");
+    21fc:	0001883a 	nop
+    2200:	00800244 	movi	r2,9
+    2204:	18c00044 	addi	r3,r3,1
+    2208:	18bffc1e 	bne	r3,r2,21fc <LCD_print_symbol+0x30>
+    220c:	01543004 	movi	r5,20672
+    2210:	00ffe004 	movi	r3,-128
+   do
+    {                
+	   BF =  IORD_ALTERA_AVALON_PIO_DATA(PIO_LCD_DATA_BASE);
+    2214:	28800037 	ldwio	r2,0(r5)
+	   //  for (A=0;A<9;A++)  asm ("nop");
+	   //  #ifdef ALT_DEBUG
+	   //       alt_printf("1Ст %x \n",k);
+	   //  #endif
+     }
+   while (k);
+    2218:	10c4703a 	and	r2,r2,r3
+    221c:	10803fcc 	andi	r2,r2,255
+    2220:	103ffc1e 	bne	r2,zero,2214 <LCD_print_symbol+0x48>
+   //     alt_printf("2Ст %x \n",k);  
+   //   #endif
+   //Задержка на 32 милисекунды (требуется после включения питания)
+   //Delay_for_microsec (1*MILI/(DELAY_KOEFF));
+   //Записываем в порт RS -1 и R/NOTW 0
+   IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0|LCD_RS_MASK );
+    2224:	00c00044 	movi	r3,1
+    2228:	00942c04 	movi	r2,20656
+    222c:	10c00035 	stwio	r3,0(r2)
+   //Объявляем двунаправленный порт в режим вывода (все 8 выводов)
+   IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_LCD_DATA_BASE,LCD_DIRECTION_8BIT_OUTPUT_MASK);
+    2230:	00c03fc4 	movi	r3,255
+    2234:	00943104 	movi	r2,20676
+    2238:	10c00035 	stwio	r3,0(r2)
+   //Записываем в порт данных ASC код символа,например, 0х30=число 0
+   IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_DATA_BASE,code);
+    223c:	20803fcc 	andi	r2,r4,255
+    2240:	28800035 	stwio	r2,0(r5)
+    2244:	0007883a 	mov	r3,zero
+   //Задержка 100нс
+   for (A=0;A<9;A++)  asm ("nop");
+    2248:	0001883a 	nop
+    224c:	00800244 	movi	r2,9
+    2250:	18c00044 	addi	r3,r3,1
+    2254:	18bffc1e 	bne	r3,r2,2248 <LCD_print_symbol+0x7c>
+   //Устанавливаем вывод Е в 1
+   IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 |LCD_E_MASK | LCD_RS_MASK );
+    2258:	00c00144 	movi	r3,5
+    225c:	00942c04 	movi	r2,20656
+    2260:	10c00035 	stwio	r3,0(r2)
+    2264:	0007883a 	mov	r3,zero
+   //Задержка 140нс
+   for (A=0;A<9;A++)  asm ("nop");
+    2268:	0001883a 	nop
+    226c:	00800244 	movi	r2,9
+    2270:	18c00044 	addi	r3,r3,1
+    2274:	18bffc1e 	bne	r3,r2,2268 <LCD_print_symbol+0x9c>
+   //обнуляем управляющие выводы RS_R/NOTW/E
+   IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 );
+    2278:	00942c04 	movi	r2,20656
+    227c:	10000035 	stwio	zero,0(r2)
+    2280:	0007883a 	mov	r3,zero
+   //Задержка 40 микросекунд,требуемая в инструкции
+   // Delay_for_microsec (40*MICRO/(DELAY_KOEFF));
+   for (i=0;i<9;i++)  asm ("nop");
+    2284:	0001883a 	nop
+    2288:	00800244 	movi	r2,9
+    228c:	18c00044 	addi	r3,r3,1
+    2290:	18bffc1e 	bne	r3,r2,2284 <LCD_print_symbol+0xb8>
+   //Установка выводов двунаправленного порта в режим входа
+   IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_LCD_DATA_BASE,0x00);
+    2294:	00943104 	movi	r2,20676
+    2298:	10000035 	stwio	zero,0(r2)
+}//конец функции
+    229c:	f800283a 	ret
+
+000022a0 <LCD_print_symbol_in_position>:
+Мы ей передаем число,которое нужно напечатать и адрес-соответствующей позиции,
+куда следует вывести это число.
+********************************************************************************/
+
+void LCD_print_symbol_in_position (alt_u8 code, alt_u8 address)
+{
+    22a0:	200f883a 	mov	r7,r4
+    alt_u8 BF;
+    alt_u8 k;
+    int i;
+    //Считывание флажка занятости
+    //Установка выводов R/nW в значение 1, RS в значение 0
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0|LCD_R_NOTW_MASK );
+    22a4:	00942c04 	movi	r2,20656
+    22a8:	00c00084 	movi	r3,2
+    22ac:	10c00035 	stwio	r3,0(r2)
+    //Установка выводов E и R/NOTW в значение 11
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 |LCD_E_MASK|LCD_R_NOTW_MASK  );
+    22b0:	00c00184 	movi	r3,6
+    22b4:	10c00035 	stwio	r3,0(r2)
+    22b8:	0007883a 	mov	r3,zero
+    //задержка 140нс
+    for (A=0;A<9;A++)  asm ("nop");
+    22bc:	0001883a 	nop
+    22c0:	00800244 	movi	r2,9
+    22c4:	18c00044 	addi	r3,r3,1
+    22c8:	18bffc1e 	bne	r3,r2,22bc <LCD_print_symbol_in_position+0x1c>
+    22cc:	01943004 	movi	r6,20672
+    22d0:	00ffe004 	movi	r3,-128
+    do
+    {                
+    	BF =  IORD_ALTERA_AVALON_PIO_DATA(PIO_LCD_DATA_BASE);
+    22d4:	30800037 	ldwio	r2,0(r6)
+    	k = BF & LCD_BF_MASK;
+    }
+    while (k);
+    22d8:	10c4703a 	and	r2,r2,r3
+    22dc:	10803fcc 	andi	r2,r2,255
+    22e0:	103ffc1e 	bne	r2,zero,22d4 <LCD_print_symbol_in_position+0x34>
+    //Записываем в порт RS 0 и R/NOTW 0 и Е 0
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 );
+    22e4:	01142c04 	movi	r4,20656
+    22e8:	20000035 	stwio	zero,0(r4)
+    //Объявляем двунаправленный порт в режим вывода (все 8 выводов)
+    IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_LCD_DATA_BASE,LCD_DIRECTION_8BIT_OUTPUT_MASK);
+    22ec:	00c03fc4 	movi	r3,255
+    22f0:	00943104 	movi	r2,20676
+    22f4:	10c00035 	stwio	r3,0(r2)
+    //Записываем в порт данных aдрес позиции курсора
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_DATA_BASE,LCD_BF_MASK | (address & LCD_ADDRESS_MASK));
+    22f8:	28801fcc 	andi	r2,r5,127
+    22fc:	10802014 	ori	r2,r2,128
+    2300:	30800035 	stwio	r2,0(r6)
+    //Устанавливаем вывод Е в 1
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 |LCD_E_MASK  );
+    2304:	00800104 	movi	r2,4
+    2308:	20800035 	stwio	r2,0(r4)
+    230c:	0007883a 	mov	r3,zero
+    //Задержка 140нс
+    for (A=0;A<9;A++)  asm ("nop");
+    2310:	0001883a 	nop
+    2314:	00800244 	movi	r2,9
+    2318:	18c00044 	addi	r3,r3,1
+    231c:	18bffc1e 	bne	r3,r2,2310 <LCD_print_symbol_in_position+0x70>
+    //обнуляем управляющие выводы RS_R/NOTW/E
+    IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 );
+    2320:	00942c04 	movi	r2,20656
+    2324:	10000035 	stwio	zero,0(r2)
+    //Задержка 20 наносекунд,требуемая в инструкции
+    // Delay_for_microsec (40*MICRO/(DELAY_KOEFF));
+    for (i=0;i<3;i++)  asm ("nop");
+    2328:	0001883a 	nop
+    232c:	0001883a 	nop
+    2330:	0001883a 	nop
+    //Установка выводов двунаправленного порта в режим входа
+    IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_LCD_DATA_BASE,0x00);
+    2334:	00943104 	movi	r2,20676
+    2338:	10000035 	stwio	zero,0(r2)
+    LCD_print_symbol(code);
+    233c:	39003fcc 	andi	r4,r7,255
+    2340:	00021cc1 	jmpi	21cc <LCD_print_symbol>
+
+00002344 <Out_CURRENT_SETTING>:
+	LCD_print_symbol(0x49);//I
+	LCD_print_symbol(0x4e);//N
+	LCD_print_symbol(0x47);//G
+}
+void Out_CURRENT_SETTING(void)	//Печатаем слово НАСТРОЙКА ТОКА
+{
+    2344:	defffc04 	addi	sp,sp,-16
+    2348:	dc400115 	stw	r17,4(sp)
+	LCD_print_symbol_in_position (0x45,0x43);//C
+    234c:	04401144 	movi	r17,69
+    2350:	014010c4 	movi	r5,67
+    2354:	8809883a 	mov	r4,r17
+	LCD_print_symbol(0x49);//I
+	LCD_print_symbol(0x4e);//N
+	LCD_print_symbol(0x47);//G
+}
+void Out_CURRENT_SETTING(void)	//Печатаем слово НАСТРОЙКА ТОКА
+{
+    2358:	dfc00315 	stw	ra,12(sp)
+    235c:	dc800215 	stw	r18,8(sp)
+    2360:	dc000015 	stw	r16,0(sp)
+	LCD_print_symbol_in_position (0x45,0x43);//C
+    2364:	00022a00 	call	22a0 <LCD_print_symbol_in_position>
+		LCD_print_symbol(0x55);//U
+		LCD_print_symbol(0x52);//R
+    2368:	04001484 	movi	r16,82
+	LCD_print_symbol(0x47);//G
+}
+void Out_CURRENT_SETTING(void)	//Печатаем слово НАСТРОЙКА ТОКА
+{
+	LCD_print_symbol_in_position (0x45,0x43);//C
+		LCD_print_symbol(0x55);//U
+    236c:	01001544 	movi	r4,85
+    2370:	00021cc0 	call	21cc <LCD_print_symbol>
+		LCD_print_symbol(0x52);//R
+    2374:	8009883a 	mov	r4,r16
+    2378:	00021cc0 	call	21cc <LCD_print_symbol>
+		LCD_print_symbol(0x52);//R
+    237c:	8009883a 	mov	r4,r16
+    2380:	00021cc0 	call	21cc <LCD_print_symbol>
+		LCD_print_symbol(0x45);//E
+		LCD_print_symbol(0x4e);//N
+    2384:	04801384 	movi	r18,78
+{
+	LCD_print_symbol_in_position (0x45,0x43);//C
+		LCD_print_symbol(0x55);//U
+		LCD_print_symbol(0x52);//R
+		LCD_print_symbol(0x52);//R
+		LCD_print_symbol(0x45);//E
+    2388:	8809883a 	mov	r4,r17
+		LCD_print_symbol(0x4e);//N
+		LCD_print_symbol(0x54);//T
+    238c:	04001504 	movi	r16,84
+{
+	LCD_print_symbol_in_position (0x45,0x43);//C
+		LCD_print_symbol(0x55);//U
+		LCD_print_symbol(0x52);//R
+		LCD_print_symbol(0x52);//R
+		LCD_print_symbol(0x45);//E
+    2390:	00021cc0 	call	21cc <LCD_print_symbol>
+		LCD_print_symbol(0x4e);//N
+    2394:	9009883a 	mov	r4,r18
+    2398:	00021cc0 	call	21cc <LCD_print_symbol>
+		LCD_print_symbol(0x54);//T
+    239c:	8009883a 	mov	r4,r16
+    23a0:	00021cc0 	call	21cc <LCD_print_symbol>
+		LCD_print_symbol(0x5f);//_
+    23a4:	010017c4 	movi	r4,95
+    23a8:	00021cc0 	call	21cc <LCD_print_symbol>
+		LCD_print_symbol(0x53);//S
+    23ac:	010014c4 	movi	r4,83
+    23b0:	00021cc0 	call	21cc <LCD_print_symbol>
+		LCD_print_symbol(0x45);//E
+    23b4:	8809883a 	mov	r4,r17
+    23b8:	00021cc0 	call	21cc <LCD_print_symbol>
+		LCD_print_symbol(0x54);//T
+    23bc:	8009883a 	mov	r4,r16
+    23c0:	00021cc0 	call	21cc <LCD_print_symbol>
+		LCD_print_symbol(0x54);//T
+    23c4:	8009883a 	mov	r4,r16
+    23c8:	00021cc0 	call	21cc <LCD_print_symbol>
+		LCD_print_symbol(0x49);//I
+    23cc:	01001244 	movi	r4,73
+    23d0:	00021cc0 	call	21cc <LCD_print_symbol>
+		LCD_print_symbol(0x4e);//N
+    23d4:	9009883a 	mov	r4,r18
+    23d8:	00021cc0 	call	21cc <LCD_print_symbol>
+		LCD_print_symbol(0x47);//G
+    23dc:	010011c4 	movi	r4,71
+}
+    23e0:	dfc00317 	ldw	ra,12(sp)
+    23e4:	dc800217 	ldw	r18,8(sp)
+    23e8:	dc400117 	ldw	r17,4(sp)
+    23ec:	dc000017 	ldw	r16,0(sp)
+    23f0:	dec00404 	addi	sp,sp,16
+		LCD_print_symbol(0x45);//E
+		LCD_print_symbol(0x54);//T
+		LCD_print_symbol(0x54);//T
+		LCD_print_symbol(0x49);//I
+		LCD_print_symbol(0x4e);//N
+		LCD_print_symbol(0x47);//G
+    23f4:	00021cc1 	jmpi	21cc <LCD_print_symbol>
+
+000023f8 <Out_ANGLE_SETTING>:
+	LCD_print_symbol(0x49);//I
+	LCD_print_symbol(0x47);//G
+
+}
+void Out_ANGLE_SETTING(void)	//Печатаем слово НАСТРОЙКА УГЛА
+{
+    23f8:	defffc04 	addi	sp,sp,-16
+    23fc:	dc000015 	stw	r16,0(sp)
+	LCD_print_symbol_in_position (0x45,0x41);//A
+    2400:	04001144 	movi	r16,69
+    2404:	01401044 	movi	r5,65
+	LCD_print_symbol(0x49);//I
+	LCD_print_symbol(0x47);//G
+
+}
+void Out_ANGLE_SETTING(void)	//Печатаем слово НАСТРОЙКА УГЛА
+{
+    2408:	dc400115 	stw	r17,4(sp)
+	LCD_print_symbol_in_position (0x45,0x41);//A
+    240c:	8009883a 	mov	r4,r16
+	LCD_print_symbol(0x4e);//N
+    2410:	04401384 	movi	r17,78
+	LCD_print_symbol(0x49);//I
+	LCD_print_symbol(0x47);//G
+
+}
+void Out_ANGLE_SETTING(void)	//Печатаем слово НАСТРОЙКА УГЛА
+{
+    2414:	dfc00315 	stw	ra,12(sp)
+    2418:	dc800215 	stw	r18,8(sp)
+	LCD_print_symbol_in_position (0x45,0x41);//A
+    241c:	00022a00 	call	22a0 <LCD_print_symbol_in_position>
+	LCD_print_symbol(0x4e);//N
+	LCD_print_symbol(0x47);//G
+    2420:	048011c4 	movi	r18,71
+
+}
+void Out_ANGLE_SETTING(void)	//Печатаем слово НАСТРОЙКА УГЛА
+{
+	LCD_print_symbol_in_position (0x45,0x41);//A
+	LCD_print_symbol(0x4e);//N
+    2424:	8809883a 	mov	r4,r17
+    2428:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x47);//G
+    242c:	9009883a 	mov	r4,r18
+    2430:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x4c);//L
+    2434:	01001304 	movi	r4,76
+    2438:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x45);//E
+    243c:	8009883a 	mov	r4,r16
+    2440:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x5f);//_
+    2444:	010017c4 	movi	r4,95
+    2448:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x53);//S
+    244c:	010014c4 	movi	r4,83
+    2450:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x45);//E
+    2454:	8009883a 	mov	r4,r16
+	LCD_print_symbol(0x54);//T
+    2458:	04001504 	movi	r16,84
+	LCD_print_symbol(0x47);//G
+	LCD_print_symbol(0x4c);//L
+	LCD_print_symbol(0x45);//E
+	LCD_print_symbol(0x5f);//_
+	LCD_print_symbol(0x53);//S
+	LCD_print_symbol(0x45);//E
+    245c:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x54);//T
+    2460:	8009883a 	mov	r4,r16
+    2464:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x54);//T
+    2468:	8009883a 	mov	r4,r16
+    246c:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x49);//I
+    2470:	01001244 	movi	r4,73
+    2474:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x4e);//N
+    2478:	8809883a 	mov	r4,r17
+    247c:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x47);//G
+    2480:	9009883a 	mov	r4,r18
+}
+    2484:	dfc00317 	ldw	ra,12(sp)
+    2488:	dc800217 	ldw	r18,8(sp)
+    248c:	dc400117 	ldw	r17,4(sp)
+    2490:	dc000017 	ldw	r16,0(sp)
+    2494:	dec00404 	addi	sp,sp,16
+	LCD_print_symbol(0x45);//E
+	LCD_print_symbol(0x54);//T
+	LCD_print_symbol(0x54);//T
+	LCD_print_symbol(0x49);//I
+	LCD_print_symbol(0x4e);//N
+	LCD_print_symbol(0x47);//G
+    2498:	00021cc1 	jmpi	21cc <LCD_print_symbol>
+
+0000249c <Out_WORKING>:
+	LCD_print_symbol(0x56);//V
+	LCD_print_symbol(0x45);//E
+	LCD_print_symbol(0x52);//R
+}
+void Out_WORKING(void)	//Печатаем слово РЕЖИМ РАБОТА
+{
+    249c:	defffe04 	addi	sp,sp,-8
+	LCD_print_symbol_in_position (0x45,0x57);//W
+    24a0:	014015c4 	movi	r5,87
+    24a4:	01001144 	movi	r4,69
+	LCD_print_symbol(0x56);//V
+	LCD_print_symbol(0x45);//E
+	LCD_print_symbol(0x52);//R
+}
+void Out_WORKING(void)	//Печатаем слово РЕЖИМ РАБОТА
+{
+    24a8:	dfc00115 	stw	ra,4(sp)
+    24ac:	dc000015 	stw	r16,0(sp)
+	LCD_print_symbol_in_position (0x45,0x57);//W
+    24b0:	00022a00 	call	22a0 <LCD_print_symbol_in_position>
+	LCD_print_symbol(0x4f);//O
+    24b4:	010013c4 	movi	r4,79
+    24b8:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x52);//R
+    24bc:	01001484 	movi	r4,82
+    24c0:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x4b);//K
+	LCD_print_symbol(0x49);//I
+    24c4:	04001244 	movi	r16,73
+void Out_WORKING(void)	//Печатаем слово РЕЖИМ РАБОТА
+{
+	LCD_print_symbol_in_position (0x45,0x57);//W
+	LCD_print_symbol(0x4f);//O
+	LCD_print_symbol(0x52);//R
+	LCD_print_symbol(0x4b);//K
+    24c8:	010012c4 	movi	r4,75
+    24cc:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x49);//I
+    24d0:	8009883a 	mov	r4,r16
+    24d4:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x4e);//N
+    24d8:	01001384 	movi	r4,78
+    24dc:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x49);//I
+    24e0:	8009883a 	mov	r4,r16
+    24e4:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x47);//G
+    24e8:	010011c4 	movi	r4,71
+
+}
+    24ec:	dfc00117 	ldw	ra,4(sp)
+    24f0:	dc000017 	ldw	r16,0(sp)
+    24f4:	dec00204 	addi	sp,sp,8
+	LCD_print_symbol(0x52);//R
+	LCD_print_symbol(0x4b);//K
+	LCD_print_symbol(0x49);//I
+	LCD_print_symbol(0x4e);//N
+	LCD_print_symbol(0x49);//I
+	LCD_print_symbol(0x47);//G
+    24f8:	00021cc1 	jmpi	21cc <LCD_print_symbol>
+
+000024fc <Out_EROOR_RESOLVER>:
+	LCD_print_symbol(0x45);//E
+	LCD_print_symbol(0x43);//C
+	LCD_print_symbol(0x54);//T
+}
+void Out_EROOR_RESOLVER(void)	//Печатаем слово ERROR_RESOLVER
+{
+    24fc:	defffc04 	addi	sp,sp,-16
+    2500:	dc000015 	stw	r16,0(sp)
+	LCD_print_symbol_in_position (0x45,0x44);//E
+    2504:	04001144 	movi	r16,69
+    2508:	01401104 	movi	r5,68
+	LCD_print_symbol(0x45);//E
+	LCD_print_symbol(0x43);//C
+	LCD_print_symbol(0x54);//T
+}
+void Out_EROOR_RESOLVER(void)	//Печатаем слово ERROR_RESOLVER
+{
+    250c:	dc400115 	stw	r17,4(sp)
+	LCD_print_symbol_in_position (0x45,0x44);//E
+    2510:	8009883a 	mov	r4,r16
+	LCD_print_symbol(0x52);//R
+    2514:	04401484 	movi	r17,82
+	LCD_print_symbol(0x45);//E
+	LCD_print_symbol(0x43);//C
+	LCD_print_symbol(0x54);//T
+}
+void Out_EROOR_RESOLVER(void)	//Печатаем слово ERROR_RESOLVER
+{
+    2518:	dfc00315 	stw	ra,12(sp)
+    251c:	dc800215 	stw	r18,8(sp)
+	LCD_print_symbol_in_position (0x45,0x44);//E
+    2520:	00022a00 	call	22a0 <LCD_print_symbol_in_position>
+	LCD_print_symbol(0x52);//R
+    2524:	8809883a 	mov	r4,r17
+    2528:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x52);//R
+	LCD_print_symbol(0x4f);//O
+    252c:	048013c4 	movi	r18,79
+}
+void Out_EROOR_RESOLVER(void)	//Печатаем слово ERROR_RESOLVER
+{
+	LCD_print_symbol_in_position (0x45,0x44);//E
+	LCD_print_symbol(0x52);//R
+	LCD_print_symbol(0x52);//R
+    2530:	8809883a 	mov	r4,r17
+    2534:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x4f);//O
+    2538:	9009883a 	mov	r4,r18
+    253c:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x52);//R
+    2540:	8809883a 	mov	r4,r17
+    2544:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x5f);//_
+    2548:	010017c4 	movi	r4,95
+    254c:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x52);//R
+    2550:	8809883a 	mov	r4,r17
+    2554:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x45);//E
+    2558:	8009883a 	mov	r4,r16
+    255c:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x53);//S
+    2560:	010014c4 	movi	r4,83
+    2564:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x4f);//O
+    2568:	9009883a 	mov	r4,r18
+    256c:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x4c);//L
+    2570:	01001304 	movi	r4,76
+    2574:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x56);//V
+    2578:	01001584 	movi	r4,86
+    257c:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x45);//E
+    2580:	8009883a 	mov	r4,r16
+    2584:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x52);//R
+    2588:	8809883a 	mov	r4,r17
+}
+    258c:	dfc00317 	ldw	ra,12(sp)
+    2590:	dc800217 	ldw	r18,8(sp)
+    2594:	dc400117 	ldw	r17,4(sp)
+    2598:	dc000017 	ldw	r16,0(sp)
+    259c:	dec00404 	addi	sp,sp,16
+	LCD_print_symbol(0x53);//S
+	LCD_print_symbol(0x4f);//O
+	LCD_print_symbol(0x4c);//L
+	LCD_print_symbol(0x56);//V
+	LCD_print_symbol(0x45);//E
+	LCD_print_symbol(0x52);//R
+    25a0:	00021cc1 	jmpi	21cc <LCD_print_symbol>
+
+000025a4 <Out_EROOR_CONECT>:
+	LCD_print_symbol(0x53);//S
+	LCD_print_symbol(0x57);//W
+	LCD_print_symbol(0x33);//3
+}
+void Out_EROOR_CONECT(void)	//Печатаем слово EROOR_CONNECT
+{
+    25a4:	defffb04 	addi	sp,sp,-20
+    25a8:	dcc00315 	stw	r19,12(sp)
+	LCD_print_symbol_in_position (0x45,0x44);//E
+    25ac:	04c01144 	movi	r19,69
+    25b0:	01401104 	movi	r5,68
+	LCD_print_symbol(0x53);//S
+	LCD_print_symbol(0x57);//W
+	LCD_print_symbol(0x33);//3
+}
+void Out_EROOR_CONECT(void)	//Печатаем слово EROOR_CONNECT
+{
+    25b4:	dc000015 	stw	r16,0(sp)
+	LCD_print_symbol_in_position (0x45,0x44);//E
+    25b8:	9809883a 	mov	r4,r19
+	LCD_print_symbol(0x52);//R
+    25bc:	04001484 	movi	r16,82
+	LCD_print_symbol(0x53);//S
+	LCD_print_symbol(0x57);//W
+	LCD_print_symbol(0x33);//3
+}
+void Out_EROOR_CONECT(void)	//Печатаем слово EROOR_CONNECT
+{
+    25c0:	dfc00415 	stw	ra,16(sp)
+    25c4:	dc800215 	stw	r18,8(sp)
+    25c8:	dc400115 	stw	r17,4(sp)
+	LCD_print_symbol_in_position (0x45,0x44);//E
+    25cc:	00022a00 	call	22a0 <LCD_print_symbol_in_position>
+	LCD_print_symbol(0x52);//R
+    25d0:	8009883a 	mov	r4,r16
+    25d4:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x52);//R
+	LCD_print_symbol(0x4f);//O
+    25d8:	044013c4 	movi	r17,79
+}
+void Out_EROOR_CONECT(void)	//Печатаем слово EROOR_CONNECT
+{
+	LCD_print_symbol_in_position (0x45,0x44);//E
+	LCD_print_symbol(0x52);//R
+	LCD_print_symbol(0x52);//R
+    25dc:	8009883a 	mov	r4,r16
+    25e0:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x4f);//O
+    25e4:	8809883a 	mov	r4,r17
+    25e8:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x52);//R
+    25ec:	8009883a 	mov	r4,r16
+    25f0:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x5f);//_
+	LCD_print_symbol(0x43);//C
+    25f4:	048010c4 	movi	r18,67
+	LCD_print_symbol_in_position (0x45,0x44);//E
+	LCD_print_symbol(0x52);//R
+	LCD_print_symbol(0x52);//R
+	LCD_print_symbol(0x4f);//O
+	LCD_print_symbol(0x52);//R
+	LCD_print_symbol(0x5f);//_
+    25f8:	010017c4 	movi	r4,95
+    25fc:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x43);//C
+    2600:	9009883a 	mov	r4,r18
+    2604:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x4f);//O
+	LCD_print_symbol(0x4e);//N
+    2608:	04001384 	movi	r16,78
+	LCD_print_symbol(0x52);//R
+	LCD_print_symbol(0x4f);//O
+	LCD_print_symbol(0x52);//R
+	LCD_print_symbol(0x5f);//_
+	LCD_print_symbol(0x43);//C
+	LCD_print_symbol(0x4f);//O
+    260c:	8809883a 	mov	r4,r17
+    2610:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x4e);//N
+    2614:	8009883a 	mov	r4,r16
+    2618:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x4e);//N
+    261c:	8009883a 	mov	r4,r16
+    2620:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x45);//E
+    2624:	9809883a 	mov	r4,r19
+    2628:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x43);//C
+    262c:	9009883a 	mov	r4,r18
+    2630:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x54);//T
+    2634:	01001504 	movi	r4,84
+}
+    2638:	dfc00417 	ldw	ra,16(sp)
+    263c:	dcc00317 	ldw	r19,12(sp)
+    2640:	dc800217 	ldw	r18,8(sp)
+    2644:	dc400117 	ldw	r17,4(sp)
+    2648:	dc000017 	ldw	r16,0(sp)
+    264c:	dec00504 	addi	sp,sp,20
+	LCD_print_symbol(0x4f);//O
+	LCD_print_symbol(0x4e);//N
+	LCD_print_symbol(0x4e);//N
+	LCD_print_symbol(0x45);//E
+	LCD_print_symbol(0x43);//C
+	LCD_print_symbol(0x54);//T
+    2650:	00021cc1 	jmpi	21cc <LCD_print_symbol>
+
+00002654 <Out_SET_SW3>:
+	LCD_print_symbol(0x53);//S
+	LCD_print_symbol(0x57);//W
+	LCD_print_symbol(0x32);//2
+}
+void Out_SET_SW3(void)  //Печатаем слово SET_SW3
+{
+    2654:	defffe04 	addi	sp,sp,-8
+    2658:	dc000015 	stw	r16,0(sp)
+	LCD_print_symbol_in_position (0x53,0x47);//S
+    265c:	040014c4 	movi	r16,83
+    2660:	014011c4 	movi	r5,71
+    2664:	8009883a 	mov	r4,r16
+	LCD_print_symbol(0x53);//S
+	LCD_print_symbol(0x57);//W
+	LCD_print_symbol(0x32);//2
+}
+void Out_SET_SW3(void)  //Печатаем слово SET_SW3
+{
+    2668:	dfc00115 	stw	ra,4(sp)
+	LCD_print_symbol_in_position (0x53,0x47);//S
+    266c:	00022a00 	call	22a0 <LCD_print_symbol_in_position>
+	LCD_print_symbol(0x45);//E
+    2670:	01001144 	movi	r4,69
+    2674:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x54);//T
+    2678:	01001504 	movi	r4,84
+    267c:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x5f);//_
+    2680:	010017c4 	movi	r4,95
+    2684:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x53);//S
+    2688:	8009883a 	mov	r4,r16
+    268c:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x57);//W
+    2690:	010015c4 	movi	r4,87
+    2694:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x33);//3
+    2698:	01000cc4 	movi	r4,51
+}
+    269c:	dfc00117 	ldw	ra,4(sp)
+    26a0:	dc000017 	ldw	r16,0(sp)
+    26a4:	dec00204 	addi	sp,sp,8
+	LCD_print_symbol(0x45);//E
+	LCD_print_symbol(0x54);//T
+	LCD_print_symbol(0x5f);//_
+	LCD_print_symbol(0x53);//S
+	LCD_print_symbol(0x57);//W
+	LCD_print_symbol(0x33);//3
+    26a8:	00021cc1 	jmpi	21cc <LCD_print_symbol>
+
+000026ac <Out_SET_SW2>:
+	LCD_print_symbol(0x53);//S
+	LCD_print_symbol(0x57);//W
+	LCD_print_symbol(0x31);//1
+}
+void Out_SET_SW2(void)  //Печатаем слово SET_SW2
+{
+    26ac:	defffe04 	addi	sp,sp,-8
+    26b0:	dc000015 	stw	r16,0(sp)
+	LCD_print_symbol_in_position (0x53,0x47);//S
+    26b4:	040014c4 	movi	r16,83
+    26b8:	014011c4 	movi	r5,71
+    26bc:	8009883a 	mov	r4,r16
+	LCD_print_symbol(0x53);//S
+	LCD_print_symbol(0x57);//W
+	LCD_print_symbol(0x31);//1
+}
+void Out_SET_SW2(void)  //Печатаем слово SET_SW2
+{
+    26c0:	dfc00115 	stw	ra,4(sp)
+	LCD_print_symbol_in_position (0x53,0x47);//S
+    26c4:	00022a00 	call	22a0 <LCD_print_symbol_in_position>
+	LCD_print_symbol(0x45);//E
+    26c8:	01001144 	movi	r4,69
+    26cc:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x54);//T
+    26d0:	01001504 	movi	r4,84
+    26d4:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x5f);//_
+    26d8:	010017c4 	movi	r4,95
+    26dc:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x53);//S
+    26e0:	8009883a 	mov	r4,r16
+    26e4:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x57);//W
+    26e8:	010015c4 	movi	r4,87
+    26ec:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x32);//2
+    26f0:	01000c84 	movi	r4,50
+}
+    26f4:	dfc00117 	ldw	ra,4(sp)
+    26f8:	dc000017 	ldw	r16,0(sp)
+    26fc:	dec00204 	addi	sp,sp,8
+	LCD_print_symbol(0x45);//E
+	LCD_print_symbol(0x54);//T
+	LCD_print_symbol(0x5f);//_
+	LCD_print_symbol(0x53);//S
+	LCD_print_symbol(0x57);//W
+	LCD_print_symbol(0x32);//2
+    2700:	00021cc1 	jmpi	21cc <LCD_print_symbol>
+
+00002704 <Out_SET_SW1>:
+// }
+//---------------------------------------------------------------------------------------
+//конец функции
+
+void Out_SET_SW1(void) //Печатаем слово SET_SW1
+{
+    2704:	defffe04 	addi	sp,sp,-8
+    2708:	dc000015 	stw	r16,0(sp)
+	LCD_print_symbol_in_position (0x53,0x47);//S
+    270c:	040014c4 	movi	r16,83
+    2710:	014011c4 	movi	r5,71
+    2714:	8009883a 	mov	r4,r16
+// }
+//---------------------------------------------------------------------------------------
+//конец функции
+
+void Out_SET_SW1(void) //Печатаем слово SET_SW1
+{
+    2718:	dfc00115 	stw	ra,4(sp)
+	LCD_print_symbol_in_position (0x53,0x47);//S
+    271c:	00022a00 	call	22a0 <LCD_print_symbol_in_position>
+	LCD_print_symbol(0x45);//E
+    2720:	01001144 	movi	r4,69
+    2724:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x54);//T
+    2728:	01001504 	movi	r4,84
+    272c:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x5f);//_
+    2730:	010017c4 	movi	r4,95
+    2734:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x53);//S
+    2738:	8009883a 	mov	r4,r16
+    273c:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x57);//W
+    2740:	010015c4 	movi	r4,87
+    2744:	00021cc0 	call	21cc <LCD_print_symbol>
+	LCD_print_symbol(0x31);//1
+    2748:	01000c44 	movi	r4,49
+}
+    274c:	dfc00117 	ldw	ra,4(sp)
+    2750:	dc000017 	ldw	r16,0(sp)
+    2754:	dec00204 	addi	sp,sp,8
+	LCD_print_symbol(0x45);//E
+	LCD_print_symbol(0x54);//T
+	LCD_print_symbol(0x5f);//_
+	LCD_print_symbol(0x53);//S
+	LCD_print_symbol(0x57);//W
+	LCD_print_symbol(0x31);//1
+    2758:	00021cc1 	jmpi	21cc <LCD_print_symbol>
+
+0000275c <LCD_print_digital_number_on_screen>:
+	alt_u8 i;
+    alt_u8 k;
+    i=0;
+    k=0;
+     //Определяем знак числа
+    if (value&LCD_MINUS_NUMBER_MASK)       
+    275c:	20bfffcc 	andi	r2,r4,65535
+    2760:	10a0001c 	xori	r2,r2,32768
+Для того,чтобы напечатать с одним знаком после запятой-нужно его предварительно
+умножить на 10, если с двумя знаками-то на 100-соответственно.
+***************************************************************************************/
+
+void LCD_print_digital_number_on_screen (alt_16 value,alt_u8 address,alt_u8 point_position)
+{
+    2764:	defffb04 	addi	sp,sp,-20
+	alt_u8 i;
+    alt_u8 k;
+    i=0;
+    k=0;
+     //Определяем знак числа
+    if (value&LCD_MINUS_NUMBER_MASK)       
+    2768:	10a00004 	addi	r2,r2,-32768
+Для того,чтобы напечатать с одним знаком после запятой-нужно его предварительно
+умножить на 10, если с двумя знаками-то на 100-соответственно.
+***************************************************************************************/
+
+void LCD_print_digital_number_on_screen (alt_16 value,alt_u8 address,alt_u8 point_position)
+{
+    276c:	dcc00315 	stw	r19,12(sp)
+    2770:	dc400115 	stw	r17,4(sp)
+    2774:	dc000015 	stw	r16,0(sp)
+    2778:	2c400044 	addi	r17,r5,1
+    277c:	dfc00415 	stw	ra,16(sp)
+    2780:	dc800215 	stw	r18,8(sp)
+    2784:	2007883a 	mov	r3,r4
+    2788:	2021883a 	mov	r16,r4
+    278c:	3027883a 	mov	r19,r6
+    2790:	29403fcc 	andi	r5,r5,255
+	alt_u8 i;
+    alt_u8 k;
+    i=0;
+    k=0;
+     //Определяем знак числа
+    if (value&LCD_MINUS_NUMBER_MASK)       
+    2794:	1000030e 	bge	r2,zero,27a4 <LCD_print_digital_number_on_screen+0x48>
+    {
+    	value=(~value +1);
+        LCD_print_symbol_in_position(0x2d,address);
+    2798:	01000b44 	movi	r4,45
+    i=0;
+    k=0;
+     //Определяем знак числа
+    if (value&LCD_MINUS_NUMBER_MASK)       
+    {
+    	value=(~value +1);
+    279c:	00e1c83a 	sub	r16,zero,r3
+    27a0:	00000106 	br	27a8 <LCD_print_digital_number_on_screen+0x4c>
+        LCD_print_symbol_in_position(0x2d,address);
+        address++;
+    }
+    else
+    {
+    	LCD_print_symbol_in_position(0x20,address);
+    27a4:	01000804 	movi	r4,32
+    27a8:	00022a00 	call	22a0 <LCD_print_symbol_in_position>
+    	address++;
+    }
+    // если количество знаков,после запятой=5, то печатаем запятую
+    if (point_position==5)
+    27ac:	98c03fcc 	andi	r3,r19,255
+    27b0:	00800144 	movi	r2,5
+    27b4:	18800326 	beq	r3,r2,27c4 <LCD_print_digital_number_on_screen+0x68>
+    27b8:	0025883a 	mov	r18,zero
+    27bc:	0009883a 	mov	r4,zero
+    27c0:	00000906 	br	27e8 <LCD_print_digital_number_on_screen+0x8c>
+    {
+    	LCD_print_symbol_in_position(0x2e,address);
+    27c4:	89403fcc 	andi	r5,r17,255
+    27c8:	01000b84 	movi	r4,46
+    27cc:	00022a00 	call	22a0 <LCD_print_symbol_in_position>
+    	address++;
+    27d0:	8c400044 	addi	r17,r17,1
+    27d4:	04800044 	movi	r18,1
+    27d8:	003ff806 	br	27bc <LCD_print_digital_number_on_screen+0x60>
+    27dc:	21000044 	addi	r4,r4,1
+    27e0:	84363c04 	addi	r16,r16,-10000
+    27e4:	04800044 	movi	r18,1
+    	k=1;
+    }
+    //Определяем количество 10000 в числе
+    while (value>=10000)
+    27e8:	80ffffcc 	andi	r3,r16,65535
+    27ec:	18e0001c 	xori	r3,r3,32768
+    27f0:	18e00004 	addi	r3,r3,-32768
+    27f4:	0089c3c4 	movi	r2,9999
+    27f8:	10fff816 	blt	r2,r3,27dc <LCD_print_digital_number_on_screen+0x80>
+    	k=1;
+        value = value-10000;
+        i++;
+    }
+    //если число меньше,чем 10000-печатаем пробел
+    if (k==0) LCD_print_symbol_in_position(0x20,address);
+    27fc:	90803fcc 	andi	r2,r18,255
+    2800:	1004c03a 	cmpne	r2,r2,zero
+    2804:	89403fcc 	andi	r5,r17,255
+    2808:	1000021e 	bne	r2,zero,2814 <LCD_print_digital_number_on_screen+0xb8>
+    280c:	01000804 	movi	r4,32
+    2810:	00000206 	br	281c <LCD_print_digital_number_on_screen+0xc0>
+    //если число больше,чем 10000-печатаем количество 10000 в этом числе
+    else   LCD_print_symbol_in_position(i+0x30,address);
+    2814:	21000c04 	addi	r4,r4,48
+    2818:	21003fcc 	andi	r4,r4,255
+    281c:	00022a00 	call	22a0 <LCD_print_symbol_in_position>
+    i=0;
+    // если количество знаков,после запятой=4, то печатаем запятую
+    if (point_position==4)
+    2820:	98c03fcc 	andi	r3,r19,255
+    2824:	00800104 	movi	r2,4
+    2828:	18800226 	beq	r3,r2,2834 <LCD_print_digital_number_on_screen+0xd8>
+    282c:	0009883a 	mov	r4,zero
+    2830:	00000706 	br	2850 <LCD_print_digital_number_on_screen+0xf4>
+    {
+    	LCD_print_symbol(0x2e);
+    2834:	01000b84 	movi	r4,46
+    2838:	00021cc0 	call	21cc <LCD_print_symbol>
+    283c:	04800044 	movi	r18,1
+    2840:	003ffa06 	br	282c <LCD_print_digital_number_on_screen+0xd0>
+    2844:	21000044 	addi	r4,r4,1
+    2848:	843f0604 	addi	r16,r16,-1000
+    284c:	04800044 	movi	r18,1
+    	k=1;
+    }
+    //Определяем количество 1000 в числе 
+    while (value>=1000)
+    2850:	80ffffcc 	andi	r3,r16,65535
+    2854:	18e0001c 	xori	r3,r3,32768
+    2858:	18e00004 	addi	r3,r3,-32768
+    285c:	0080f9c4 	movi	r2,999
+    2860:	10fff816 	blt	r2,r3,2844 <LCD_print_digital_number_on_screen+0xe8>
+    	k=1;
+        value = value-1000;
+        i++;
+    }
+    //если число меньше,чем 1000 и мы не напечатали ни одного знака перед-печатаем пробел
+    if (k==0) LCD_print_symbol (0x20);
+    2864:	90803fcc 	andi	r2,r18,255
+    2868:	1004c03a 	cmpne	r2,r2,zero
+    286c:	1000021e 	bne	r2,zero,2878 <LCD_print_digital_number_on_screen+0x11c>
+    2870:	01000804 	movi	r4,32
+    2874:	00000206 	br	2880 <LCD_print_digital_number_on_screen+0x124>
+    //если число больше,чем 1000-печатаем количество 1000 в этом числе
+    else   LCD_print_symbol(i+0x30);
+    2878:	21000c04 	addi	r4,r4,48
+    287c:	21003fcc 	andi	r4,r4,255
+    2880:	00021cc0 	call	21cc <LCD_print_symbol>
+    i=0;
+    // если число знаков,после запятой=3, то печатаем запятую
+    if (point_position==3)
+    2884:	98c03fcc 	andi	r3,r19,255
+    2888:	008000c4 	movi	r2,3
+    288c:	18800226 	beq	r3,r2,2898 <LCD_print_digital_number_on_screen+0x13c>
+    2890:	0009883a 	mov	r4,zero
+    2894:	00000706 	br	28b4 <LCD_print_digital_number_on_screen+0x158>
+    {
+    	LCD_print_symbol(0x2e);
+    2898:	01000b84 	movi	r4,46
+    289c:	00021cc0 	call	21cc <LCD_print_symbol>
+    28a0:	04800044 	movi	r18,1
+    28a4:	003ffa06 	br	2890 <LCD_print_digital_number_on_screen+0x134>
+    28a8:	21000044 	addi	r4,r4,1
+    28ac:	843fe704 	addi	r16,r16,-100
+    28b0:	04800044 	movi	r18,1
+    	k=1;
+    }
+    //Определяем количество 100 в числе
+    while (value>=100)
+    28b4:	80ffffcc 	andi	r3,r16,65535
+    28b8:	18e0001c 	xori	r3,r3,32768
+    28bc:	18e00004 	addi	r3,r3,-32768
+    28c0:	008018c4 	movi	r2,99
+    28c4:	10fff816 	blt	r2,r3,28a8 <LCD_print_digital_number_on_screen+0x14c>
+    	k=1;
+        value = value-100;
+        i++;
+    }
+    //если число меньше,чем 100 и мы не напечатали ни одного знака перед-печатаем пробел
+    if (k==0) LCD_print_symbol (0x20);
+    28c8:	90803fcc 	andi	r2,r18,255
+    28cc:	1004c03a 	cmpne	r2,r2,zero
+    28d0:	1000021e 	bne	r2,zero,28dc <LCD_print_digital_number_on_screen+0x180>
+    28d4:	01000804 	movi	r4,32
+    28d8:	00000206 	br	28e4 <LCD_print_digital_number_on_screen+0x188>
+    //если число больше,чем 100-печатаем количество 100 в этом числе
+    else   LCD_print_symbol(i+0x30);
+    28dc:	21000c04 	addi	r4,r4,48
+    28e0:	21003fcc 	andi	r4,r4,255
+    28e4:	00021cc0 	call	21cc <LCD_print_symbol>
+    // если количество знаков,после запятой=2, то печатаем запятую 
+    if (point_position==2)
+    28e8:	98c03fcc 	andi	r3,r19,255
+    28ec:	00800084 	movi	r2,2
+    28f0:	1880031e 	bne	r3,r2,2900 <LCD_print_digital_number_on_screen+0x1a4>
+    {
+    	LCD_print_symbol(0x2e);
+    28f4:	01000b84 	movi	r4,46
+    28f8:	00021cc0 	call	21cc <LCD_print_symbol>
+    28fc:	04800044 	movi	r18,1
+    2900:	0009883a 	mov	r4,zero
+    2904:	00c00244 	movi	r3,9
+    2908:	00000306 	br	2918 <LCD_print_digital_number_on_screen+0x1bc>
+    	k=1;
+    }
+    i=0;
+    //Определяем количество 10 в числе
+    while (value>=10)
+    290c:	21000044 	addi	r4,r4,1
+    2910:	843ffd84 	addi	r16,r16,-10
+    2914:	04800044 	movi	r18,1
+    2918:	80bfffcc 	andi	r2,r16,65535
+    291c:	10a0001c 	xori	r2,r2,32768
+    2920:	10a00004 	addi	r2,r2,-32768
+    2924:	18bff916 	blt	r3,r2,290c <LCD_print_digital_number_on_screen+0x1b0>
+        k=1;
+        value = value-10;
+        i++;
+    }
+    //если число меньше,чем 10 и мы не напечатали ни одного знака перед-печатаем пробел
+    if (k==0) LCD_print_symbol (0x20);
+    2928:	90803fcc 	andi	r2,r18,255
+    292c:	1004c03a 	cmpne	r2,r2,zero
+    2930:	1000021e 	bne	r2,zero,293c <LCD_print_digital_number_on_screen+0x1e0>
+    2934:	01000804 	movi	r4,32
+    2938:	00000206 	br	2944 <LCD_print_digital_number_on_screen+0x1e8>
+    //если число больше,чем 10-печатаем количество 10 в этом числе
+    else   LCD_print_symbol(i+0x30);
+    293c:	21000c04 	addi	r4,r4,48
+    2940:	21003fcc 	andi	r4,r4,255
+    2944:	00021cc0 	call	21cc <LCD_print_symbol>
+    // если количество знаков,после запятой=1, то печатаем запятую
+    if (point_position==1)
+    2948:	98c03fcc 	andi	r3,r19,255
+    294c:	00800044 	movi	r2,1
+    2950:	1880021e 	bne	r3,r2,295c <LCD_print_digital_number_on_screen+0x200>
+    {
+    	LCD_print_symbol(0x2e);
+    2954:	01000b84 	movi	r4,46
+    2958:	00021cc0 	call	21cc <LCD_print_symbol>
+    	k=1;
+    } 
+    //печатаем количество единиц в этом числе
+    LCD_print_symbol(value+0x30);
+    295c:	81000c04 	addi	r4,r16,48
+    2960:	21003fcc 	andi	r4,r4,255
+}		//конец функции
+    2964:	dfc00417 	ldw	ra,16(sp)
+    2968:	dcc00317 	ldw	r19,12(sp)
+    296c:	dc800217 	ldw	r18,8(sp)
+    2970:	dc400117 	ldw	r17,4(sp)
+    2974:	dc000017 	ldw	r16,0(sp)
+    2978:	dec00504 	addi	sp,sp,20
+    {
+    	LCD_print_symbol(0x2e);
+    	k=1;
+    } 
+    //печатаем количество единиц в этом числе
+    LCD_print_symbol(value+0x30);
+    297c:	00021cc1 	jmpi	21cc <LCD_print_symbol>
+
+00002980 <LCD_INITIALIZATION>:
+}
+
+//--------------------------------------------------------------------
+//Функция инициализации LCD индикатора
+void LCD_INITIALIZATION()
+{
+    2980:	defffe04 	addi	sp,sp,-8
+	//int i;
+	//Записываем в порт RS и R/NOTW E 0
+	  IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 );
+    2984:	00942c04 	movi	r2,20656
+}
+
+//--------------------------------------------------------------------
+//Функция инициализации LCD индикатора
+void LCD_INITIALIZATION()
+{
+    2988:	dfc00115 	stw	ra,4(sp)
+    298c:	dc000015 	stw	r16,0(sp)
+	//int i;
+	//Записываем в порт RS и R/NOTW E 0
+	  IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 );
+    2990:	10000035 	stwio	zero,0(r2)
+	//задержка на 40 милисекунды (требуется после включения питания)
+    Delay_for_microsec (40*MILI/(DELAY_KOEFF));
+    //инициализация ЖКИ-модуля
+    //передаем комманду 0х38(8-bit,1,5*7 dot,2 lines)
+    FUNCTION_SET(0x38);
+    2994:	04000e04 	movi	r16,56
+{
+	//int i;
+	//Записываем в порт RS и R/NOTW E 0
+	  IOWR_ALTERA_AVALON_PIO_DATA(PIO_LCD_CONTROL_BASE,0 );
+	//задержка на 40 милисекунды (требуется после включения питания)
+    Delay_for_microsec (40*MILI/(DELAY_KOEFF));
+    2998:	01000134 	movhi	r4,4
+    299c:	21342404 	addi	r4,r4,-12144
+    29a0:	00020640 	call	2064 <Delay_for_microsec>
+    //инициализация ЖКИ-модуля
+    //передаем комманду 0х38(8-bit,1,5*7 dot,2 lines)
+    FUNCTION_SET(0x38);
+    29a4:	8009883a 	mov	r4,r16
+    29a8:	00021780 	call	2178 <FUNCTION_SET>
+    ////задержка на 5 милисекунд (busy flag not available)
+    Delay_for_microsec (5*MILI/(DELAY_KOEFF));
+    29ac:	011e8484 	movi	r4,31250
+    29b0:	00020640 	call	2064 <Delay_for_microsec>
+    FUNCTION_SET(0x38);//(8-bit,1,5*7 dot,2 lines)
+    29b4:	8009883a 	mov	r4,r16
+    //задержка на 160us (busy flag not available)
+    Delay_for_microsec (2*MILI/(DELAY_KOEFF));
+    29b8:	040c3504 	movi	r16,12500
+    //инициализация ЖКИ-модуля
+    //передаем комманду 0х38(8-bit,1,5*7 dot,2 lines)
+    FUNCTION_SET(0x38);
+    ////задержка на 5 милисекунд (busy flag not available)
+    Delay_for_microsec (5*MILI/(DELAY_KOEFF));
+    FUNCTION_SET(0x38);//(8-bit,1,5*7 dot,2 lines)
+    29bc:	00021780 	call	2178 <FUNCTION_SET>
+    //задержка на 160us (busy flag not available)
+    Delay_for_microsec (2*MILI/(DELAY_KOEFF));
+    29c0:	8009883a 	mov	r4,r16
+    29c4:	00020640 	call	2064 <Delay_for_microsec>
+    //Записываем в порт данных 0х0C=1100 DISPLAY ON, Cursor ON, BLINK OFF
+      FUNCTION_SET(0x0C);
+    29c8:	01000304 	movi	r4,12
+    29cc:	00021780 	call	2178 <FUNCTION_SET>
+       //задержка на 160us (busy flag not available)
+      Delay_for_microsec (2*MILI/(DELAY_KOEFF));
+    29d0:	8009883a 	mov	r4,r16
+    29d4:	00020640 	call	2064 <Delay_for_microsec>
+       //Записываем в порт данных 0х01=0001 clear display
+     FUNCTION_SET(0x01);
+    29d8:	01000044 	movi	r4,1
+    29dc:	00021780 	call	2178 <FUNCTION_SET>
+     //задержка на 160us (busy flag not available)
+     Delay_for_microsec (2*MILI/(DELAY_KOEFF));
+    29e0:	8009883a 	mov	r4,r16
+    29e4:	00020640 	call	2064 <Delay_for_microsec>
+     //Записываем в порт данных 0х06=0110 entry mode set, cursor moves to right
+     FUNCTION_SET(0x06);
+    29e8:	01000184 	movi	r4,6
+    29ec:	00021780 	call	2178 <FUNCTION_SET>
+       //Объявляем двунаправленный порт в режим ввода (все 8 выводов)
+    IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_LCD_DATA_BASE,0);
+    29f0:	00943104 	movi	r2,20676
+    29f4:	10000035 	stwio	zero,0(r2)
+}		//Конец функции инициализации индикатора
+    29f8:	dfc00117 	ldw	ra,4(sp)
+    29fc:	dc000017 	ldw	r16,0(sp)
+    2a00:	dec00204 	addi	sp,sp,8
+    2a04:	f800283a 	ret
+
+00002a08 <Resolver_write_byte_config_mode>:
+//------------------------------------------------------------
+//Функция, записывающая  байт
+// данных-8 бит для режима конфигурации 
+//------------------------------------------------------------   
+void Resolver_write_byte_config_mode (alt_u8 address,alt_u8 data)
+{
+    2a08:	defffc04 	addi	sp,sp,-16
+	alt_u8 i;
+// выставляем выводы А1 А0 в режим конфигурации
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_A1_A0_BASE,A1_A0_MASK_CONFIGURATION_MODE);
+    2a0c:	00c000c4 	movi	r3,3
+    2a10:	00941404 	movi	r2,20560
+//------------------------------------------------------------
+//Функция, записывающая  байт
+// данных-8 бит для режима конфигурации 
+//------------------------------------------------------------   
+void Resolver_write_byte_config_mode (alt_u8 address,alt_u8 data)
+{
+    2a14:	dfc00315 	stw	ra,12(sp)
+    2a18:	dc800215 	stw	r18,8(sp)
+    2a1c:	dc400115 	stw	r17,4(sp)
+    2a20:	dc000015 	stw	r16,0(sp)
+	alt_u8 i;
+// выставляем выводы А1 А0 в режим конфигурации
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_A1_A0_BASE,A1_A0_MASK_CONFIGURATION_MODE);
+    2a24:	10c00035 	stwio	r3,0(r2)
+	//Объявляем двунаправленный порт в режим вывода (все 8 выводов)
+	IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_ANGLE_BASE,ANGLE_DIRECTION_16BIT_OUTPUT_MASK);
+    2a28:	00ffffd4 	movui	r3,65535
+    2a2c:	00943504 	movi	r2,20692
+    2a30:	10c00035 	stwio	r3,0(r2)
+		// выставляем адрес регистра 8 бит в порт
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_ANGLE_BASE,address);
+    2a34:	21003fcc 	andi	r4,r4,255
+    2a38:	00d43404 	movi	r3,20688
+    2a3c:	19000035 	stwio	r4,0(r3)
+// выставляем вывод CS в 0
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NCS_BASE,0);
+    2a40:	04941804 	movi	r18,20576
+    2a44:	90000035 	stwio	zero,0(r18)
+	// выставляем вывод nRD в 1
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NRD_BASE,1);
+    2a48:	04400044 	movi	r17,1
+    2a4c:	00942404 	movi	r2,20624
+    2a50:	14400035 	stwio	r17,0(r2)
+	// выставляем вывод nWR в 0
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NWR_BASE,0);
+    2a54:	04142804 	movi	r16,20640
+    2a58:	80000035 	stwio	zero,0(r16)
+	//задержка на 22 нс (1 такт процессора 20 нс)
+	for(i=1;i<=2;i++) asm("nop");
+    2a5c:	0001883a 	nop
+    2a60:	0001883a 	nop
+	// выставляем вывод nWR в 1
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NWR_BASE,1);
+    2a64:	84400035 	stwio	r17,0(r16)
+	// выставляем вывод CS в 1
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NCS_BASE,1);
+    2a68:	94400035 	stwio	r17,0(r18)
+	//задержка на 10 нс
+	for(i=1;i<=2;i++) asm("nop");
+    2a6c:	0001883a 	nop
+    2a70:	0001883a 	nop
+	// выставляем вывод CS в 0
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NCS_BASE,0);
+    2a74:	90000035 	stwio	zero,0(r18)
+	// выставляем данные 8 бит в порт
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_ANGLE_BASE,data);
+    2a78:	29403fcc 	andi	r5,r5,255
+    2a7c:	19400035 	stwio	r5,0(r3)
+	// выставляем вывод nWR в 0
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NWR_BASE,0);
+    2a80:	80000035 	stwio	zero,0(r16)
+	// задержка 240 нс между записью адреса и записью данных
+	 Delay_for_microsec (10);
+    2a84:	01000284 	movi	r4,10
+    2a88:	00020640 	call	2064 <Delay_for_microsec>
+	 // выставляем вывод nWR в 1
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NWR_BASE,1);
+    2a8c:	84400035 	stwio	r17,0(r16)
+	 	// выставляем вывод CS в 1
+	 IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NCS_BASE,1);
+    2a90:	94400035 	stwio	r17,0(r18)
+	 	//задержка на 620 нс
+	  Delay_for_microsec (31);
+    2a94:	010007c4 	movi	r4,31
+// чтение данных из spi порта  
+ //  alt_u8 rdata = IORD_ALTERA_AVALON_SPI_RXDATA(SPI_RESOLVER_BASE);
+//   return rdata;
+} // конец  Resolver_write_byte_config_mode
+    2a98:	dfc00317 	ldw	ra,12(sp)
+    2a9c:	dc800217 	ldw	r18,8(sp)
+    2aa0:	dc400117 	ldw	r17,4(sp)
+    2aa4:	dc000017 	ldw	r16,0(sp)
+    2aa8:	dec00404 	addi	sp,sp,16
+	 // выставляем вывод nWR в 1
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NWR_BASE,1);
+	 	// выставляем вывод CS в 1
+	 IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NCS_BASE,1);
+	 	//задержка на 620 нс
+	  Delay_for_microsec (31);
+    2aac:	00020641 	jmpi	2064 <Delay_for_microsec>
+
+00002ab0 <Resolver_initialization>:
+
+// конец функции Resolver_read_position_in_normal_mode чтения из регистров преобразователь резольвера
+//--------------------------------------------------------------------
+//функция инициализации
+alt_u8 Resolver_initialization ()
+{
+    2ab0:	defffd04 	addi	sp,sp,-12
+    2ab4:	dc400115 	stw	r17,4(sp)
+//  alt_u8 Reg_dos_mismatch; 
+//  alt_u8 Ex_freq;
+ // alt_u8 Dos_mismatch_thre;
+
+// выставляем выводы SAMPLE в 1
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NSAMPLE_BASE,1);
+    2ab8:	00942004 	movi	r2,20608
+    2abc:	04400044 	movi	r17,1
+
+// конец функции Resolver_read_position_in_normal_mode чтения из регистров преобразователь резольвера
+//--------------------------------------------------------------------
+//функция инициализации
+alt_u8 Resolver_initialization ()
+{
+    2ac0:	dfc00215 	stw	ra,8(sp)
+    2ac4:	dc000015 	stw	r16,0(sp)
+//  alt_u8 Reg_dos_mismatch; 
+//  alt_u8 Ex_freq;
+ // alt_u8 Dos_mismatch_thre;
+
+// выставляем выводы SAMPLE в 1
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NSAMPLE_BASE,1);
+    2ac8:	14400035 	stwio	r17,0(r2)
+//	 // выставляем вывод nWR в 1
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NWR_BASE,1);
+    2acc:	00942804 	movi	r2,20640
+    2ad0:	14400035 	stwio	r17,0(r2)
+	 // выставляем вывод nRD в 1
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NRD_BASE,1);
+    2ad4:	00942404 	movi	r2,20624
+    2ad8:	14400035 	stwio	r17,0(r2)
+// выставляем вывод CS в 1
+	 IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NCS_BASE,1);
+    2adc:	00941804 	movi	r2,20576
+    2ae0:	14400035 	stwio	r17,0(r2)
+	 //выставляем порт в  режим паралельного чтения
+	 IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NSOE_BASE,1);
+    2ae4:	00941c04 	movi	r2,20592
+    2ae8:	14400035 	stwio	r17,0(r2)
+ // IOWR_ALTERA_AVALON_PIO_DATA(PIO_MUX_BASE,0 | RESOLVER_MUX_RESOLVER0_MASK);    
+   Resolver_write_byte_config_mode (RES_ADDR_CONTROL_REG, 0x0);
+    2aec:	04002484 	movi	r16,146
+    2af0:	8009883a 	mov	r4,r16
+    2af4:	000b883a 	mov	r5,zero
+    2af8:	0002a080 	call	2a08 <Resolver_write_byte_config_mode>
+// инициализация  control регистра резольвера   0x7F=111 1111 0x5F= 0101 1111 0xDF 1101 1111
+   Resolver_write_byte_config_mode (RES_ADDR_CONTROL_REG, 0xDF);
+    2afc:	8009883a 	mov	r4,r16
+    2b00:	014037c4 	movi	r5,223
+    2b04:	0002a080 	call	2a08 <Resolver_write_byte_config_mode>
+// инициализация   регистра EXCITATION_FREQUENCY_REG резольвера   0x21 
+// fclkin=10kHz(подана с ПЛИС),fexc=33=0x21-- fwc=35=0x23  fexc=10.6kHz3
+   Resolver_write_byte_config_mode ( RES_ADDR_EXCITATION_FREQUENCY_REG, 0x21);
+    2b08:	01002444 	movi	r4,145
+    2b0c:	01400844 	movi	r5,33
+    2b10:	0002a080 	call	2a08 <Resolver_write_byte_config_mode>
+   //    alt_printf("Dos_mismatch_thre= %x\n\n",Dos_mismatch_thre);
+ //#endif              
+// инициализация  control регистра резольвера   0x7F=111 1111 0x5F= 0101 1111
+
+   return (1);
+}
+    2b14:	8805883a 	mov	r2,r17
+    2b18:	dfc00217 	ldw	ra,8(sp)
+    2b1c:	dc400117 	ldw	r17,4(sp)
+    2b20:	dc000017 	ldw	r16,0(sp)
+    2b24:	dec00304 	addi	sp,sp,12
+    2b28:	f800283a 	ret
+
+00002b2c <Resolver_read_position_in_normal_mode>:
+}// конец  Resolver_read_byte_config_mode
+//----------------------------------------------------------------
+//Функция чтения из регистров преобразователя резольвера
+//----------------------------------------------------------------
+alt_16  Resolver_read_position_in_normal_mode ()
+{
+    2b2c:	defffb04 	addi	sp,sp,-20
+    2b30:	dc400115 	stw	r17,4(sp)
+	alt_u8 i;
+// выставляем выводы SAMPLE в 1
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NSAMPLE_BASE,1);
+    2b34:	00942004 	movi	r2,20608
+    2b38:	04400044 	movi	r17,1
+}// конец  Resolver_read_byte_config_mode
+//----------------------------------------------------------------
+//Функция чтения из регистров преобразователя резольвера
+//----------------------------------------------------------------
+alt_16  Resolver_read_position_in_normal_mode ()
+{
+    2b3c:	dfc00415 	stw	ra,16(sp)
+    2b40:	dcc00315 	stw	r19,12(sp)
+    2b44:	dc800215 	stw	r18,8(sp)
+    2b48:	dc000015 	stw	r16,0(sp)
+	alt_u8 i;
+// выставляем выводы SAMPLE в 1
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NSAMPLE_BASE,1);
+    2b4c:	14400035 	stwio	r17,0(r2)
+	// выставляем вывод nRD в 1
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NRD_BASE,1);
+    2b50:	04942404 	movi	r18,20624
+    2b54:	94400035 	stwio	r17,0(r18)
+	//задержка на 42 нс (1 такт процессора 20 нс)
+	for(i=1;i<2;i++) asm("nop");
+    2b58:	0001883a 	nop
+	// выставляем выводы SAMPLE в 0
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NSAMPLE_BASE,0);
+    2b5c:	10000035 	stwio	zero,0(r2)
+	//задержка на 220 нс (1 такт процессора 600 нс)
+		Delay_for_microsec (32);
+    2b60:	01000804 	movi	r4,32
+    2b64:	00020640 	call	2064 <Delay_for_microsec>
+   // выставляем вывод CS в 0
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NCS_BASE,0);
+    2b68:	04d41804 	movi	r19,20576
+    2b6c:	98000035 	stwio	zero,0(r19)
+	// выставляем выводы А1 А0 в режим чтения угла
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_A1_A0_BASE,A1_A0_MASK_NORMAL_MODE_POSITION);
+    2b70:	00941404 	movi	r2,20560
+    2b74:	10000035 	stwio	zero,0(r2)
+	//задержка на 220 нс (1 такт процессора 20 нс)
+	Delay_for_microsec (2);
+    2b78:	01000084 	movi	r4,2
+    2b7c:	00020640 	call	2064 <Delay_for_microsec>
+	  // выставляем вывод nWR в 1
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NWR_BASE,1);
+    2b80:	00942804 	movi	r2,20640
+    2b84:	14400035 	stwio	r17,0(r2)
+	// выставляем вывод nRD в 0
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NRD_BASE,0);
+    2b88:	90000035 	stwio	zero,0(r18)
+	//задержка на 42 нс (1 такт процессора 20 нс)
+		for(i=1;i<3;i++) asm("nop");
+    2b8c:	0001883a 	nop
+    2b90:	0001883a 	nop
+		//Объявляем двунаправленный порт в режим ввода (все 16 вводов)
+	IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_ANGLE_BASE,ANGLE_DIRECTION_16BIT_INTPUT_MASK);
+    2b94:	00943504 	movi	r2,20692
+    2b98:	10000035 	stwio	zero,0(r2)
+		//читаем значение угла
+	alt_u16 rdata =IORD_ALTERA_AVALON_PIO_DATA(PIO_ANGLE_BASE);
+    2b9c:	00943404 	movi	r2,20688
+    2ba0:	14000037 	ldwio	r16,0(r2)
+	alt_16 position= rdata-32760;
+		//  var.u= var.u^0x8000;
+		 //  p-> position=var.i;
+		   //задержка на 100 нс (1 такт процессора 20 нс)
+	for(i=1;i<5;i++) asm("nop");
+    2ba4:	0001883a 	nop
+    2ba8:	0001883a 	nop
+    2bac:	0001883a 	nop
+    2bb0:	0001883a 	nop
+		   // выставляем вывод CS в 1
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NCS_BASE,1);
+    2bb4:	9c400035 	stwio	r17,0(r19)
+		   	// выставляем вывод nRD в 1
+	IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NRD_BASE,1);
+    2bb8:	94400035 	stwio	r17,0(r18)
+	   	//задержка на 220 нс (1 такт процессора 20 нс)
+   	Delay_for_microsec (20);
+    2bbc:	01000504 	movi	r4,20
+    2bc0:	00020640 	call	2064 <Delay_for_microsec>
+    2bc4:	84200204 	addi	r16,r16,-32760
+	   //	return(position);
+   	return (position);
+}
+    2bc8:	80bfffcc 	andi	r2,r16,65535
+    2bcc:	10a0001c 	xori	r2,r2,32768
+    2bd0:	10a00004 	addi	r2,r2,-32768
+    2bd4:	dfc00417 	ldw	ra,16(sp)
+    2bd8:	dcc00317 	ldw	r19,12(sp)
+    2bdc:	dc800217 	ldw	r18,8(sp)
+    2be0:	dc400117 	ldw	r17,4(sp)
+    2be4:	dc000017 	ldw	r16,0(sp)
+    2be8:	dec00504 	addi	sp,sp,20
+    2bec:	f800283a 	ret
+
+00002bf0 <Resolver_read_byte_config_mode>:
+alt_u8 Resolver_read_byte_config_mode (alt_u8 address) 
+{
+	alt_u8 i;
+ // Запись адреса в  порт
+	// выставляем выводы А1 А0 в режим конфигурации
+		IOWR_ALTERA_AVALON_PIO_DATA(PIO_A1_A0_BASE,A1_A0_MASK_CONFIGURATION_MODE);
+    2bf0:	00c000c4 	movi	r3,3
+    2bf4:	00941404 	movi	r2,20560
+    2bf8:	10c00035 	stwio	r3,0(r2)
+		//Объявляем двунаправленный порт в режим вывода (все 8 выводов)
+	 IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_ANGLE_BASE,ANGLE_DIRECTION_16BIT_OUTPUT_MASK);
+    2bfc:	01943504 	movi	r6,20692
+    2c00:	00bfffd4 	movui	r2,65535
+    2c04:	30800035 	stwio	r2,0(r6)
+		// выставляем адрес регистра 8 бит в порт
+		IOWR_ALTERA_AVALON_PIO_DATA(PIO_ANGLE_BASE,address);
+    2c08:	21003fcc 	andi	r4,r4,255
+    2c0c:	01543404 	movi	r5,20688
+    2c10:	29000035 	stwio	r4,0(r5)
+	// выставляем вывод CS в 0
+		IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NCS_BASE,0);
+    2c14:	00941804 	movi	r2,20576
+    2c18:	10000035 	stwio	zero,0(r2)
+		// выставляем вывод nRD в 1
+		IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NRD_BASE,1);
+    2c1c:	01142404 	movi	r4,20624
+    2c20:	00c00044 	movi	r3,1
+    2c24:	20c00035 	stwio	r3,0(r4)
+	// выставляем вывод nWR в 0
+		IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NWR_BASE,0);
+    2c28:	00942804 	movi	r2,20640
+    2c2c:	10000035 	stwio	zero,0(r2)
+		//задержка на 22 нс (1 такт процессора 20 нс)
+		for(i=1;i<=2;i++) asm("nop");
+    2c30:	0001883a 	nop
+    2c34:	0001883a 	nop
+		// выставляем вывод nWR в 1
+		IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NWR_BASE,1);
+    2c38:	10c00035 	stwio	r3,0(r2)
+		// выставляем вывод CS в 1
+	        //	IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NCS_BASE,1);
+		//задержка на 10 нс
+		for(i=1;i<2;i++) asm("nop");
+    2c3c:	0001883a 	nop
+		// выставляем вывод CS в 0
+		//IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NCS_BASE,0);
+		// выставляем вывод nRD в 0
+		IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NRD_BASE,0);
+    2c40:	20000035 	stwio	zero,0(r4)
+		//задержка на 10 нс
+				for(i=1;i<2;i++) asm("nop");
+    2c44:	0001883a 	nop
+		//Объявляем двунаправленный порт в режим ввода (все 16 вводов)
+		IOWR_ALTERA_AVALON_PIO_DIRECTION(PIO_ANGLE_BASE,ANGLE_DIRECTION_16BIT_INTPUT_MASK);
+    2c48:	30000035 	stwio	zero,0(r6)
+		// чтение данных из  порта
+	    alt_u8 rdata = IORD_ALTERA_AVALON_PIO_DATA(PIO_ANGLE_BASE);
+    2c4c:	28800037 	ldwio	r2,0(r5)
+	  //   return rdata;
+        return rdata;
+}// конец  Resolver_read_byte_config_mode
+    2c50:	10803fcc 	andi	r2,r2,255
+    2c54:	f800283a 	ret
+
+00002c58 <udivmodsi4>:
+    2c58:	29001b2e 	bgeu	r5,r4,2cc8 <udivmodsi4+0x70>
+    2c5c:	28001a16 	blt	r5,zero,2cc8 <udivmodsi4+0x70>
+    2c60:	00800044 	movi	r2,1
+    2c64:	0007883a 	mov	r3,zero
+    2c68:	01c007c4 	movi	r7,31
+    2c6c:	00000306 	br	2c7c <udivmodsi4+0x24>
+    2c70:	19c01326 	beq	r3,r7,2cc0 <udivmodsi4+0x68>
+    2c74:	18c00044 	addi	r3,r3,1
+    2c78:	28000416 	blt	r5,zero,2c8c <udivmodsi4+0x34>
+    2c7c:	294b883a 	add	r5,r5,r5
+    2c80:	1085883a 	add	r2,r2,r2
+    2c84:	293ffa36 	bltu	r5,r4,2c70 <udivmodsi4+0x18>
+    2c88:	10000d26 	beq	r2,zero,2cc0 <udivmodsi4+0x68>
+    2c8c:	0007883a 	mov	r3,zero
+    2c90:	21400236 	bltu	r4,r5,2c9c <udivmodsi4+0x44>
+    2c94:	2149c83a 	sub	r4,r4,r5
+    2c98:	1886b03a 	or	r3,r3,r2
+    2c9c:	1004d07a 	srli	r2,r2,1
+    2ca0:	280ad07a 	srli	r5,r5,1
+    2ca4:	103ffa1e 	bne	r2,zero,2c90 <udivmodsi4+0x38>
+    2ca8:	30000226 	beq	r6,zero,2cb4 <udivmodsi4+0x5c>
+    2cac:	2005883a 	mov	r2,r4
+    2cb0:	f800283a 	ret
+    2cb4:	1809883a 	mov	r4,r3
+    2cb8:	2005883a 	mov	r2,r4
+    2cbc:	f800283a 	ret
+    2cc0:	0007883a 	mov	r3,zero
+    2cc4:	003ff806 	br	2ca8 <udivmodsi4+0x50>
+    2cc8:	00800044 	movi	r2,1
+    2ccc:	0007883a 	mov	r3,zero
+    2cd0:	003fef06 	br	2c90 <udivmodsi4+0x38>
+
+00002cd4 <__divsi3>:
+    2cd4:	defffe04 	addi	sp,sp,-8
+    2cd8:	dc000015 	stw	r16,0(sp)
+    2cdc:	dfc00115 	stw	ra,4(sp)
+    2ce0:	0021883a 	mov	r16,zero
+    2ce4:	20000c16 	blt	r4,zero,2d18 <__divsi3+0x44>
+    2ce8:	000d883a 	mov	r6,zero
+    2cec:	28000e16 	blt	r5,zero,2d28 <__divsi3+0x54>
+    2cf0:	0002c580 	call	2c58 <udivmodsi4>
+    2cf4:	1007883a 	mov	r3,r2
+    2cf8:	8005003a 	cmpeq	r2,r16,zero
+    2cfc:	1000011e 	bne	r2,zero,2d04 <__divsi3+0x30>
+    2d00:	00c7c83a 	sub	r3,zero,r3
+    2d04:	1805883a 	mov	r2,r3
+    2d08:	dfc00117 	ldw	ra,4(sp)
+    2d0c:	dc000017 	ldw	r16,0(sp)
+    2d10:	dec00204 	addi	sp,sp,8
+    2d14:	f800283a 	ret
+    2d18:	0109c83a 	sub	r4,zero,r4
+    2d1c:	04000044 	movi	r16,1
+    2d20:	000d883a 	mov	r6,zero
+    2d24:	283ff20e 	bge	r5,zero,2cf0 <__divsi3+0x1c>
+    2d28:	014bc83a 	sub	r5,zero,r5
+    2d2c:	8021003a 	cmpeq	r16,r16,zero
+    2d30:	003fef06 	br	2cf0 <__divsi3+0x1c>
+
+00002d34 <__modsi3>:
+    2d34:	deffff04 	addi	sp,sp,-4
+    2d38:	dfc00015 	stw	ra,0(sp)
+    2d3c:	01800044 	movi	r6,1
+    2d40:	2807883a 	mov	r3,r5
+    2d44:	20000416 	blt	r4,zero,2d58 <__modsi3+0x24>
+    2d48:	28000c16 	blt	r5,zero,2d7c <__modsi3+0x48>
+    2d4c:	dfc00017 	ldw	ra,0(sp)
+    2d50:	dec00104 	addi	sp,sp,4
+    2d54:	0002c581 	jmpi	2c58 <udivmodsi4>
+    2d58:	0109c83a 	sub	r4,zero,r4
+    2d5c:	28000b16 	blt	r5,zero,2d8c <__modsi3+0x58>
+    2d60:	180b883a 	mov	r5,r3
+    2d64:	01800044 	movi	r6,1
+    2d68:	0002c580 	call	2c58 <udivmodsi4>
+    2d6c:	0085c83a 	sub	r2,zero,r2
+    2d70:	dfc00017 	ldw	ra,0(sp)
+    2d74:	dec00104 	addi	sp,sp,4
+    2d78:	f800283a 	ret
+    2d7c:	014bc83a 	sub	r5,zero,r5
+    2d80:	dfc00017 	ldw	ra,0(sp)
+    2d84:	dec00104 	addi	sp,sp,4
+    2d88:	0002c581 	jmpi	2c58 <udivmodsi4>
+    2d8c:	0147c83a 	sub	r3,zero,r5
+    2d90:	003ff306 	br	2d60 <__modsi3+0x2c>
+
+00002d94 <__udivsi3>:
+    2d94:	000d883a 	mov	r6,zero
+    2d98:	0002c581 	jmpi	2c58 <udivmodsi4>
+
+00002d9c <__umodsi3>:
+    2d9c:	01800044 	movi	r6,1
+    2da0:	0002c581 	jmpi	2c58 <udivmodsi4>
+
+00002da4 <alt_load_section>:
+
+static void ALT_INLINE alt_load_section (alt_u32* from, 
+                                         alt_u32* to, 
+                                         alt_u32* end)
+{
+  if (to != from)
+    2da4:	2900051e 	bne	r5,r4,2dbc <alt_load_section+0x18>
+    2da8:	f800283a 	ret
+  {
+    while( to != end )
+    {
+      *to++ = *from++;
+    2dac:	20800017 	ldw	r2,0(r4)
+    2db0:	21000104 	addi	r4,r4,4
+    2db4:	28800015 	stw	r2,0(r5)
+    2db8:	29400104 	addi	r5,r5,4
+                                         alt_u32* to, 
+                                         alt_u32* end)
+{
+  if (to != from)
+  {
+    while( to != end )
+    2dbc:	29bffb1e 	bne	r5,r6,2dac <alt_load_section+0x8>
+    2dc0:	f800283a 	ret
+
+00002dc4 <alt_load>:
+ * there is no bootloader, so this application is responsible for loading to
+ * RAM any sections that are required.
+ */  
+
+void alt_load (void)
+{
+    2dc4:	deffff04 	addi	sp,sp,-4
+  /* 
+   * Copy the .rwdata section. 
+   */
+
+  alt_load_section (&__flash_rwdata_start, 
+    2dc8:	01000034 	movhi	r4,0
+    2dcc:	210bb504 	addi	r4,r4,11988
+    2dd0:	01400034 	movhi	r5,0
+    2dd4:	294bb404 	addi	r5,r5,11984
+    2dd8:	01800034 	movhi	r6,0
+    2ddc:	318bb504 	addi	r6,r6,11988
+ * there is no bootloader, so this application is responsible for loading to
+ * RAM any sections that are required.
+ */  
+
+void alt_load (void)
+{
+    2de0:	dfc00015 	stw	ra,0(sp)
+  /* 
+   * Copy the .rwdata section. 
+   */
+
+  alt_load_section (&__flash_rwdata_start, 
+    2de4:	0002da40 	call	2da4 <alt_load_section>
+
+  /*
+   * Copy the exception handler.
+   */
+
+  alt_load_section (&__flash_exceptions_start, 
+    2de8:	01000034 	movhi	r4,0
+    2dec:	21080804 	addi	r4,r4,8224
+    2df0:	01400034 	movhi	r5,0
+    2df4:	29480804 	addi	r5,r5,8224
+    2df8:	01800034 	movhi	r6,0
+    2dfc:	31880804 	addi	r6,r6,8224
+    2e00:	0002da40 	call	2da4 <alt_load_section>
+
+  /*
+   * Copy the .rodata section.
+   */
+
+  alt_load_section (&__flash_rodata_start, 
+    2e04:	01000034 	movhi	r4,0
+    2e08:	210bb404 	addi	r4,r4,11984
+    2e0c:	01400034 	movhi	r5,0
+    2e10:	294bb404 	addi	r5,r5,11984
+    2e14:	01800034 	movhi	r6,0
+    2e18:	318bb404 	addi	r6,r6,11984
+    2e1c:	0002da40 	call	2da4 <alt_load_section>
+  
+  /*
+   * Now ensure that the caches are in synch.
+   */
+  
+  alt_dcache_flush_all();
+    2e20:	0002e800 	call	2e80 <alt_dcache_flush_all>
+  alt_icache_flush_all();
+}
+    2e24:	dfc00017 	ldw	ra,0(sp)
+    2e28:	dec00104 	addi	sp,sp,4
+  /*
+   * Now ensure that the caches are in synch.
+   */
+  
+  alt_dcache_flush_all();
+  alt_icache_flush_all();
+    2e2c:	0002e841 	jmpi	2e84 <alt_icache_flush_all>
+
+00002e30 <alt_main>:
+ * devices/filesystems/components in the system; and call the entry point for
+ * the users application, i.e. main().
+ */
+
+void alt_main (void)
+{
+    2e30:	deffff04 	addi	sp,sp,-4
+#endif
+
+  /* ALT LOG - please see HAL/sys/alt_log_printf.h for details */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Entering alt_main, calling alt_irq_init.\r\n");
+  /* Initialize the interrupt controller. */
+  alt_irq_init (NULL);
+    2e34:	0009883a 	mov	r4,zero
+ * devices/filesystems/components in the system; and call the entry point for
+ * the users application, i.e. main().
+ */
+
+void alt_main (void)
+{
+    2e38:	dfc00015 	stw	ra,0(sp)
+#endif
+
+  /* ALT LOG - please see HAL/sys/alt_log_printf.h for details */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Entering alt_main, calling alt_irq_init.\r\n");
+  /* Initialize the interrupt controller. */
+  alt_irq_init (NULL);
+    2e3c:	0002e600 	call	2e60 <alt_irq_init>
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Done OS Init, calling alt_sem_create.\r\n");
+  ALT_SEM_CREATE (&alt_fd_list_lock, 1);
+
+  /* Initialize the device drivers/software components. */
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling alt_sys_init.\r\n");
+  alt_sys_init();
+    2e40:	0002e5c0 	call	2e5c <alt_sys_init>
+   */
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling main.\r\n");
+
+#ifdef ALT_NO_EXIT
+  main (alt_argc, alt_argv, alt_envp);
+    2e44:	d1200417 	ldw	r4,-32752(gp)
+    2e48:	d1600517 	ldw	r5,-32748(gp)
+    2e4c:	d1a00617 	ldw	r6,-32744(gp)
+  close(STDOUT_FILENO);
+  exit (result);
+#endif
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] After main - we should not be here?.\r\n");
+}
+    2e50:	dfc00017 	ldw	ra,0(sp)
+    2e54:	dec00104 	addi	sp,sp,4
+   */
+
+  ALT_LOG_PRINT_BOOT("[alt_main.c] Calling main.\r\n");
+
+#ifdef ALT_NO_EXIT
+  main (alt_argc, alt_argv, alt_envp);
+    2e58:	000205c1 	jmpi	205c <main>
+
+00002e5c <alt_sys_init>:
+
+void alt_sys_init( void )
+{
+    ALTERA_AVALON_JTAG_UART_INIT ( JTAG_UART_0, jtag_uart_0);
+    ALTERA_AVALON_SYSID_QSYS_INIT ( SYSID_QSYS_0, sysid_qsys_0);
+}
+    2e5c:	f800283a 	ret
+
+00002e60 <alt_irq_init>:
+ * The "base" parameter is ignored and only
+ * present for backwards-compatibility.
+ */
+
+void alt_irq_init ( const void* base )
+{
+    2e60:	deffff04 	addi	sp,sp,-4
+    2e64:	dfc00015 	stw	ra,0(sp)
+    ALTERA_NIOS2_QSYS_IRQ_INIT ( NIOS2_QSYS_0, nios2_qsys_0);
+    2e68:	0002e900 	call	2e90 <altera_nios2_qsys_irq_init>
+ * alt_irq_cpu_enable_interrupts() enables the CPU to start taking interrupts.
+ */
+static ALT_INLINE void ALT_ALWAYS_INLINE 
+       alt_irq_cpu_enable_interrupts ()
+{
+    NIOS2_WRITE_STATUS(NIOS2_STATUS_PIE_MSK
+    2e6c:	00800044 	movi	r2,1
+    2e70:	1001703a 	wrctl	status,r2
+    alt_irq_cpu_enable_interrupts();
+}
+    2e74:	dfc00017 	ldw	ra,0(sp)
+    2e78:	dec00104 	addi	sp,sp,4
+    2e7c:	f800283a 	ret
+
+00002e80 <alt_dcache_flush_all>:
+  for (i = (char*) 0; i < (char*) NIOS2_DCACHE_SIZE; i+= NIOS2_DCACHE_LINE_SIZE)
+  { 
+    __asm__ volatile ("flushd (%0)" :: "r" (i));
+  }
+#endif /* NIOS2_DCACHE_SIZE > 0 */
+}
+    2e80:	f800283a 	ret
+
+00002e84 <alt_icache_flush_all>:
+ */
+
+void alt_icache_flush_all (void)
+{
+#if NIOS2_ICACHE_SIZE > 0
+  alt_icache_flush (0, NIOS2_ICACHE_SIZE);
+    2e84:	0009883a 	mov	r4,zero
+    2e88:	01440004 	movi	r5,4096
+    2e8c:	0002e981 	jmpi	2e98 <alt_icache_flush>
+
+00002e90 <altera_nios2_qsys_irq_init>:
+ * To initialize the internal interrupt controller, just clear the IENABLE
+ * register so that all possible IRQs are disabled.
+ */
+void altera_nios2_qsys_irq_init(void) 
+{
+    NIOS2_WRITE_IENABLE(0);
+    2e90:	000170fa 	wrctl	ienable,zero
+}
+    2e94:	f800283a 	ret
+
+00002e98 <alt_icache_flush>:
+  if (len > NIOS2_ICACHE_SIZE)
+  {
+    len = NIOS2_ICACHE_SIZE;
+  }
+
+  end = ((char*) start) + len;
+    2e98:	00840004 	movi	r2,4096
+    2e9c:	2007883a 	mov	r3,r4
+    2ea0:	1140012e 	bgeu	r2,r5,2ea8 <alt_icache_flush+0x10>
+    2ea4:	100b883a 	mov	r5,r2
+    2ea8:	194b883a 	add	r5,r3,r5
+    2eac:	00000206 	br	2eb8 <alt_icache_flush+0x20>
+
+  for (i = start; i < end; i+= NIOS2_ICACHE_LINE_SIZE)
+  { 
+    __asm__ volatile ("flushi %0" :: "r" (i)); 
+    2eb0:	1800603a 	flushi	r3
+    len = NIOS2_ICACHE_SIZE;
+  }
+
+  end = ((char*) start) + len;
+
+  for (i = start; i < end; i+= NIOS2_ICACHE_LINE_SIZE)
+    2eb4:	18c00804 	addi	r3,r3,32
+    2eb8:	197ffd36 	bltu	r3,r5,2eb0 <alt_icache_flush+0x18>
+   * For an unaligned flush request, we've got one more line left.
+   * Note that this is dependent on NIOS2_ICACHE_LINE_SIZE to be a 
+   * multiple of 2 (which it always is).
+   */
+
+  if (((alt_u32) start) & (NIOS2_ICACHE_LINE_SIZE - 1))
+    2ebc:	208007cc 	andi	r2,r4,31
+    2ec0:	10000126 	beq	r2,zero,2ec8 <alt_icache_flush+0x30>
+  {
+    __asm__ volatile ("flushi %0" :: "r" (i));
+    2ec4:	1800603a 	flushi	r3
+  /* 
+   * Having flushed the cache, flush any stale instructions in the 
+   * pipeline 
+   */
+
+  __asm__ volatile ("flushp");
+    2ec8:	0000203a 	flushp
+
+#endif /* NIOS2_ICACHE_SIZE > 0 */
+}
+    2ecc:	f800283a 	ret

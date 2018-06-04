@@ -1,0 +1,358 @@
+!SESSION 2018-05-17 15:46:06.121 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-17 15:47:46.672
+!MESSAGE Indexed 'test_bsp' (78 sources, 57 headers) in 0,69 sec: 922 declarations; 2 207 references; 113 unresolved inclusions; 5 syntax errors; 193 unresolved names (5,81 %)
+!SESSION 2018-05-17 15:48:36.508 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -data D:\work\RADIONIX\KOORDINATOR\ALTERA_13\Controller_ASK2\test -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-17 15:49:20.703
+!MESSAGE Indexed 'test_bsp' (78 sources, 57 headers) in 0,62 sec: 922 declarations; 2 207 references; 113 unresolved inclusions; 5 syntax errors; 193 unresolved names (5,81 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-17 15:49:22.313
+!MESSAGE Indexed 'test' (1 sources, 13 headers) in 0,02 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0,00 %)
+
+!ENTRY org.eclipse.cdt.launch 4 150 2018-05-17 15:50:21.174
+!MESSAGE Error starting process.
+!STACK 0
+java.io.IOException: Cannot run program "D:\work\RADIONIX\KOORDINATOR\ALTERA_13\Controller_ASK2\software\test\test.elf": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:347)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:89)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:89)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.exec(LocalCDILaunchDelegate.java:370)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:96)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:70)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.launch 4 150 2018-05-17 15:50:21.174
+!MESSAGE Cannot run program "D:\work\RADIONIX\KOORDINATOR\ALTERA_13\Controller_ASK2\software\test\test.elf": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "D:\work\RADIONIX\KOORDINATOR\ALTERA_13\Controller_ASK2\software\test\test.elf": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:347)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:89)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:89)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.exec(LocalCDILaunchDelegate.java:370)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:96)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:70)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.cdt.launch 4 150 2018-05-17 16:34:12.186
+!MESSAGE Error starting process.
+!STACK 0
+java.io.IOException: Cannot run program "D:\work\RADIONIX\KOORDINATOR\ALTERA_13\Controller_ASK2\software\test\test.elf": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:347)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:89)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:89)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.exec(LocalCDILaunchDelegate.java:370)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:96)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:70)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.launch 4 150 2018-05-17 16:34:12.186
+!MESSAGE Cannot run program "D:\work\RADIONIX\KOORDINATOR\ALTERA_13\Controller_ASK2\software\test\test.elf": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "D:\work\RADIONIX\KOORDINATOR\ALTERA_13\Controller_ASK2\software\test\test.elf": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:347)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:89)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:89)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.exec(LocalCDILaunchDelegate.java:370)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:96)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:70)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2018-05-21 12:28:23.600 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -data D:\work\RADIONIX\KOORDINATOR\ALTERA_13\Controller_ASK2\test -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-05-21 12:31:17.909
+!MESSAGE Executing: [D:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x50e0]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-05-21 12:31:21.076
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=0x50e0] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-05-21 12:31:21.342
+!MESSAGE Executing: [D:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x50e0 --reset-target /cygdrive/d/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/software/test/test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-05-21 12:31:24.103
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x50e0, --reset-target, /cygdrive/d/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/software/test/test.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-05-21 12:31:24.103
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-05-21 12:32:01.953
+!MESSAGE Executing: [D:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x50e0]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-05-21 12:32:05.120
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=0x50e0] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-05-21 12:32:05.386
+!MESSAGE Executing: [D:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x50e0 --reset-target /cygdrive/d/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/software/test/test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-05-21 12:32:08.082
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x50e0, --reset-target, /cygdrive/d/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/software/test/test.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-05-21 12:32:08.082
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-05-21 13:06:55.701
+!MESSAGE Executing: [D:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x50e0]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-05-21 13:06:57.787
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=0x50e0] return code: 2, no processors found
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-05-21 13:06:58.052
+!MESSAGE Executing: [D:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x50e0 --reset-target /cygdrive/d/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/software/test/test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-05-21 13:07:00.450
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x50e0, --reset-target, /cygdrive/d/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/software/test/test.elf] return code: 2, no processors found
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-05-21 13:07:00.450
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY org.eclipse.cdt.launch 4 150 2018-05-21 13:07:55.144
+!MESSAGE Error starting process.
+!STACK 0
+java.io.IOException: Cannot run program "D:\work\RADIONIX\KOORDINATOR\ALTERA_13\Controller_ASK2\software\test\test.elf": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:347)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:89)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:89)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.exec(LocalCDILaunchDelegate.java:370)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:96)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:70)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.launch 4 150 2018-05-21 13:07:55.144
+!MESSAGE Cannot run program "D:\work\RADIONIX\KOORDINATOR\ALTERA_13\Controller_ASK2\software\test\test.elf": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "D:\work\RADIONIX\KOORDINATOR\ALTERA_13\Controller_ASK2\software\test\test.elf": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:347)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:89)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:89)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.exec(LocalCDILaunchDelegate.java:370)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:96)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:70)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-05-21 13:08:09.896
+!MESSAGE Executing: [D:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x50e0]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-05-21 13:08:11.966
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=0x50e0] return code: 2, no processors found
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-05-21 13:08:12.231
+!MESSAGE Executing: [D:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x50e0 --reset-target /cygdrive/d/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/software/test/test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-05-21 13:08:14.643
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x50e0, --reset-target, /cygdrive/d/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/software/test/test.elf] return code: 2, no processors found
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-05-21 13:08:14.643
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-05-21 13:09:19.157
+!MESSAGE Executing: [D:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x50e0]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-05-21 13:09:21.242
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=0x50e0] return code: 2, no processors found
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-05-21 13:09:21.507
+!MESSAGE Executing: [D:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x50e0 --reset-target /cygdrive/d/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/software/test/test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-05-21 13:09:23.888
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x50e0, --reset-target, /cygdrive/d/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/software/test/test.elf] return code: 2, no processors found
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-05-21 13:09:23.888
+!MESSAGE Downloading ELF Process failed
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-05-21 13:16:21.924
+!MESSAGE Executing: [D:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x50e0]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-05-21 13:16:24.026
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=0x50e0] return code: 2, no processors found
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-05-21 13:16:24.291
+!MESSAGE Executing: [D:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x50e0 --reset-target /cygdrive/d/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/software/test/test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-05-21 13:16:26.688
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x50e0, --reset-target, /cygdrive/d/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/software/test/test.elf] return code: 2, no processors found
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-05-21 13:16:26.688
+!MESSAGE Downloading ELF Process failed
+!SESSION 2018-05-21 13:19:59.749 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.launch 4 150 2018-05-21 13:20:45.986
+!MESSAGE Error starting process.
+!STACK 0
+java.io.IOException: Cannot run program "D:\work\RADIONIX\KOORDINATOR\ALTERA_13\Controller_ASK2\software\test\test.elf": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:347)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:89)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:89)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.exec(LocalCDILaunchDelegate.java:370)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:96)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:70)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.launch 4 150 2018-05-21 13:20:45.986
+!MESSAGE Cannot run program "D:\work\RADIONIX\KOORDINATOR\ALTERA_13\Controller_ASK2\software\test\test.elf": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "D:\work\RADIONIX\KOORDINATOR\ALTERA_13\Controller_ASK2\software\test\test.elf": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:347)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:89)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:89)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.exec(LocalCDILaunchDelegate.java:370)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:96)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:70)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-05-21 13:21:05.474
+!MESSAGE Executing: [D:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x50e0]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-05-21 13:21:08.641
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=0x50e0] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-05-21 13:21:08.907
+!MESSAGE Executing: [D:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x50e0 --reset-target /cygdrive/d/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/software/test/test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-05-21 13:21:11.619
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x50e0, --reset-target, /cygdrive/d/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/software/test/test.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-05-21 13:21:11.619
+!MESSAGE Downloading ELF Process failed
+!SESSION 2018-05-21 14:32:40.477 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.launch 4 150 2018-05-21 14:35:44.837
+!MESSAGE Error starting process.
+!STACK 0
+java.io.IOException: Cannot run program "D:\work\RADIONIX\KOORDINATOR\ALTERA_13\Controller_ASK2\software\test\test.elf": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:347)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:89)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:89)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.exec(LocalCDILaunchDelegate.java:370)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:96)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:70)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SUBENTRY 1 org.eclipse.cdt.launch 4 150 2018-05-21 14:35:44.837
+!MESSAGE Cannot run program "D:\work\RADIONIX\KOORDINATOR\ALTERA_13\Controller_ASK2\software\test\test.elf": Launching failed
+!STACK 0
+java.io.IOException: Cannot run program "D:\work\RADIONIX\KOORDINATOR\ALTERA_13\Controller_ASK2\software\test\test.elf": Launching failed
+	at org.eclipse.cdt.utils.spawner.Spawner.exec(Spawner.java:347)
+	at org.eclipse.cdt.utils.spawner.Spawner.<init>(Spawner.java:89)
+	at org.eclipse.cdt.utils.spawner.ProcessFactory.exec(ProcessFactory.java:89)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.exec(LocalCDILaunchDelegate.java:370)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:96)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:70)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:937)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-05-21 14:36:08.773
+!MESSAGE Executing: [D:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop --accept-bad-sysid --sidp=0x50e0]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-05-21 14:36:11.941
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --stop, --accept-bad-sysid, --sidp=0x50e0] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 1 0 2018-05-21 14:36:12.207
+!MESSAGE Executing: [D:/altera/13.0/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go --accept-bad-sysid --sidp=0x50e0 --reset-target /cygdrive/d/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/software/test/test.elf]
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-05-21 14:36:14.922
+!MESSAGE Failed Executing: [nios2-download, '--cable=USB-Blaster on localhost [USB-0]', --device=1, --instance=0, --go, --accept-bad-sysid, --sidp=0x50e0, --reset-target, /cygdrive/d/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/software/test/test.elf] return code: 4, 'other error'
+
+!ENTRY com.altera.sbtgui.launch 4 0 2018-05-21 14:36:14.922
+!MESSAGE Downloading ELF Process failed
+!SESSION 2018-05-21 15:25:55.883 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-21 16:22:54.659
+!MESSAGE Indexed 'test_bsp' (78 sources, 151 headers) in 1,12 sec: 5 453 declarations; 7 233 references; 0 unresolved inclusions; 0 syntax errors; 6 unresolved names (0,05 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-21 16:33:32.474
+!MESSAGE Indexed 'test_bsp' (78 sources, 163 headers) in 0,61 sec: 5 535 declarations; 7 234 references; 0 unresolved inclusions; 0 syntax errors; 2 unresolved names (0,02 %)
+!SESSION 2018-05-21 16:42:17.072 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-05-21 16:42:20.713
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-21 16:46:00.319
+!MESSAGE Indexed 'test_bsp' (78 sources, 153 headers) in 0,83 sec: 4 377 declarations; 6 166 references; 3 unresolved inclusions; 3 syntax errors; 14 unresolved names (0,13 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2018-05-21 16:46:36.195
+!MESSAGE Indexed 'test_bsp' (78 sources, 153 headers) in 0,52 sec: 4 377 declarations; 6 166 references; 3 unresolved inclusions; 3 syntax errors; 14 unresolved names (0,13 %)
+!SESSION 2018-05-21 16:52:24.834 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-05-21 16:52:28.714
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

@@ -1,0 +1,11 @@
+Fitter Status : Successful - Tue May 16 17:10:01 2017
+Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
+Revision Name : SYS_REST
+Top-level Entity Name : SYS_REST
+Family : MAX V
+Device : 5M40ZM64C4
+Timing Models : Final
+Total logic elements : 14 / 40 ( 35 % )
+Total pins : 4 / 30 ( 13 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

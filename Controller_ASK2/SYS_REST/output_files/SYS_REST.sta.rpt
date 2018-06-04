@@ -1,0 +1,456 @@
+TimeQuest Timing Analyzer report for SYS_REST
+Tue May 16 17:11:03 2017
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'CLK_IN'
+ 12. Hold: 'CLK_IN'
+ 13. Minimum Pulse Width: 'CLK_IN'
+ 14. Setup Times
+ 15. Hold Times
+ 16. Clock to Output Times
+ 17. Minimum Clock to Output Times
+ 18. Setup Transfers
+ 19. Hold Transfers
+ 20. Report TCCS
+ 21. Report RSKM
+ 22. Unconstrained Paths
+ 23. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                        ;
++--------------------+-----------------------------------------------------+
+; Quartus II Version ; Version 13.0.0 Build 156 04/24/2013 SJ Full Version ;
+; Revision Name      ; SYS_REST                                            ;
+; Device Family      ; MAX V                                               ;
+; Device Name        ; 5M40ZM64C4                                          ;
+; Timing Models      ; Final                                               ;
+; Delay Model        ; Slow Model                                          ;
+; Rise/Fall Delays   ; Unavailable                                         ;
++--------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                             ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets    ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
+; CLK_IN     ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLK_IN } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+------------+
+
+
++--------------------------------------------------+
+; Fmax Summary                                     ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 154.54 MHz ; 154.54 MHz      ; CLK_IN     ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++---------------------------------+
+; Setup Summary                   ;
++--------+--------+---------------+
+; Clock  ; Slack  ; End Point TNS ;
++--------+--------+---------------+
+; CLK_IN ; -5.471 ; -36.678       ;
++--------+--------+---------------+
+
+
++--------------------------------+
+; Hold Summary                   ;
++--------+-------+---------------+
+; Clock  ; Slack ; End Point TNS ;
++--------+-------+---------------+
+; CLK_IN ; 2.512 ; 0.000         ;
++--------+-------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++---------------------------------+
+; Minimum Pulse Width Summary     ;
++--------+--------+---------------+
+; Clock  ; Slack  ; End Point TNS ;
++--------+--------+---------------+
+; CLK_IN ; -2.289 ; -2.289        ;
++--------+--------+---------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Setup: 'CLK_IN'                                                                                                    ;
++--------+------------------+------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+--------------+-------------+--------------+------------+------------+
+; -5.471 ; ST_REST[1]       ; REST_master~reg0 ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 6.211      ;
+; -4.703 ; ST_REST[2]       ; REST_master~reg0 ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 5.443      ;
+; -4.166 ; ST_REST[3]       ; REST_slave~reg0  ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.906      ;
+; -4.115 ; ST_REST[0]       ; REST_master~reg0 ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.855      ;
+; -3.991 ; ST_REST[2]       ; REST_slave~reg0  ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.731      ;
+; -3.936 ; ST_REST[0]       ; ST_REST[5]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.676      ;
+; -3.936 ; ST_REST[0]       ; ST_REST[6]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.676      ;
+; -3.936 ; ST_REST[0]       ; ST_REST[7]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.676      ;
+; -3.779 ; ST_REST[4]       ; ST_REST[5]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.519      ;
+; -3.779 ; ST_REST[4]       ; ST_REST[6]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.519      ;
+; -3.779 ; ST_REST[4]       ; ST_REST[7]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.519      ;
+; -3.721 ; ST_REST[5]       ; ST_REST[7]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.461      ;
+; -3.691 ; ST_REST[3]       ; ST_REST[5]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.431      ;
+; -3.691 ; ST_REST[3]       ; ST_REST[6]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.431      ;
+; -3.691 ; ST_REST[3]       ; ST_REST[7]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.431      ;
+; -3.676 ; ST_REST[1]       ; ST_REST[5]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.416      ;
+; -3.676 ; ST_REST[1]       ; ST_REST[6]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.416      ;
+; -3.676 ; ST_REST[1]       ; ST_REST[7]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.416      ;
+; -3.603 ; ST_REST[7]       ; REST_master~reg0 ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.343      ;
+; -3.596 ; ST_REST[5]       ; ST_REST[6]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.336      ;
+; -3.592 ; ST_REST[4]       ; REST_slave~reg0  ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.332      ;
+; -3.560 ; ST_REST[2]       ; ST_REST[5]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.300      ;
+; -3.560 ; ST_REST[2]       ; ST_REST[6]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.300      ;
+; -3.560 ; ST_REST[2]       ; ST_REST[7]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.300      ;
+; -3.445 ; ST_REST[0]       ; ST_REST[4]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.185      ;
+; -3.331 ; ST_REST[6]       ; ST_REST[7]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.071      ;
+; -3.320 ; ST_REST[0]       ; ST_REST[3]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 4.060      ;
+; -3.254 ; ST_REST[4]       ; REST_master~reg0 ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.994      ;
+; -3.242 ; ST_REST[1]       ; REST_slave~reg0  ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.982      ;
+; -3.206 ; ST_REST[7]       ; REST_slave~reg0  ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.946      ;
+; -3.200 ; ST_REST[3]       ; ST_REST[4]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.940      ;
+; -3.195 ; ST_REST[0]       ; ST_REST[2]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.935      ;
+; -3.185 ; ST_REST[1]       ; ST_REST[4]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.925      ;
+; -3.069 ; ST_REST[2]       ; ST_REST[4]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.809      ;
+; -3.060 ; ST_REST[1]       ; ST_REST[3]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.800      ;
+; -2.944 ; ST_REST[2]       ; ST_REST[3]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.684      ;
+; -2.935 ; ST_REST[1]       ; ST_REST[2]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.675      ;
+; -2.926 ; ST_REST[3]       ; REST_master~reg0 ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.666      ;
+; -2.811 ; REST_slave~reg0  ; REST_slave~reg0  ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.551      ;
+; -2.728 ; ST_REST[6]       ; REST_slave~reg0  ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.468      ;
+; -2.705 ; ST_REST[5]       ; ST_REST[5]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.445      ;
+; -2.687 ; REST_master~reg0 ; ST_REST[5]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.427      ;
+; -2.687 ; REST_master~reg0 ; ST_REST[6]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.427      ;
+; -2.687 ; REST_master~reg0 ; ST_REST[4]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.427      ;
+; -2.687 ; REST_master~reg0 ; ST_REST[3]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.427      ;
+; -2.687 ; REST_master~reg0 ; ST_REST[1]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.427      ;
+; -2.687 ; REST_master~reg0 ; ST_REST[2]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.427      ;
+; -2.687 ; REST_master~reg0 ; ST_REST[7]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.427      ;
+; -2.624 ; ST_REST[5]       ; REST_slave~reg0  ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.364      ;
+; -2.622 ; ST_REST[5]       ; REST_master~reg0 ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.362      ;
+; -2.586 ; ST_REST[0]       ; ST_REST[0]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.326      ;
+; -2.583 ; ST_REST[6]       ; ST_REST[6]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.323      ;
+; -2.535 ; ST_REST[4]       ; ST_REST[4]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.275      ;
+; -2.309 ; ST_REST[3]       ; ST_REST[3]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.049      ;
+; -2.304 ; ST_REST[0]       ; ST_REST[1]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.044      ;
+; -2.275 ; REST_master~reg0 ; REST_slave~reg0  ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 3.015      ;
+; -2.196 ; ST_REST[2]       ; ST_REST[2]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 2.936      ;
+; -2.187 ; ST_REST[1]       ; ST_REST[1]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 2.927      ;
+; -2.138 ; ST_REST[7]       ; ST_REST[7]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 2.878      ;
+; -2.040 ; ST_REST[6]       ; REST_master~reg0 ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 2.780      ;
+; -1.846 ; REST_master~reg0 ; ST_REST[0]       ; CLK_IN       ; CLK_IN      ; 1.000        ; 0.000      ; 2.586      ;
++--------+------------------+------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Hold: 'CLK_IN'                                                                                                    ;
++-------+------------------+------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+--------------+-------------+--------------+------------+------------+
+; 2.512 ; REST_master~reg0 ; ST_REST[0]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 2.586      ;
+; 2.706 ; ST_REST[6]       ; REST_master~reg0 ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 2.780      ;
+; 2.804 ; ST_REST[7]       ; ST_REST[7]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 2.878      ;
+; 2.853 ; ST_REST[1]       ; ST_REST[1]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 2.927      ;
+; 2.862 ; ST_REST[2]       ; ST_REST[2]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 2.936      ;
+; 2.941 ; REST_master~reg0 ; REST_slave~reg0  ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.015      ;
+; 2.970 ; ST_REST[0]       ; ST_REST[1]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.044      ;
+; 2.975 ; ST_REST[3]       ; ST_REST[3]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.049      ;
+; 3.201 ; ST_REST[4]       ; ST_REST[4]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.275      ;
+; 3.249 ; ST_REST[6]       ; ST_REST[6]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.323      ;
+; 3.252 ; ST_REST[0]       ; ST_REST[0]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.326      ;
+; 3.288 ; ST_REST[5]       ; REST_master~reg0 ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.362      ;
+; 3.290 ; ST_REST[5]       ; REST_slave~reg0  ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.364      ;
+; 3.353 ; REST_master~reg0 ; ST_REST[5]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.427      ;
+; 3.353 ; REST_master~reg0 ; ST_REST[6]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.427      ;
+; 3.353 ; REST_master~reg0 ; ST_REST[4]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.427      ;
+; 3.353 ; REST_master~reg0 ; ST_REST[3]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.427      ;
+; 3.353 ; REST_master~reg0 ; ST_REST[1]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.427      ;
+; 3.353 ; REST_master~reg0 ; ST_REST[2]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.427      ;
+; 3.353 ; REST_master~reg0 ; ST_REST[7]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.427      ;
+; 3.371 ; ST_REST[5]       ; ST_REST[5]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.445      ;
+; 3.394 ; ST_REST[6]       ; REST_slave~reg0  ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.468      ;
+; 3.477 ; REST_slave~reg0  ; REST_slave~reg0  ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.551      ;
+; 3.574 ; ST_REST[1]       ; ST_REST[2]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.648      ;
+; 3.583 ; ST_REST[2]       ; ST_REST[3]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.657      ;
+; 3.592 ; ST_REST[3]       ; REST_master~reg0 ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.666      ;
+; 3.687 ; ST_REST[1]       ; ST_REST[3]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.761      ;
+; 3.696 ; ST_REST[2]       ; ST_REST[4]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.770      ;
+; 3.800 ; ST_REST[1]       ; ST_REST[4]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.874      ;
+; 3.835 ; ST_REST[0]       ; ST_REST[2]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.909      ;
+; 3.840 ; ST_REST[3]       ; ST_REST[4]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.914      ;
+; 3.872 ; ST_REST[7]       ; REST_slave~reg0  ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.946      ;
+; 3.908 ; ST_REST[1]       ; REST_slave~reg0  ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.982      ;
+; 3.920 ; ST_REST[4]       ; REST_master~reg0 ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 3.994      ;
+; 3.948 ; ST_REST[0]       ; ST_REST[3]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.022      ;
+; 3.970 ; ST_REST[6]       ; ST_REST[7]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.044      ;
+; 4.061 ; ST_REST[0]       ; ST_REST[4]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.135      ;
+; 4.199 ; ST_REST[2]       ; ST_REST[5]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.273      ;
+; 4.199 ; ST_REST[2]       ; ST_REST[6]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.273      ;
+; 4.199 ; ST_REST[2]       ; ST_REST[7]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.273      ;
+; 4.236 ; ST_REST[5]       ; ST_REST[6]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.310      ;
+; 4.258 ; ST_REST[4]       ; REST_slave~reg0  ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.332      ;
+; 4.269 ; ST_REST[7]       ; REST_master~reg0 ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.343      ;
+; 4.303 ; ST_REST[1]       ; ST_REST[5]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.377      ;
+; 4.303 ; ST_REST[1]       ; ST_REST[6]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.377      ;
+; 4.303 ; ST_REST[1]       ; ST_REST[7]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.377      ;
+; 4.343 ; ST_REST[3]       ; ST_REST[5]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.417      ;
+; 4.343 ; ST_REST[3]       ; ST_REST[6]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.417      ;
+; 4.343 ; ST_REST[3]       ; ST_REST[7]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.417      ;
+; 4.349 ; ST_REST[5]       ; ST_REST[7]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.423      ;
+; 4.445 ; ST_REST[4]       ; ST_REST[5]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.519      ;
+; 4.445 ; ST_REST[4]       ; ST_REST[6]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.519      ;
+; 4.445 ; ST_REST[4]       ; ST_REST[7]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.519      ;
+; 4.564 ; ST_REST[0]       ; ST_REST[5]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.638      ;
+; 4.564 ; ST_REST[0]       ; ST_REST[6]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.638      ;
+; 4.564 ; ST_REST[0]       ; ST_REST[7]       ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.638      ;
+; 4.657 ; ST_REST[2]       ; REST_slave~reg0  ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.731      ;
+; 4.781 ; ST_REST[0]       ; REST_master~reg0 ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.855      ;
+; 4.832 ; ST_REST[3]       ; REST_slave~reg0  ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 4.906      ;
+; 5.369 ; ST_REST[2]       ; REST_master~reg0 ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 5.443      ;
+; 6.137 ; ST_REST[1]       ; REST_master~reg0 ; CLK_IN       ; CLK_IN      ; 0.000        ; 0.000      ; 6.211      ;
++-------+------------------+------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Minimum Pulse Width: 'CLK_IN'                                                                          ;
++--------+--------------+----------------+------------------+--------+------------+----------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock  ; Clock Edge ; Target               ;
++--------+--------------+----------------+------------------+--------+------------+----------------------+
+; -2.289 ; 1.000        ; 3.289          ; Port Rate        ; CLK_IN ; Rise       ; CLK_IN               ;
+; 0.247  ; 0.500        ; 0.253          ; High Pulse Width ; CLK_IN ; Rise       ; REST_master~reg0     ;
+; 0.247  ; 0.500        ; 0.253          ; Low Pulse Width  ; CLK_IN ; Rise       ; REST_master~reg0     ;
+; 0.247  ; 0.500        ; 0.253          ; High Pulse Width ; CLK_IN ; Rise       ; REST_slave~reg0      ;
+; 0.247  ; 0.500        ; 0.253          ; Low Pulse Width  ; CLK_IN ; Rise       ; REST_slave~reg0      ;
+; 0.247  ; 0.500        ; 0.253          ; High Pulse Width ; CLK_IN ; Rise       ; ST_REST[0]           ;
+; 0.247  ; 0.500        ; 0.253          ; Low Pulse Width  ; CLK_IN ; Rise       ; ST_REST[0]           ;
+; 0.247  ; 0.500        ; 0.253          ; High Pulse Width ; CLK_IN ; Rise       ; ST_REST[1]           ;
+; 0.247  ; 0.500        ; 0.253          ; Low Pulse Width  ; CLK_IN ; Rise       ; ST_REST[1]           ;
+; 0.247  ; 0.500        ; 0.253          ; High Pulse Width ; CLK_IN ; Rise       ; ST_REST[2]           ;
+; 0.247  ; 0.500        ; 0.253          ; Low Pulse Width  ; CLK_IN ; Rise       ; ST_REST[2]           ;
+; 0.247  ; 0.500        ; 0.253          ; High Pulse Width ; CLK_IN ; Rise       ; ST_REST[3]           ;
+; 0.247  ; 0.500        ; 0.253          ; Low Pulse Width  ; CLK_IN ; Rise       ; ST_REST[3]           ;
+; 0.247  ; 0.500        ; 0.253          ; High Pulse Width ; CLK_IN ; Rise       ; ST_REST[4]           ;
+; 0.247  ; 0.500        ; 0.253          ; Low Pulse Width  ; CLK_IN ; Rise       ; ST_REST[4]           ;
+; 0.247  ; 0.500        ; 0.253          ; High Pulse Width ; CLK_IN ; Rise       ; ST_REST[5]           ;
+; 0.247  ; 0.500        ; 0.253          ; Low Pulse Width  ; CLK_IN ; Rise       ; ST_REST[5]           ;
+; 0.247  ; 0.500        ; 0.253          ; High Pulse Width ; CLK_IN ; Rise       ; ST_REST[6]           ;
+; 0.247  ; 0.500        ; 0.253          ; Low Pulse Width  ; CLK_IN ; Rise       ; ST_REST[6]           ;
+; 0.247  ; 0.500        ; 0.253          ; High Pulse Width ; CLK_IN ; Rise       ; ST_REST[7]           ;
+; 0.247  ; 0.500        ; 0.253          ; Low Pulse Width  ; CLK_IN ; Rise       ; ST_REST[7]           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK_IN ; Rise       ; CLK_IN|combout       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK_IN ; Rise       ; CLK_IN|combout       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK_IN ; Rise       ; REST_master~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK_IN ; Rise       ; REST_master~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK_IN ; Rise       ; REST_slave~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK_IN ; Rise       ; REST_slave~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK_IN ; Rise       ; ST_REST[0]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK_IN ; Rise       ; ST_REST[0]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK_IN ; Rise       ; ST_REST[1]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK_IN ; Rise       ; ST_REST[1]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK_IN ; Rise       ; ST_REST[2]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK_IN ; Rise       ; ST_REST[2]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK_IN ; Rise       ; ST_REST[3]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK_IN ; Rise       ; ST_REST[3]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK_IN ; Rise       ; ST_REST[4]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK_IN ; Rise       ; ST_REST[4]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK_IN ; Rise       ; ST_REST[5]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK_IN ; Rise       ; ST_REST[5]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK_IN ; Rise       ; ST_REST[6]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK_IN ; Rise       ; ST_REST[6]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; CLK_IN ; Rise       ; ST_REST[7]|clk       ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; CLK_IN ; Rise       ; ST_REST[7]|clk       ;
++--------+--------------+----------------+------------------+--------+------------+----------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; MASTER_OK ; CLK_IN     ; 2.703 ; 2.703 ; Rise       ; CLK_IN          ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; MASTER_OK ; CLK_IN     ; -2.369 ; -2.369 ; Rise       ; CLK_IN          ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; REST_master ; CLK_IN     ; 8.064 ; 8.064 ; Rise       ; CLK_IN          ;
+; REST_slave  ; CLK_IN     ; 7.463 ; 7.463 ; Rise       ; CLK_IN          ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; REST_master ; CLK_IN     ; 8.064 ; 8.064 ; Rise       ; CLK_IN          ;
+; REST_slave  ; CLK_IN     ; 7.463 ; 7.463 ; Rise       ; CLK_IN          ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLK_IN     ; CLK_IN   ; 85       ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLK_IN     ; CLK_IN   ; 85       ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 1     ; 1    ;
+; Unconstrained Input Port Paths  ; 1     ; 1    ;
+; Unconstrained Output Ports      ; 2     ; 2    ;
+; Unconstrained Output Port Paths ; 2     ; 2    ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+    Info: Processing started: Tue May 16 17:10:37 2017
+Info: Command: quartus_sta SYS_REST -c SYS_REST
+Info: qsta_default_script.tcl version: #1
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (306004): Started post-fitting delay annotation
+Info (306005): Delay annotation completed successfully
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'SYS_REST.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name CLK_IN CLK_IN
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -5.471
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -5.471       -36.678 CLK_IN 
+Info (332146): Worst-case hold slack is 2.512
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     2.512         0.000 CLK_IN 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.289        -2.289 CLK_IN 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 397 megabytes
+    Info: Processing ended: Tue May 16 17:11:03 2017
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:00:01
+
+

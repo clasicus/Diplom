@@ -1,0 +1,142 @@
+Flow report for Controller_ASK2
+Wed May 30 13:04:58 2018
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Wed May 30 13:04:58 2018       ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Full Version ;
+; Revision Name                      ; Controller_ASK2                             ;
+; Top-level Entity Name              ; Controller_ASK2                             ;
+; Family                             ; Cyclone III                                 ;
+; Device                             ; EP3C25E144I7                                ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 2,849 / 24,624 ( 12 % )                     ;
+;     Total combinational functions  ; 2,580 / 24,624 ( 10 % )                     ;
+;     Dedicated logic registers      ; 1,853 / 24,624 ( 8 % )                      ;
+; Total registers                    ; 1853                                        ;
+; Total pins                         ; 51 / 83 ( 61 % )                            ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 110,208 / 608,256 ( 18 % )                  ;
+; Embedded Multiplier 9-bit elements ; 4 / 132 ( 3 % )                             ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                              ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 05/30/2018 13:02:11 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; Controller_ASK2     ;
++-------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                   ;
++------------------------------------------------+-----------------------------------------------------------------------------------+---------------+-------------+-----------------+
+; Assignment Name                                ; Value                                                                             ; Default Value ; Entity Name ; Section Id      ;
++------------------------------------------------+-----------------------------------------------------------------------------------+---------------+-------------+-----------------+
+; COMPILER_SIGNATURE_ID                          ; 123532103127540.152767453108796                                                   ; --            ; --          ; --              ;
+; EDA_DESIGN_INSTANCE_NAME                       ; NA                                                                                ; --            ; --          ; AD7687_vlg_test ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH           ; AD7687_vlg_test                                                                   ; --            ; --          ; eda_simulation  ;
+; EDA_OUTPUT_DATA_FORMAT                         ; Verilog Hdl                                                                       ; --            ; --          ; eda_simulation  ;
+; EDA_SIMULATION_TOOL                            ; ModelSim-Altera (Verilog)                                                         ; <None>        ; --          ; --              ;
+; EDA_TEST_BENCH_ENABLE_STATUS                   ; TEST_BENCH_MODE                                                                   ; --            ; --          ; eda_simulation  ;
+; EDA_TEST_BENCH_FILE                            ; AD7687/simulation/modelsim/AD7687.vt                                              ; --            ; --          ; AD7687_vlg_test ;
+; EDA_TEST_BENCH_MODULE_NAME                     ; AD7687_vlg_test                                                                   ; --            ; --          ; AD7687_vlg_test ;
+; EDA_TEST_BENCH_NAME                            ; AD7687_vlg_test                                                                   ; --            ; --          ; eda_simulation  ;
+; EDA_TIME_SCALE                                 ; 1 ps                                                                              ; --            ; --          ; eda_simulation  ;
+; EDA_USER_COMPILED_SIMULATION_LIBRARY_DIRECTORY ; D:\work\RADIONIX\KOORDINATOR\ALTERA_13\Controller_ASK2\AD7687\simulation\modelsim ; --            ; --          ; eda_simulation  ;
+; MAX_CORE_JUNCTION_TEMP                         ; 100                                                                               ; --            ; --          ; --              ;
+; MIN_CORE_JUNCTION_TEMP                         ; -40                                                                               ; --            ; --          ; --              ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS                 ; Half Signal Swing                                                                 ; --            ; --          ; --              ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS                 ; Half Signal Swing                                                                 ; --            ; --          ; --              ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS                ; Half Vccio                                                                        ; --            ; --          ; --              ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS                ; Half Vccio                                                                        ; --            ; --          ; --              ;
+; PARTITION_COLOR                                ; 16764057                                                                          ; --            ; --          ; Top             ;
+; PARTITION_FITTER_PRESERVATION_LEVEL            ; PLACEMENT_AND_ROUTING                                                             ; --            ; --          ; Top             ;
+; PARTITION_NETLIST_TYPE                         ; SOURCE                                                                            ; --            ; --          ; Top             ;
+; POWER_BOARD_THERMAL_MODEL                      ; None (CONSERVATIVE)                                                               ; --            ; --          ; --              ;
+; POWER_PRESET_COOLING_SOLUTION                  ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                             ; --            ; --          ; --              ;
+; PROJECT_OUTPUT_DIRECTORY                       ; output_files                                                                      ; --            ; --          ; --              ;
+; SEARCH_PATH                                    ; d:\work\radionix\koordinator\altera_13\controller_ask2\nios_cpu                   ; --            ; --          ; --              ;
++------------------------------------------------+-----------------------------------------------------------------------------------+---------------+-------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:01:39     ; 1.0                     ; 669 MB              ; 00:01:36                           ;
+; Fitter                    ; 00:00:36     ; 1.5                     ; 1107 MB             ; 00:00:44                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 429 MB              ; 00:00:04                           ;
+; TimeQuest Timing Analyzer ; 00:00:07     ; 1.0                     ; 523 MB              ; 00:00:08                           ;
+; EDA Netlist Writer        ; 00:00:10     ; 1.0                     ; 430 MB              ; 00:00:10                           ;
+; Total                     ; 00:02:36     ; --                      ; --                  ; 00:02:42                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; KMD-RUSIN-VP-N   ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; KMD-RUSIN-VP-N   ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; KMD-RUSIN-VP-N   ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; KMD-RUSIN-VP-N   ; Windows 7 ; 6.1        ; x86_64         ;
+; EDA Netlist Writer        ; KMD-RUSIN-VP-N   ; Windows 7 ; 6.1        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off Controller_ASK2 -c Controller_ASK2
+quartus_fit --read_settings_files=off --write_settings_files=off Controller_ASK2 -c Controller_ASK2
+quartus_asm --read_settings_files=off --write_settings_files=off Controller_ASK2 -c Controller_ASK2
+quartus_sta Controller_ASK2 -c Controller_ASK2
+quartus_eda --read_settings_files=off --write_settings_files=off Controller_ASK2 -c Controller_ASK2
+
+
+

@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\work\RADIONIX\KOORDINATOR\ALTERA_13\PWM_ver\simulation\modelsim
+vpwm_ver
+IXk;ck>_Q9_8NW^392b]132
+V;c=U^2ABzV34V=^^KeT:M1
+Z1 dD:\work\RADIONIX\KOORDINATOR\ALTERA_13\PWM_ver\simulation\modelsim
+w1525354452
+8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/pwm_ver.v
+FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/pwm_ver.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 06VakmdPN4=DnUAz4<eKm0
+!s85 0
+!s108 1525354517.395000
+!s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/pwm_ver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver|-O0|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/pwm_ver.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver -O0
+vpwm_ver_vlg_tst
+!i10b 1
+!s100 `^5gcP_5ZGocM4I`SIYVW3
+I;<DcSgCEP`dR3d2Cczi6>2
+VJ<3ZolUoT5WfT:3>b7dO10
+R1
+w1525358461
+8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+L0 28
+R2
+r1
+!s85 0
+31
+!s108 1525358466.043000
+!s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim|-O0|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0

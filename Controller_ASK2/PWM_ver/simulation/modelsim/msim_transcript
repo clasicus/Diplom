@@ -1,0 +1,390 @@
+# Reading D:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do PWM_ver_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver {D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/pwm_ver.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver
+# 
+# Top level modules:
+# 	pwm_ver
+# 
+# vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim {D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs="+acc"  pwm_ver_vlg_ts
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps pwm_ver_vlg_ts 
+# ** Error: (vsim-3170) Could not find 'D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/rtl_work.pwm_ver_vlg_ts'.
+# 
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./PWM_ver_run_msim_rtl_verilog.do PAUSED at line 12
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/pwm_ver.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver
+# 
+# Top level modules:
+# 	pwm_ver
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+vsim rtl_work.pwm_ver_vlg_tst
+# vsim rtl_work.pwm_ver_vlg_tst 
+# Loading work.pwm_ver_vlg_tst
+# Loading work.pwm_ver
+add wave -position insertpoint  \
+sim:/pwm_ver_vlg_tst/Pwm_in \
+sim:/pwm_ver_vlg_tst/RESET \
+sim:/pwm_ver_vlg_tst/i_clk \
+sim:/pwm_ver_vlg_tst/I_max \
+sim:/pwm_ver_vlg_tst/I_in \
+sim:/pwm_ver_vlg_tst/Count \
+sim:/pwm_ver_vlg_tst/DIR \
+sim:/pwm_ver_vlg_tst/PWM_out \
+sim:/pwm_ver_vlg_tst/OFF
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Ivan  Hostname: DESKTOP-3AE0TDF  ProcessID: 13648
+# 
+#           Attempting to use alternate WLF file "./wlfts7wgqm".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfts7wgqm
+# 
+run
+# Running testbench
+run
+run
+run
+run
+run
+run
+run -all
+# Break key hit 
+# Simulation stop requested.
+run
+run
+run
+run
+run
+run -all
+restart
+run -all
+# Running testbench
+# Break key hit 
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/pwm_ver.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver
+# 
+# Top level modules:
+# 	pwm_ver
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+restart
+# Loading rtl_work.pwm_ver_vlg_tst
+# Loading rtl_work.pwm_ver
+run -all
+# Running testbench
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+restart
+# Loading rtl_work.pwm_ver_vlg_tst
+run -all
+# Running testbench
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/pwm_ver.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver
+# 
+# Top level modules:
+# 	pwm_ver
+# Break key hit 
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/pwm_ver.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver
+# 
+# Top level modules:
+# 	pwm_ver
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+restart
+# Loading rtl_work.pwm_ver_vlg_tst
+# Loading rtl_work.pwm_ver
+run -all
+# Running testbench
+run -all
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/pwm_ver.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver
+# 
+# Top level modules:
+# 	pwm_ver
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/pwm_ver.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver
+# 
+# Top level modules:
+# 	pwm_ver
+restart
+# Loading rtl_work.pwm_ver
+run -all
+# Running testbench
+add wave -position insertpoint  \
+sim:/pwm_ver_vlg_tst/PWM_out
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+restart
+# Loading rtl_work.pwm_ver_vlg_tst
+run
+# Running testbench
+run -all
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+restart
+# Loading rtl_work.pwm_ver_vlg_tst
+run -all
+# Running testbench
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+restart
+# Loading rtl_work.pwm_ver_vlg_tst
+run -all
+# Running testbench
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+restart
+# Loading rtl_work.pwm_ver_vlg_tst
+run -all
+# Running testbench
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+restart
+# Loading rtl_work.pwm_ver_vlg_tst
+run -all
+# Running testbench
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+restart
+# Loading rtl_work.pwm_ver_vlg_tst
+run
+# Running testbench
+run -all
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+restart
+# Loading rtl_work.pwm_ver_vlg_tst
+run -all
+# Running testbench
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+restart
+# Loading rtl_work.pwm_ver_vlg_tst
+run -all
+# Running testbench
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+restart
+# Loading rtl_work.pwm_ver_vlg_tst
+run -all
+# Running testbench
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/pwm_ver.v
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver
+# 
+# Top level modules:
+# 	pwm_ver
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+restart
+# Loading rtl_work.pwm_ver_vlg_tst
+# Loading rtl_work.pwm_ver
+run -all
+# Running testbench
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+restart
+# Loading rtl_work.pwm_ver_vlg_tst
+run -all
+# Running testbench
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+restart
+# Loading rtl_work.pwm_ver_vlg_tst
+run -all
+# Running testbench
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+restart
+# Loading rtl_work.pwm_ver_vlg_tst
+run -all
+# Running testbench
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+restart
+# Loading rtl_work.pwm_ver_vlg_tst
+run -all
+# Running testbench
+restart
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+restart
+# Loading rtl_work.pwm_ver_vlg_tst
+run -all
+# Running testbench
+run -all
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# ** Error: D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt(102): near "end": syntax error, unexpected end
+# D:/altera/13.0/modelsim_ase/win32aloem/vlog failed.
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# ** Error: D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt(101): near "end": syntax error, unexpected end
+# D:/altera/13.0/modelsim_ase/win32aloem/vlog failed.
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+restart
+# Loading rtl_work.pwm_ver_vlg_tst
+run -all
+# Running testbench
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# ** Error: D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt(93): near "always": syntax error, unexpected always
+# D:/altera/13.0/modelsim_ase/win32aloem/vlog failed.
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+restart
+# Loading rtl_work.pwm_ver_vlg_tst
+run -all
+# Running testbench
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+restart
+# Loading rtl_work.pwm_ver_vlg_tst
+run -all
+# Running testbench
+restart
+run -all
+# Running testbench
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# ** Error: D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt(92): near "always": syntax error, unexpected always
+# D:/altera/13.0/modelsim_ase/win32aloem/vlog failed.
+vlog -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim -O0 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/PWM_ver/simulation/modelsim/pwm_ver.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module pwm_ver_vlg_tst
+# 
+# Top level modules:
+# 	pwm_ver_vlg_tst
+restart
+# Loading rtl_work.pwm_ver_vlg_tst
+run -all
+# Running testbench

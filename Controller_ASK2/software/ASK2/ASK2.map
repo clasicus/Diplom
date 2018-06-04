@@ -1,0 +1,540 @@
+Archive member included because of file (symbol)
+
+d:/install/quartus_13/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2\libgcc.a(lib2-divmod.o)
+                              obj/default/ANGLE_SETTING.o (__divsi3)
+../ASK2_bsp\libhal_bsp.a(alt_load.o)
+                              ../ASK2_bsp/obj/HAL/src/crt0.o (alt_load)
+../ASK2_bsp\libhal_bsp.a(alt_main.o)
+                              ../ASK2_bsp/obj/HAL/src/crt0.o (alt_main)
+../ASK2_bsp\libhal_bsp.a(alt_sys_init.o)
+                              ../ASK2_bsp\libhal_bsp.a(alt_main.o) (alt_sys_init)
+../ASK2_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+                              ../ASK2_bsp\libhal_bsp.a(alt_load.o) (alt_dcache_flush_all)
+../ASK2_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+                              ../ASK2_bsp\libhal_bsp.a(alt_load.o) (alt_icache_flush_all)
+../ASK2_bsp\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                              ../ASK2_bsp\libhal_bsp.a(alt_sys_init.o) (altera_nios2_qsys_irq_init)
+../ASK2_bsp\libhal_bsp.a(alt_icache_flush.o)
+                              ../ASK2_bsp\libhal_bsp.a(alt_icache_flush_all.o) (alt_icache_flush)
+
+Allocating common symbols
+Common symbol       size              file
+
+Angle_norm          0x2               obj/default/ACK2_main.o
+setting_mode        0x1               obj/default/ACK2_main.o
+Current_norm        0x2               obj/default/ACK2_main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+reset            0x00002000         0x00000020
+onchip_memory2_0 0x00002020         0x00001f80
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ../ASK2_bsp/obj/HAL/src/crt0.o
+                0x0000201c                exit = _exit
+LOAD obj/default/ACK2_main.o
+LOAD obj/default/ANGLE_SETTING.o
+LOAD obj/default/LCD.o
+LOAD obj/default/SETTING.o
+LOAD obj/default/resolver.o
+LOAD d:/install/quartus_13/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib\libstdc++.a
+LOAD d:/install/quartus_13/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib\libm.a
+LOAD d:/install/quartus_13/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2\libgcc.a
+START GROUP
+LOAD d:/install/quartus_13/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/../../../../nios2-elf/lib\libsmallc.a
+LOAD d:/install/quartus_13/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2\libgcc.a
+LOAD ../ASK2_bsp\libhal_bsp.a
+END GROUP
+LOAD d:/install/quartus_13/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2\libgcc.a
+                0x00002000                __alt_mem_onchip_memory2_0 = 0x2000
+
+.entry          0x00002000       0x20
+ *(.entry)
+ .entry         0x00002000       0x20 ../ASK2_bsp/obj/HAL/src/crt0.o
+                0x00002000                __reset
+                0x0000201c                _exit
+
+.exceptions     0x00002020        0x0
+                0x00002020                PROVIDE (__ram_exceptions_start, ABSOLUTE (.))
+                0x00002020                . = ALIGN (0x20)
+ *(.irq)
+ *(.exceptions.entry.label)
+ *(.exceptions.entry.user)
+ *(.exceptions.entry)
+ *(.exceptions.irqtest.user)
+ *(.exceptions.irqtest)
+ *(.exceptions.irqhandler.user)
+ *(.exceptions.irqhandler)
+ *(.exceptions.irqreturn.user)
+ *(.exceptions.irqreturn)
+ *(.exceptions.notirq.label)
+ *(.exceptions.notirq.user)
+ *(.exceptions.notirq)
+ *(.exceptions.soft.user)
+ *(.exceptions.soft)
+ *(.exceptions.unknown.user)
+ *(.exceptions.unknown)
+ *(.exceptions.exit.label)
+ *(.exceptions.exit.user)
+ *(.exceptions.exit)
+ *(.exceptions)
+                0x00002020                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
+                0x00002020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
+
+.text           0x00002020      0xeb0
+                0x00002020                PROVIDE (stext, ABSOLUTE (.))
+ *(.interp)
+ *(.hash)
+ *(.dynsym)
+ *(.dynstr)
+ *(.gnu.version)
+ *(.gnu.version_d)
+ *(.gnu.version_r)
+ *(.rel.init)
+ *(.rela.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ *(.rel.fini)
+ *(.rela.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rela.ctors)
+ *(.rel.dtors)
+ *(.rela.dtors)
+ *(.rel.got)
+ *(.rela.got)
+ *(.rel.sdata .rel.sdata.* .rel.gnu.linkonce.s.*)
+ *(.rela.sdata .rela.sdata.* .rela.gnu.linkonce.s.*)
+ *(.rel.sbss .rel.sbss.* .rel.gnu.linkonce.sb.*)
+ *(.rela.sbss .rela.sbss.* .rela.gnu.linkonce.sb.*)
+ *(.rel.sdata2 .rel.sdata2.* .rel.gnu.linkonce.s2.*)
+ *(.rela.sdata2 .rela.sdata2.* .rela.gnu.linkonce.s2.*)
+ *(.rel.sbss2 .rel.sbss2.* .rel.gnu.linkonce.sb2.*)
+ *(.rela.sbss2 .rela.sbss2.* .rela.gnu.linkonce.sb2.*)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ *(.rel.plt)
+ *(.rela.plt)
+ *(.rel.dyn)
+ *(.init)
+ *(.plt)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00002020       0x3c ../ASK2_bsp/obj/HAL/src/crt0.o
+                0x00002020                _start
+ .text          0x0000205c        0xc obj/default/ACK2_main.o
+                0x0000205c                main
+                0x00002064                Delay_for_microsec
+ .text          0x00002068      0x110 obj/default/ANGLE_SETTING.o
+                0x00002068                MODE_FORMATION
+                0x000020a8                CURRENT_SETTING
+                0x00002110                ANGLE_SETTING
+ .text          0x00002178      0x890 obj/default/LCD.o
+                0x00002178                FUNCTION_SET
+                0x000021cc                LCD_print_symbol
+                0x000022a0                LCD_print_symbol_in_position
+                0x00002344                Out_CURRENT_SETTING
+                0x000023f8                Out_ANGLE_SETTING
+                0x0000249c                Out_WORKING
+                0x000024fc                Out_EROOR_RESOLVER
+                0x000025a4                Out_EROOR_CONECT
+                0x00002654                Out_SET_SW3
+                0x000026ac                Out_SET_SW2
+                0x00002704                Out_SET_SW1
+                0x0000275c                LCD_print_digital_number_on_screen
+                0x00002980                LCD_INITIALIZATION
+ .text          0x00002a08        0x0 obj/default/SETTING.o
+ .text          0x00002a08      0x250 obj/default/resolver.o
+                0x00002a08                Resolver_write_byte_config_mode
+                0x00002ab0                Resolver_initialization
+                0x00002b2c                Resolver_read_position_in_normal_mode
+                0x00002bf0                Resolver_read_byte_config_mode
+ .text          0x00002c58      0x14c d:/install/quartus_13/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2\libgcc.a(lib2-divmod.o)
+                0x00002cd4                __divsi3
+                0x00002d34                __modsi3
+                0x00002d94                __udivsi3
+                0x00002d9c                __umodsi3
+ .text          0x00002da4       0x8c ../ASK2_bsp\libhal_bsp.a(alt_load.o)
+                0x00002dc4                alt_load
+ .text          0x00002e30       0x2c ../ASK2_bsp\libhal_bsp.a(alt_main.o)
+                0x00002e30                alt_main
+ .text          0x00002e5c       0x24 ../ASK2_bsp\libhal_bsp.a(alt_sys_init.o)
+                0x00002e5c                alt_sys_init
+                0x00002e60                alt_irq_init
+ .text          0x00002e80        0x4 ../ASK2_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x00002e80                alt_dcache_flush_all
+ .text          0x00002e84        0xc ../ASK2_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+                0x00002e84                alt_icache_flush_all
+ .text          0x00002e90        0x8 ../ASK2_bsp\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                0x00002e90                altera_nios2_qsys_irq_init
+ .text          0x00002e98       0x38 ../ASK2_bsp\libhal_bsp.a(alt_icache_flush.o)
+                0x00002e98                alt_icache_flush
+ *(.gnu.warning.*)
+ *(.fini)
+                0x00002ed0                PROVIDE (__etext, ABSOLUTE (.))
+                0x00002ed0                PROVIDE (_etext, ABSOLUTE (.))
+                0x00002ed0                PROVIDE (etext, ABSOLUTE (.))
+ *(.eh_frame_hdr)
+                0x00002ed0                . = ALIGN (0x4)
+                0x00002ed0                PROVIDE (__preinit_array_start, ABSOLUTE (.))
+ *(.preinit_array)
+                0x00002ed0                PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                0x00002ed0                PROVIDE (__init_array_start, ABSOLUTE (.))
+ *(.init_array)
+                0x00002ed0                PROVIDE (__init_array_end, ABSOLUTE (.))
+                0x00002ed0                PROVIDE (__fini_array_start, ABSOLUTE (.))
+ *(.fini_array)
+                0x00002ed0                PROVIDE (__fini_array_end, ABSOLUTE (.))
+ *(.eh_frame)
+ *(.gcc_except_table)
+ *(.dynamic)
+                0x00002ed0                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+ *(.ctors)
+ *(SORT(.ctors.*))
+                0x00002ed0                PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                0x00002ed0                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+ *(.dtors)
+ *(SORT(.dtors.*))
+                0x00002ed0                PROVIDE (__DTOR_END__, ABSOLUTE (.))
+ *(.jcr)
+                0x00002ed0                . = ALIGN (0x4)
+
+.rodata         0x00002ed0        0x0
+                0x00002ed0                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x00002ed0                . = ALIGN (0x4)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ *(.rodata1)
+                0x00002ed0                . = ALIGN (0x4)
+                0x00002ed0                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x00002ed0                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+
+.rwdata         0x00002ed0        0x4 load address 0x00002ed4
+                0x00002ed0                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x00002ed0                . = ALIGN (0x4)
+ *(.got.plt)
+ *(.got)
+ *(.data1)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x00002ed0        0x0 ../ASK2_bsp/obj/HAL/src/crt0.o
+ .data          0x00002ed0        0x0 obj/default/ACK2_main.o
+ .data          0x00002ed0        0x0 obj/default/ANGLE_SETTING.o
+ .data          0x00002ed0        0x0 obj/default/LCD.o
+ .data          0x00002ed0        0x0 obj/default/SETTING.o
+ .data          0x00002ed0        0x0 obj/default/resolver.o
+ .data          0x00002ed0        0x0 d:/install/quartus_13/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2\libgcc.a(lib2-divmod.o)
+ .data          0x00002ed0        0x0 ../ASK2_bsp\libhal_bsp.a(alt_load.o)
+ .data          0x00002ed0        0x0 ../ASK2_bsp\libhal_bsp.a(alt_main.o)
+ .data          0x00002ed0        0x0 ../ASK2_bsp\libhal_bsp.a(alt_sys_init.o)
+ .data          0x00002ed0        0x0 ../ASK2_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x00002ed0        0x0 ../ASK2_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x00002ed0        0x0 ../ASK2_bsp\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .data          0x00002ed0        0x0 ../ASK2_bsp\libhal_bsp.a(alt_icache_flush.o)
+                0x0000aed0                _gp = ABSOLUTE ((. + 0x8000))
+                0x0000aed0                PROVIDE (gp, _gp)
+ *(.rwdata .rwdata.*)
+ *(.sdata .sdata.* .gnu.linkonce.s.*)
+ .sdata         0x00002ed0        0x4 ../ASK2_bsp\libhal_bsp.a(alt_sys_init.o)
+                0x00002ed0                jtag_uart_0
+ *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
+                0x00002ed4                . = ALIGN (0x4)
+                0x00002ed4                _edata = ABSOLUTE (.)
+                0x00002ed4                PROVIDE (edata, ABSOLUTE (.))
+                0x00002ed4                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x00002ed4                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+
+.bss            0x00002ed8       0x14
+                0x00002ed8                __bss_start = ABSOLUTE (.)
+                0x00002ed8                PROVIDE (__sbss_start, ABSOLUTE (.))
+                0x00002ed8                PROVIDE (___sbss_start, ABSOLUTE (.))
+ *(.dynsbss)
+ *(.sbss .sbss.* .gnu.linkonce.sb.*)
+ .sbss          0x00002ed8        0x6 obj/default/ACK2_main.o
+                0x00002ed8                Angle_norm
+                0x00002eda                setting_mode
+                0x00002edc                Current_norm
+ *fill*         0x00002ede        0x2 00
+ .sbss          0x00002ee0        0xc ../ASK2_bsp\libhal_bsp.a(alt_main.o)
+                0x00002ee0                alt_argc
+                0x00002ee4                alt_argv
+                0x00002ee8                alt_envp
+ *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
+ *(.scommon)
+                0x00002eec                PROVIDE (__sbss_end, ABSOLUTE (.))
+                0x00002eec                PROVIDE (___sbss_end, ABSOLUTE (.))
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00002eec        0x0 ../ASK2_bsp/obj/HAL/src/crt0.o
+ .bss           0x00002eec        0x0 obj/default/ACK2_main.o
+ .bss           0x00002eec        0x0 obj/default/ANGLE_SETTING.o
+ .bss           0x00002eec        0x0 obj/default/LCD.o
+ .bss           0x00002eec        0x0 obj/default/SETTING.o
+ .bss           0x00002eec        0x0 obj/default/resolver.o
+ .bss           0x00002eec        0x0 d:/install/quartus_13/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2\libgcc.a(lib2-divmod.o)
+ .bss           0x00002eec        0x0 ../ASK2_bsp\libhal_bsp.a(alt_load.o)
+ .bss           0x00002eec        0x0 ../ASK2_bsp\libhal_bsp.a(alt_main.o)
+ .bss           0x00002eec        0x0 ../ASK2_bsp\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x00002eec        0x0 ../ASK2_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x00002eec        0x0 ../ASK2_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x00002eec        0x0 ../ASK2_bsp\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .bss           0x00002eec        0x0 ../ASK2_bsp\libhal_bsp.a(alt_icache_flush.o)
+ *(COMMON)
+                0x00002eec                . = ALIGN (0x4)
+                0x00002eec                __bss_end = ABSOLUTE (.)
+
+.onchip_memory2_0
+                0x00002eec        0x0
+                0x00002eec                PROVIDE (_alt_partition_onchip_memory2_0_start, ABSOLUTE (.))
+ *(.onchip_memory2_0. onchip_memory2_0.*)
+                0x00002eec                . = ALIGN (0x4)
+                0x00002eec                PROVIDE (_alt_partition_onchip_memory2_0_end, ABSOLUTE (.))
+                0x00002eec                _end = ABSOLUTE (.)
+                0x00002eec                end = ABSOLUTE (.)
+                0x00002eec                __alt_stack_base = ABSOLUTE (.)
+                0x00002eec                PROVIDE (_alt_partition_onchip_memory2_0_load_addr, LOADADDR (.onchip_memory2_0))
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x23
+ *(.comment)
+ .comment       0x00000000       0x23 obj/default/ACK2_main.o
+                                 0x24 (size before relaxing)
+ .comment       0x00000000       0x24 obj/default/ANGLE_SETTING.o
+ .comment       0x00000000       0x24 obj/default/LCD.o
+ .comment       0x00000000       0x24 obj/default/SETTING.o
+ .comment       0x00000000       0x24 obj/default/resolver.o
+ .comment       0x00000000       0x24 d:/install/quartus_13/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2\libgcc.a(lib2-divmod.o)
+ .comment       0x00000000       0x24 ../ASK2_bsp\libhal_bsp.a(alt_load.o)
+ .comment       0x00000000       0x24 ../ASK2_bsp\libhal_bsp.a(alt_main.o)
+ .comment       0x00000000       0x24 ../ASK2_bsp\libhal_bsp.a(alt_sys_init.o)
+ .comment       0x00000000       0x24 ../ASK2_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .comment       0x00000000       0x24 ../ASK2_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .comment       0x00000000       0x24 ../ASK2_bsp\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .comment       0x00000000       0x24 ../ASK2_bsp\libhal_bsp.a(alt_icache_flush.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x1a8
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x28 ../ASK2_bsp/obj/HAL/src/crt0.o
+ .debug_aranges
+                0x00000028       0x20 obj/default/ACK2_main.o
+ .debug_aranges
+                0x00000048       0x20 obj/default/ANGLE_SETTING.o
+ .debug_aranges
+                0x00000068       0x20 obj/default/LCD.o
+ .debug_aranges
+                0x00000088       0x20 obj/default/resolver.o
+ .debug_aranges
+                0x000000a8       0x20 d:/install/quartus_13/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2\libgcc.a(lib2-divmod.o)
+ .debug_aranges
+                0x000000c8       0x20 ../ASK2_bsp\libhal_bsp.a(alt_load.o)
+ .debug_aranges
+                0x000000e8       0x20 ../ASK2_bsp\libhal_bsp.a(alt_main.o)
+ .debug_aranges
+                0x00000108       0x20 ../ASK2_bsp\libhal_bsp.a(alt_sys_init.o)
+ .debug_aranges
+                0x00000128       0x20 ../ASK2_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_aranges
+                0x00000148       0x20 ../ASK2_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_aranges
+                0x00000168       0x20 ../ASK2_bsp\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_aranges
+                0x00000188       0x20 ../ASK2_bsp\libhal_bsp.a(alt_icache_flush.o)
+
+.debug_pubnames
+                0x00000000      0x41d
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x63 obj/default/ACK2_main.o
+ .debug_pubnames
+                0x00000063       0x4b obj/default/ANGLE_SETTING.o
+ .debug_pubnames
+                0x000000ae      0x131 obj/default/LCD.o
+ .debug_pubnames
+                0x000001df       0x9f obj/default/resolver.o
+ .debug_pubnames
+                0x0000027e       0x48 d:/install/quartus_13/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2\libgcc.a(lib2-divmod.o)
+ .debug_pubnames
+                0x000002c6       0x1f ../ASK2_bsp\libhal_bsp.a(alt_load.o)
+ .debug_pubnames
+                0x000002e5       0x46 ../ASK2_bsp\libhal_bsp.a(alt_main.o)
+ .debug_pubnames
+                0x0000032b       0x44 ../ASK2_bsp\libhal_bsp.a(alt_sys_init.o)
+ .debug_pubnames
+                0x0000036f       0x2b ../ASK2_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_pubnames
+                0x0000039a       0x2b ../ASK2_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_pubnames
+                0x000003c5       0x31 ../ASK2_bsp\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_pubnames
+                0x000003f6       0x27 ../ASK2_bsp\libhal_bsp.a(alt_icache_flush.o)
+
+.debug_info     0x00000000      0xf55
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000       0x7a ../ASK2_bsp/obj/HAL/src/crt0.o
+ .debug_info    0x0000007a      0x12f obj/default/ACK2_main.o
+ .debug_info    0x000001a9      0x167 obj/default/ANGLE_SETTING.o
+ .debug_info    0x00000310      0x28e obj/default/LCD.o
+ .debug_info    0x0000059e        0x0 obj/default/SETTING.o
+ .debug_info    0x0000059e      0x14f obj/default/resolver.o
+ .debug_info    0x000006ed      0x21c d:/install/quartus_13/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2\libgcc.a(lib2-divmod.o)
+ .debug_info    0x00000909      0x12e ../ASK2_bsp\libhal_bsp.a(alt_load.o)
+ .debug_info    0x00000a37      0x125 ../ASK2_bsp\libhal_bsp.a(alt_main.o)
+ .debug_info    0x00000b5c      0x17d ../ASK2_bsp\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x00000cd9       0x8d ../ASK2_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x00000d66       0x8d ../ASK2_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x00000df3       0x8d ../ASK2_bsp\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_info    0x00000e80       0xd5 ../ASK2_bsp\libhal_bsp.a(alt_icache_flush.o)
+
+.debug_abbrev   0x00000000      0x6d1
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x12 ../ASK2_bsp/obj/HAL/src/crt0.o
+ .debug_abbrev  0x00000012       0x9f obj/default/ACK2_main.o
+ .debug_abbrev  0x000000b1       0x72 obj/default/ANGLE_SETTING.o
+ .debug_abbrev  0x00000123       0xb8 obj/default/LCD.o
+ .debug_abbrev  0x000001db        0x1 obj/default/SETTING.o
+ .debug_abbrev  0x000001dc       0xaf obj/default/resolver.o
+ .debug_abbrev  0x0000028b       0xe0 d:/install/quartus_13/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2\libgcc.a(lib2-divmod.o)
+ .debug_abbrev  0x0000036b       0x97 ../ASK2_bsp\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x00000402       0xa6 ../ASK2_bsp\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x000004a8       0xe3 ../ASK2_bsp\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x0000058b       0x3f ../ASK2_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x000005ca       0x3f ../ASK2_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x00000609       0x3f ../ASK2_bsp\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_abbrev  0x00000648       0x89 ../ASK2_bsp\libhal_bsp.a(alt_icache_flush.o)
+
+.debug_line     0x00000000     0x1ffe
+ *(.debug_line)
+ .debug_line    0x00000000       0x6c ../ASK2_bsp/obj/HAL/src/crt0.o
+ .debug_line    0x0000006c       0xfe obj/default/ACK2_main.o
+ .debug_line    0x0000016a      0x1c7 obj/default/ANGLE_SETTING.o
+ .debug_line    0x00000331      0x887 obj/default/LCD.o
+ .debug_line    0x00000bb8       0x24 obj/default/SETTING.o
+ .debug_line    0x00000bdc      0x313 obj/default/resolver.o
+ .debug_line    0x00000eef      0x24f d:/install/quartus_13/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2\libgcc.a(lib2-divmod.o)
+ .debug_line    0x0000113e      0x21f ../ASK2_bsp\libhal_bsp.a(alt_load.o)
+ .debug_line    0x0000135d      0x2ca ../ASK2_bsp\libhal_bsp.a(alt_main.o)
+ .debug_line    0x00001627      0x28e ../ASK2_bsp\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x000018b5      0x1bd ../ASK2_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x00001a72      0x1cd ../ASK2_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x00001c3f      0x1d6 ../ASK2_bsp\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_line    0x00001e15      0x1e9 ../ASK2_bsp\libhal_bsp.a(alt_icache_flush.o)
+
+.debug_frame    0x00000000      0x3f8
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x30 obj/default/ACK2_main.o
+ .debug_frame   0x00000030       0x64 obj/default/ANGLE_SETTING.o
+ .debug_frame   0x00000094      0x164 obj/default/LCD.o
+ .debug_frame   0x000001f8       0x78 obj/default/resolver.o
+ .debug_frame   0x00000270       0x70 d:/install/quartus_13/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2\libgcc.a(lib2-divmod.o)
+ .debug_frame   0x000002e0       0x38 ../ASK2_bsp\libhal_bsp.a(alt_load.o)
+ .debug_frame   0x00000318       0x28 ../ASK2_bsp\libhal_bsp.a(alt_main.o)
+ .debug_frame   0x00000340       0x38 ../ASK2_bsp\libhal_bsp.a(alt_sys_init.o)
+ .debug_frame   0x00000378       0x20 ../ASK2_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_frame   0x00000398       0x20 ../ASK2_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_frame   0x000003b8       0x20 ../ASK2_bsp\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_frame   0x000003d8       0x20 ../ASK2_bsp\libhal_bsp.a(alt_icache_flush.o)
+
+.debug_str      0x00000000      0x74d
+ *(.debug_str)
+ .debug_str     0x00000000      0x12b obj/default/ACK2_main.o
+                                0x157 (size before relaxing)
+ .debug_str     0x0000012b       0x38 obj/default/ANGLE_SETTING.o
+                                0x168 (size before relaxing)
+ .debug_str     0x00000163      0x125 obj/default/LCD.o
+                                0x1fb (size before relaxing)
+ .debug_str     0x00000288       0x96 obj/default/resolver.o
+                                0x182 (size before relaxing)
+ .debug_str     0x0000031e      0x108 d:/install/quartus_13/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2\libgcc.a(lib2-divmod.o)
+                                0x1b1 (size before relaxing)
+ .debug_str     0x00000426      0x132 ../ASK2_bsp\libhal_bsp.a(alt_load.o)
+                                0x1cf (size before relaxing)
+ .debug_str     0x00000558       0x75 ../ASK2_bsp\libhal_bsp.a(alt_main.o)
+                                0x153 (size before relaxing)
+ .debug_str     0x000005cd       0xb1 ../ASK2_bsp\libhal_bsp.a(alt_sys_init.o)
+                                0x1c8 (size before relaxing)
+ .debug_str     0x0000067e       0x34 ../ASK2_bsp\libhal_bsp.a(alt_dcache_flush_all.o)
+                                0x112 (size before relaxing)
+ .debug_str     0x000006b2       0x34 ../ASK2_bsp\libhal_bsp.a(alt_icache_flush_all.o)
+                                0x112 (size before relaxing)
+ .debug_str     0x000006e6       0x3b ../ASK2_bsp\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                                0x119 (size before relaxing)
+ .debug_str     0x00000721       0x2c ../ASK2_bsp\libhal_bsp.a(alt_icache_flush.o)
+                                0x118 (size before relaxing)
+
+.debug_loc      0x00000000      0x798
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x83 obj/default/ANGLE_SETTING.o
+ .debug_loc     0x00000083      0x42a obj/default/LCD.o
+ .debug_loc     0x000004ad       0x96 obj/default/resolver.o
+ .debug_loc     0x00000543      0x1d2 d:/install/quartus_13/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2\libgcc.a(lib2-divmod.o)
+ .debug_loc     0x00000715       0x1f ../ASK2_bsp\libhal_bsp.a(alt_load.o)
+ .debug_loc     0x00000734       0x1f ../ASK2_bsp\libhal_bsp.a(alt_main.o)
+ .debug_loc     0x00000753       0x32 ../ASK2_bsp\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x00000785       0x13 ../ASK2_bsp\libhal_bsp.a(alt_icache_flush.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_alt_sim_info
+                0x00000000       0x20
+ *(.debug_alt_sim_info)
+ .debug_alt_sim_info
+                0x00000000       0x20 ../ASK2_bsp/obj/HAL/src/crt0.o
+                0x00003fa0                __alt_data_end = 0x3fa0
+                0x00003fa0                PROVIDE (__alt_stack_pointer, __alt_data_end)
+                0x00002eec                PROVIDE (__alt_stack_limit, __alt_stack_base)
+                0x00002eec                PROVIDE (__alt_heap_start, end)
+                0x00003fa0                PROVIDE (__alt_heap_limit, 0x3fa0)
+OUTPUT(ASK2.elf elf32-littlenios2)
+
+.debug_ranges   0x00000000       0x20
+ .debug_ranges  0x00000000       0x20 ../ASK2_bsp/obj/HAL/src/crt0.o

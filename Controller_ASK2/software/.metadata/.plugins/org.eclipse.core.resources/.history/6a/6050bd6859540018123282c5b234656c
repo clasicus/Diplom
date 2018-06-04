@@ -1,0 +1,296 @@
+#include "sys/alt_stdio.h"
+#include "alt_types.h"
+#include <io.h>
+#include "altera_avalon_pio_regs.h"
+#include "system.h"
+#include "ACK2_main.h"
+#include "LCD.h"
+#include "resolver.h"
+//alt_16 X[10];
+// alt_32 Y[10];
+//alt_16 position;
+int main()
+{ 
+  //int count = 0;
+  //int delay;
+  alt_putstr("Hello from Nios II!\n");
+  alt_8 Vcc;
+  alt_8 LED;
+  alt_u8 fault_reg;
+  alt_16 resolver_angle;
+  alt_32 timer;
+  alt_16 Angle_norm;
+  alt_u8 k;
+  //инициализация
+  Resolver_initialization();
+  // выставляем выводы SAMPLE в 0
+ IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NSAMPLE_BASE,0);
+ //задержка на 2 us (1 такт процессора 20 нс)после сброса SAMPLE до поднятия SAMPLE
+ 	Delay_for_microsec (2);
+ // выставляем выводы SAMPLE в 1
+  IOWR_ALTERA_AVALON_PIO_DATA(PIO_RES_NSAMPLE_BASE,1);
+  //задержка на 2 us (1 такт процессора 20 нс)после сброса SAMPLE до поднятия CS
+   	Delay_for_microsec (2);
+  //чтение регистра ошибки
+ fault_reg= Resolver_read_byte_config_mode (RES_ADDR_FAULT_REG);
+ //если регистр не выдает ошибку, то читаем угол с резольвера
+ //if (fault_reg == 0) 	//читаем угол с резольвера
+ resolver_angle=Resolver_read_position_in_normal_mode();
+ //else 	 resolver_angle= Resolver_read_position_in_normal_mode;
+ timer=0;
+ if (k==0)
+    {
+          Angle_norm=0;
+          resolver_angle=Resolver_read_position_in_normal_mode();
+  //вывести на ЖКИ значение угла
+  /* Выводим на ЖКИ-индикатор углы с устройства управления резольверами
+    				   * (переведенный из 16-разрядного кода в угол
+    				   * (код*100(с двумя знаками после запятой)*360/65535,в первую строчку с 10-ой позиции
+    				   * с двумя знаками после запятой   				   */
+
+    				    //temp = PIO_2_ANGLE_BASE*100*360/65535;
+    	  LCD_print_digital_number_on_screen (resolver_angle*100*360/65535,9,2);
+           k=k+1;
+    }
+ else
+    {
+ //задержка 0,5с
+	while(timer==500000000)
+	{
+ 	//проверка SW_5" (ждем удержание клавиши)
+  	  if (SW5_MASK||IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)==0x0)
+  	  {
+  				  	   Angle_norm++;
+  	//вывести на ЖКИ значение угла
+  	  /* Выводим на ЖКИ-индикатор углы с устройства управления резольверами
+  	    				   * (переведенный из 16-разрядного кода в угол
+  	    				   * (код*100(с двумя знаками после запятой)*360/65535,в первую строчку с 10-ой позиции
+  	    				   * с двумя знаками после запятой   				   */
+
+  	    				    //temp = PIO_2_ANGLE_BASE*100*360/65535;
+  	    	  LCD_print_digital_number_on_screen (resolver_angle*100*360/65535,9,2);
+  	    	  timer=0;
+  	  }//проверка SW_6" (ждем удержание клавиши)
+  	    	  else if (SW6_MASK||IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)==0x0)
+  	    	  {
+  				  		Angle_norm=Angle_norm-1;
+  			  LCD_print_digital_number_on_screen (resolver_angle*100*360/65535,9,2);
+  		      timer=0;
+  	    	  }
+  	    	 if (((SW5_MASK||(IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)))==0x01)&&((SW6_MASK||IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)==0x01)))
+  	    			timer=500000000;
+  	    			else
+  	    				timer=0;
+	}
+
+  LED=0;
+  Vcc=0;
+  timer=0;
+  while (timer==25000000)	//проверка SW_3" (ждем удержание клавиши)
+   				  {
+   				  	  timer++;
+   				  	  if (IORD_ALTERA_AVALON_PIO_DATA(PIO_SW_3_BASE)==0x1)
+   				  	  {
+   				  		  timer=0;
+   				  	  }
+   				  }
+  IOWR_ALTERA_AVALON_PIO_DATA(PIO_VCC_BASE,Vcc);
+  IOWR_ALTERA_AVALON_PIO_DATA(PIO_LED_BASE,LED);
+
+  LCD_INITIALIZATION();
+
+  while(1)
+  {
+	  //проверка подключен ли прибор управления резольвером
+  	  if (IORD_ALTERA_AVALON_PIO_DATA(PIO_CONNECT1_BASE)==0x0)
+  	    {
+  		   //проверка подключен ли прибор управления приводом
+  		   if (IORD_ALTERA_AVALON_PIO_DATA(PIO_CONNECT2_BASE)==0x01)
+  			 {
+  			   // включить диод LED2 таймер=0
+  			   Vcc=0;
+  			   LED= !MASK_D2||LED;
+  			   IOWR_ALTERA_AVALON_PIO_DATA(PIO_VCC_BASE,Vcc);
+  			   IOWR_ALTERA_AVALON_PIO_DATA(PIO_LED_BASE,LED);
+  			   Out_SET_SW2(); //вывести на ЖКИ предупреждение 2
+  			   timer=0;
+
+            //проверка SW_2" (ждем нажатие клавиши)
+  			  while(timer==25000000)
+  			   {
+  				timer++;
+  				if (IORD_ALTERA_AVALON_PIO_DATA(PIO_SW_2_BASE)==0x01)
+  				{
+  					timer=0;
+  				}
+  			   }
+  			   //подать питание на устройство управления резольверами
+  			   //включить диод LED3
+  			  timer=0;
+  			  LED=!MASK_D3||LED;
+  			  IOWR_ALTERA_AVALON_PIO_DATA(PIO_LED_BASE,LED);
+  			  Vcc=E1_E2MASK||Vcc;
+  			  IOWR_ALTERA_AVALON_PIO_DATA(PIO_VCC_BASE,Vcc);
+
+  			  //Out_EXIT_to_SET_SW1_or_SW3();
+  			  //Out_Angle_Y();
+  			  //Out_Angle_Z();
+
+  			  while (timer==250000)
+  			   {
+  				   /* Выводим на ЖКИ-индикатор углы с устройства управления резольверами
+  				   * (переведенный из 16-разрядного кода в угол
+  				   * (код*100(с двумя знаками после запятой)*360/65535,в первую строчку с 10-ой позиции
+  				   * с двумя знаками после запятой
+  				   */
+
+  				    //temp = PIO_2_ANGLE_BASE*100*360/65535;
+  				    LCD_print_digital_number_on_screen (IORD_ALTERA_AVALON_PIO_DATA(PIO_2_ANGLE_BASE)*100*360/65535,9,2);
+  				    //temp = PIO_3_ANGLE_BASE*100*360/65535;
+  				    LCD_print_digital_number_on_screen (IORD_ALTERA_AVALON_PIO_DATA(PIO_3_ANGLE_BASE)*100*360/65535,64+9,2);
+
+  					timer++;
+  					if ((IORD_ALTERA_AVALON_PIO_DATA(PIO_SW_1_BASE)==0x01)&&(IORD_ALTERA_AVALON_PIO_DATA(PIO_SW_3_BASE)==0x01))
+  					{
+  						timer=0;
+  					}
+  			   }
+
+  			  // Завершение работы с блоком
+  			  //выключаем диод LED2,LED3,отключить питание,таймер=0
+  			  LED=0;
+  			  Vcc=0;
+  			  IOWR_ALTERA_AVALON_PIO_DATA(PIO_LED_BASE,LED);
+  			  IOWR_ALTERA_AVALON_PIO_DATA(PIO_VCC_BASE,Vcc);
+  			  timer=0;
+  			 }
+
+  			else	// Подключены оба устройства
+  			{
+  				Out_EROOR_CONECT();//ошибка подключения, предупреждение №1
+  			}
+
+  	  	/**************************************************************
+  	  		Режим проверки устройства управления резольверами завершон
+  	  	***************************************************************/
+  	    }
+  	    //если прибор управления резольвером не подключен
+  	    else		//проверка подключен ли прибор управления приводом
+  	    {
+  		  if (IORD_ALTERA_AVALON_PIO_DATA(PIO_CONNECT2_BASE)==0x0)
+  		  {
+  			  //включить диод LED4
+  			  Vcc=0;
+  			  IOWR_ALTERA_AVALON_PIO_DATA(PIO_VCC_BASE,Vcc);
+  			  LED=!MASK_D4||LED;
+  			  IOWR_ALTERA_AVALON_PIO_DATA(PIO_LED_BASE,LED);
+  			  Out_SET_SW3();//вывести на ЖКИ предупреждение №3
+  			  timer=0;
+
+  			  while (timer==25000000)	//проверка SW_3" (ждем удержание клавиши)
+  				  {
+  				  	  timer++;
+  				  	  if (IORD_ALTERA_AVALON_PIO_DATA(PIO_SW_3_BASE)==0x1)
+  				  	  {
+  				  		  timer=0;
+  				  	  }
+  				  }
+  			  //подать питание на прибор управления приводом и включить диод LED5
+  			  Vcc=E3_E4MASK||Vcc;
+  			  IOWR_ALTERA_AVALON_PIO_DATA(PIO_VCC_BASE,Vcc);
+  			  LED=!MASK_D5||LED;
+  			  IOWR_ALTERA_AVALON_PIO_DATA(PIO_LED_BASE,LED);
+  			  timer=0;
+
+  			  //Out_EXIT_to_SET_SW1_or_SW2();
+  			  //Out_Angle_X();
+
+  			  while(timer==2500000)	//проверка SW_1 или SW_2(ждем удержание клавиши)
+  			  {
+  				  /* Выводим на ЖКИ-индикатор угл с прибора управления приводом
+  				   * (переведенный из 16-разрядного кода в угол
+  				   * (код*100(с двумя знаками после запятой)*360/65535,в первую строчку с 10-ой позиции
+  				   * с двумя знаками после запятой
+  				   */
+
+  				  //temp = PIO_3_ANGLE_BASE*100*360/65535;
+  				  LCD_print_digital_number_on_screen (IORD_ALTERA_AVALON_PIO_DATA(PIO_3_ANGLE_BASE)*100*360/65535,9,2);
+  				  timer++;
+  				  if ((IORD_ALTERA_AVALON_PIO_DATA(PIO_SW_1_BASE)==0x1)&&(IORD_ALTERA_AVALON_PIO_DATA(PIO_SW_2_BASE)==0x1))
+  				  {
+  					  timer=0;
+  				  }
+  			  }
+  			  //выключаем диод LED4,LED5,отключить питание,таймер=0
+  			  LED = 0;
+  			  IOWR_ALTERA_AVALON_PIO_DATA(PIO_LED_BASE,LED);
+  			  Vcc = 0;
+  			  IOWR_ALTERA_AVALON_PIO_DATA(PIO_VCC_BASE,Vcc);
+  			  timer=0;
+  		  }
+  		  /************************************************************
+  		  		Режим проверки прибора управления приводом завершон
+  		  *************************************************************/
+  		  //если приборы управления приводом и резольвером не подключены
+  		  else
+  		  {
+  			  LED = 0;
+  			  IOWR_ALTERA_AVALON_PIO_DATA(PIO_LED_BASE,LED);
+  			  Vcc = 0;
+  			  IOWR_ALTERA_AVALON_PIO_DATA(PIO_VCC_BASE,Vcc);
+  			  Out_SET_SW1();// предупреждение №4
+  			  timer=0;
+  			  while (timer==25000000)	//проверка SW_1" (ждем удержание клавиши)
+  			  {
+  				  timer++;
+  				  if (IORD_ALTERA_AVALON_PIO_DATA(PIO_SW_1_BASE)==0x1)
+  				  {
+  					  timer=0;
+  				  }
+  			  }
+  			  LED=!MASK_D1||LED;
+  			  IOWR_ALTERA_AVALON_PIO_DATA(PIO_LED_BASE,LED);
+
+  			  //Out_EXIT_to_SET_SW2_or_SW3();
+  			  //Out_Angle();
+
+  			  while(timer==2500000)	//проверка SW_2 или SW_3(ждем удержание клавиши)
+  			  {
+  				  /* Выводим на ЖКИ-индикатор угл с датчика
+  				   * (переведенный из 16-разрядного кода в угол
+  				   * (код*100(с двумя знаками после запятой)*360/65535,в первую строчку с 10-ой позиции
+  				   * с двумя знаками после запятой
+  				   */
+
+  				  //temp = PIO_1_ANGLE_BASE*100*360/65535;
+  				  LCD_print_digital_number_on_screen (IORD_ALTERA_AVALON_PIO_DATA(PIO_1_ANGLE_BASE)*100*360/65535,9,2);
+
+  				  timer++;
+  				  if ((IORD_ALTERA_AVALON_PIO_DATA(PIO_SW_2_BASE)==0x1)&&(IORD_ALTERA_AVALON_PIO_DATA(PIO_SW_3_BASE)==0x1))
+  				  {
+  					  timer=0;
+  				  }
+  			  }
+  			  //выключаем диод LED1
+  			  LED = 0;
+  			  IOWR_ALTERA_AVALON_PIO_DATA(PIO_LED_BASE,LED);
+  			  Vcc = 0;
+  			  IOWR_ALTERA_AVALON_PIO_DATA(PIO_VCC_BASE,Vcc);
+  			  timer=0;
+  		  }
+  	  }
+  	  return 0;
+  }	//END WHILE(1)
+} //END MAIN()
+void Delay_for_microsec (alt_u32 amount_us)
+ {
+    int i;
+
+ //дисассемблирование показало,что процессор на выполнение этого цикла тратит 9 тактов
+   // время одного такта CPU_CYCLE_DELAY_nS =20нс, поэтому время выполнения цикла = 20*9=190нс
+   //amount_us-количество микросекунд задержки.Минимальная задержка 1 микросекунда.
+   // (1000*MILI/(DELAY_KOEFF))-пример задания аргумента функции , если необходима задержка
+   //в микросекундах, то (число*MICRO/(DELAY_KOEFF))
+
+      for (i=0;i<(amount_us);i++);
+  }

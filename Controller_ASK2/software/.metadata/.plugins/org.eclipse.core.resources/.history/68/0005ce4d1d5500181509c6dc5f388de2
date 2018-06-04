@@ -1,0 +1,132 @@
+/*
+ * SETTING.c
+ *
+ *  Created on: 10.05.2018
+ *      Author: ilnitskaya-ll
+ */
+#include "sys/alt_stdio.h"
+#include "alt_types.h"
+#include <io.h>
+#include "altera_avalon_pio_regs.h"
+#include "system.h"
+#include "ACK2_main.h"
+#include "LCD.h"
+#include "resolver.h"
+#include "ANGLE_SETTING.h"
+//функция настройки угла
+alt_16 ANGLE_SETTING(alt_16 k)
+{
+alt_u32 timer;
+timer=0;
+alt_16 resolver_angle;
+alt_u32 perem_cycla;
+perem_cycla=0;
+if (perem_cycla==0)
+    {
+    //задержка 0,5с
+	while(timer==250000000)timer++;
+	//проверка SW_5" (ждем удержание клавиши)
+  	  if (SW5_MASK||IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)==0x0)
+  	  {
+  				  	   Angle_norm++;
+  	//вывести на ЖКИ значение угла
+  	  /* Выводим на ЖКИ-индикатор углы с устройства управления резольверами
+  	    				   * (переведенный из 16-разрядного кода в угол
+  	    				   * (код*100(с двумя знаками после запятой)*360/65535,в первую строчку с 10-ой позиции
+  	    				   * с двумя знаками после запятой   				   */
+
+  	    				    //temp = PIO_2_ANGLE_BASE*100*360/65535;
+  	    	  LCD_print_digital_number_on_screen (Angle_norm*100*360/65535,9,2);
+  	  }//проверка SW_6" (ждем удержание клавиши)
+  	    	  else if (SW6_MASK||IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)==0x0)
+  	    	  {
+  				  		Angle_norm=Angle_norm-1;
+  			  LCD_print_digital_number_on_screen (Angle_norm*100*360/65535,9,2);
+  		       }
+  	    	 if (((SW5_MASK||(IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)))==0x01)&&((SW6_MASK||IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)==0x01)))
+  	    		perem_cycla=1;
+  	    			else
+  	    		perem_cycla=0;
+	}
+	return (Angle_norm);
+ }
+ //конец функции  alt_16 ANGLE_SETTING(alt_16 k)
+alt_16 CURRENT_SETTING(alt_16 k)
+{
+alt_u32 timer;
+timer=0;
+ //задержка 0,5с
+	while(timer==500000000)
+	{
+ 	//проверка SW_5" (ждем удержание клавиши)
+  	  if (SW5_MASK||IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)==0x0)
+  	  {
+  		Current_norm++;
+  	//вывести на ЖКИ значение угла
+  	  /* Выводим на ЖКИ-индикатор углы с устройства управления резольверами
+  	    				   * (переведенный из 16-разрядного кода в угол
+  	    				   * (код*100(с двумя знаками после запятой)*360/65535,в первую строчку с 10-ой позиции
+  	    				   * с двумя знаками после запятой   				   */
+
+  	    				    //temp = PIO_2_ANGLE_BASE*100*360/65535;
+  	    	  LCD_print_digital_number_on_screen (Current_norm*100*360/65535,9,2);
+  	    	  timer=0;
+  	  }//проверка SW_6" (ждем удержание клавиши)
+  	    	  else if (SW6_MASK||IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)==0x0)
+  	    	  {
+  	    		Current_norm=Current_norm-1;
+  			  LCD_print_digital_number_on_screen (Current_norm*100*360/65535,9,2);
+  		      timer=0;
+  	    	  }
+  	    	 if (((SW5_MASK||(IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)))==0x01)&&((SW6_MASK||IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)==0x01)))
+  	    			timer=500000000;
+  	    			else
+  	    				timer=0;
+	}
+    }
+	return (Current_norm);
+    }
+    //конец функции  alt_16 CURRENT_SETTING(alt_16 k)
+alt_16 MODE_FORMATION(void)
+{
+	alt_32 timer;
+if (SW2_MASK||IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)==0x1)
+  			   {
+  				  		  if(SW1_MASK||IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)==0x0)
+  				  		  {
+  				  			  //установить режим работа setting_mode=1
+  				  		        setting_mode=1;
+  				  		   //включить диод LED1
+  				  		     IOWR_ALTERA_AVALON_PIO_DATA(PIO_LED2_LED1_BASE,0x1);
+  				  		   //установить начальные значения
+  				  		while (timer==25000000)	//проверка SW_1" (ждем удержание клавиши)
+  				  		{
+
+  				  	 if (SW1_MASK||IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)==0x0)
+  				  		timer=0;
+  				  	 else
+  				  	   timer++;
+  				  	    }
+  				  		//отображение режима работа на ЖКИ дисплее
+  				  	 Out_WORKING();
+  			  	  }  				  		    				  	  }
+  		else
+  				  {
+  				  	     //установить режим настройка setting_mode=0
+  				  	       setting_mode=0;
+  				  	   	 //выключить диод LED1 и включить диод LED2
+  				  	   	   IOWR_ALTERA_AVALON_PIO_DATA(PIO_LED2_LED1_BASE,0x2);
+  				  	  if (SW3_MASK||IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)==0x1)
+  				  	  {
+  				  		  if (SW4_MASK||IORD_ALTERA_AVALON_PIO_DATA(PIO_KEYBOARD_SW6_SW1_BASE)==0x0)
+  				   //установить режим "настройка тока"
+  				  			 setting_mode=2;
+  				  	  }
+  				  	  else
+  				  //установить режим "настройка угла"
+  				  			  setting_mode=3;
+  				    }
+  		return (setting_mode);
+   }
+ //конец функции alt_u8 MODE_FORMATION(void)
+

@@ -1,0 +1,79 @@
+#ifndef RESOLVER_H_
+#define RESOLVER_H_
+
+// маска вывода CS0 порта pio
+#define RESOLVER_CS0_MASK 1 
+//  маска вывода CS1 порта pio
+#define RESOLVER_CS1_MASK 2
+// маска вывода CS2 порта pio
+//#define RESOLVER_CS2_MASK 4 
+////  маска вывода CS3 порта pio
+//#define RESOLVER_CS3_MASK 8
+// маска вывода SAMPLE порта pio
+#define RESOLVER_SAMPLE_MASK 4
+// маска  выбора первого резольвера порта pio
+#define RESOLVER_1RES_MASK 1 
+// маска  выбора второго резольвера порта pio
+#define RESOLVER_2RES_MASK 2
+// маска  выбора  первого EEPROM порта pio
+#define RESOLVER_CS_EPROM1_MASK 2
+// маска  выбора  второго EEPROM порта pio
+#define RESOLVER_CS_EPROM2_MASK 8
+// маска  не выбирающая ничего из порта pio
+#define RESOLVER_CS_NOTHING 7 //(0|RESOLVER_CS0_MASK|RESOLVER_CS1_MASK|RESOLVER_CS2_MASK|RESOLVER_CS3_MASK)
+// маска,включающая мультиплексор для передачи первого резольвера RESOLVER0
+#define RESOLVER_MUX_RESOLVER0_MASK   0
+// маска,включающая мультиплексор для передачи второго резольвера RESOLVER1
+#define RESOLVER_MUX_RESOLVER1_MASK   1
+#define RESOLVER_HIGH_BIT        0x8000
+//маска, выставляющая А1А0 в режим конфигурации
+#define A1_A0_MASK_CONFIGURATION_MODE  3 //00011
+#define A1_A0_MASK_NORMAL_MODE_POSITION 0
+#define A1_A0_MASK_NORMAL_MODE_VELOCITY 1
+#define ANGLE_DIRECTION_16BIT_OUTPUT_MASK 0xFFFF
+#define ANGLE_DIRECTION_16BIT_INTPUT_MASK 0
+
+// адреса регистров резольвера ADS1210
+#define RES_ADDR_POSITION_REG_H               0x80        
+#define RES_ADDR_POSITION_REG_L               0x81 
+#define RES_ADDR_VELOCITY_REG_H               0x82 
+#define RES_ADDR_VELOCITY_REG_L               0x83
+#define RES_ADDR_LOS_THRESHOLD_REG            0x88
+#define RES_ADDR_DOS_OVERRANGE_THRESHOLD_REG  0x89
+#define RES_ADDR_DOS_MISMATCH_THRESHOLD_REG   0x8A
+#define RES_ADDR_DOS_RESET_MAX_THRESHOLD_REG  0x8B
+#define RES_ADDR_DOS_RESET_MIN_THRESHOLD_REG  0x8C
+#define RES_ADDR_LOT_HIGH_THRESHOLD_REG       0x8D
+#define RES_ADDR_LOT_LOW_THRESHOLD_REG        0x8E
+#define RES_ADDR_EXCITATION_FREQUENCY_REG     0x91
+#define RES_ADDR_CONTROL_REG                  0x92
+#define RES_ADDR_SOFT_RESET_REG               0xF0
+#define RES_ADDR_FAULT_REG                    0xFF       
+
+
+//Функция, записывающая в порт   resolver байт
+// данных-8 бит для режима конфигурации
+void Resolver_write_byte_config_mode (alt_u8 address,alt_u8 data);
+//Функция, считывающая из порта  spi resolver байт
+// данных-8 бит для режима конфигурации   
+alt_u8 Resolver_read_byte_config_mode (alt_u8 address);
+//функция, инициализации и конфигурации резольверов
+alt_u8 Resolver_initialization();
+//функция, читающая информацию с резольвера, номер резольвера задается SPI_RESOLVER1_BASE-первый резольвер
+//SPI_RESOLVER2_BASE-второй резольвер
+alt_u8 Resolver_reading (alt_u8 resolver_number); 
+//struct resolver_struct
+//  alt_16 position;
+//   alt_16 velocity;
+ //  alt_u8  fault;
+void Resolver_read_position_in_normal_mode (alt_16 *position);
+ 
+
+//void Resolver_read_position_in_normal_mode (struct resolver_struct *p);
+
+
+//extern struct resolver_struct resolver_data_y ;
+//extern struct resolver_struct resolver_data_z;
+
+#endif /*RESOLVER_H_*/
+

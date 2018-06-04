@@ -1,0 +1,271 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "05/02/2018 12:21:53"
+                                                                                
+// Verilog Test Bench template for design : AD7687
+// 
+// Simulation tool : ModelSim (Verilog)
+// 
+
+`timescale 1 ns/ 1 ps
+module AD7687_vlg_tst();
+// constants                                           
+// general purpose registers
+reg eachvec;
+// test vector input registers
+reg CLK = 0;
+reg DATA_IN = 0;
+reg RESET = 0;
+// wires                                               
+wire CNV;
+wire [15:0]  DATA_OUT_DAC;
+wire SCK;
+wire [15:0]  SHIFT_REG_REC;
+wire [4:0]  ST;
+wire [1:0]  port_a;
+wire [4:0]  port_b;
+wire sr_out;
+
+// assign statements (if any)                          
+AD7687 i1 (
+// port map - connection between master ports and signals/registers   
+	.CLK(CLK),
+	.CNV(CNV),
+	.DATA_IN(DATA_IN),
+	.DATA_OUT_DAC(DATA_OUT_DAC),
+	.RESET(RESET),
+	.SCK(SCK),
+	.SHIFT_REG_REC(SHIFT_REG_REC),
+	.ST(ST),
+	.port_a(port_a),
+	.port_b(port_b),
+	.sr_out(sr_out)
+);
+initial                                                
+begin                                                  
+// code that executes only once                        
+// insert code here --> begin 
+#100; RESET = 1;                         
+ #200 DATA_IN=1;
+// #1000000 DATA_IN=1;
+// #200 DATA_IN=0;
+                                                       
+// --> end                                             
+$display("Running testbench");                       
+end 
+//reg[3:0] count=0;
+//reg[5:0] count_1=0;
+reg[15:0]  shift_reg=0;  
+reg[13:0] k=0; 
+reg[15:0] b=16'hAAAA;                                            
+//always @(posedge CLK)
+//begin
+//   if(CNV) // cnv = 1
+ // begin  
+  // BUSY = 1'b1;
+  // count <= 0;
+  //end
+
+ //else // cnv = 0
+ // begin 
+  // if (count == 8)
+  //  BUSY  <= 1'b0;
+   //else 
+   // count <= count + 1;
+  //end
+//end                               
+//always                                                 
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn)                  
+//begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin 
+//end 
+always @(negedge SCK or !RESET or negedge CNV)
+begin
+	if(!RESET)		
+			shift_reg[15:0]<=0;	  
+	  else if(!CNV)
+	    begin
+	  	    case(k)
+		    17:k=8'hAA;
+		    8'hBB: k=8'hFF;
+		    8'hFF: k=8'hBB;
+		    8'hBB: k=17;		   
+		     default:
+						 k=0;
+				endcase  
+			shift_reg[15:0]<=b+k;	
+			DATA_IN=1;	
+			end				
+	else
+begin
+   // shift_reg[15:0]<= {shift_reg[15:0], 1.b0};
+          shift_reg[0]<=0;
+          shift_reg[15:1]<=shift_reg[14:0];    
+         DATA_IN<=shift_reg[15];
+         k=k+1;
+end     
+  end  
+always                 
+begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin          
+  #100; CLK = ~CLK;
+  
+ end                                                    
+endmodule
+                                                       
+// @eachvec;                                              
+// --> end                                             
+                                     
+                                                       
+//@eachvec;                                              
+// --> end                                             
+
+//`timescale 1 ns/ 1 ps
+//module ADC_READ_vlg_tst();
+// constants                                           
+// general purpose registers
+// reg eachvec;
+// test vector input registers
+//reg BUSY = 1'b0;
+//reg CLK = 1'b0;
+//reg RESET = 1'b1;
+//reg SDO_ADC;
+// wires                                               
+//wire CNV;
+//wire [7:0]  CONFIGURATION_WORD;
+//wire [3:0]  DATA_A;
+//wire [7:0]  DATA_C7_C0;
+//wire [15:0]  DATA_OUT_DAC;
+//wire [15:0]  DATA_OUT_DAC1;
+//wire [15:0]  DATA_OUT_DAC2;
+//wire [15:0]  DATA_OUT_DAC3;
+//wire [1:0]  DATA_R1_R0;
+//wire DATA_SOS;
+//wire RDL;
+//wire RESET_OUT;
+//wire SCK;
+//wire SDI_ADC;
+//wire [23:0]  SHIFT_REG_REC;
+//wire [7:0]  SHIFT_REG_TRANS;
+//wire [4:0]  ST;
+//wire [1:0]  port_a;
+//wire [4:0]  port_b;
+//wire sr_out;
+
+// assign statements (if any)                          
+///ADC_READ i1 (
+// port map - connection between master ports and signals/registers   
+//	.BUSY(BUSY),
+//	.CLK(CLK),
+//	.CNV(CNV),
+//	.CONFIGURATION_WORD(CONFIGURATION_WORD),
+	//.DATA_A(DATA_A),
+//	.DATA_C7_C0(DATA_C7_C0),
+//	.DATA_OUT_DAC(DATA_OUT_DAC),
+//	.DATA_OUT_DAC1(DATA_OUT_DAC1),
+//	.DATA_OUT_DAC2(DATA_OUT_DAC2),
+///	.DATA_OUT_DAC3(DATA_OUT_DAC3),
+//	.DATA_R1_R0(DATA_R1_R0),
+//	.DATA_SOS(DATA_SOS),
+//	.RDL(RDL),
+	//.RESET(RESET),
+	//.RESET_OUT(RESET_OUT),
+	//.SCK(SCK),
+	//.SDI_ADC(SDI_ADC),
+	//.SDO_ADC(SDO_ADC),
+	//.SHIFT_REG_REC(SHIFT_REG_REC),
+	//.SHIFT_REG_TRANS(SHIFT_REG_TRANS),
+//	.ST(ST),
+//	.port_a(port_a),
+	//.port_b(port_b),
+//	.sr_out(sr_out)
+//);
+//initial                                                
+//begin
+//SDO_ADC<=0;                                                  
+// code that executes only once                        
+// insert code here --> begin 
+
+// #2000; BUSY = 1'b0; 
+// end
+// --> end                                             
+//$display("Running testbench");                       
+//end  
+//reg[3:0] count=0;
+//reg[5:0] count_1=0;
+//reg[23:0]  shift_reg=15;  
+//reg[13:0] k=100000; 
+//reg[23:0] b=15790095;                                            
+//always @(posedge CLK)
+//begin
+ // if(CNV) // cnv = 1
+  //begin  
+  // BUSY = 1'b1;
+   //count <= 0;
+ // end
+
+ //else // cnv = 0
+ // begin 
+ //  if (count == 8)
+  //  BUSY  <= 1'b0;
+ //  else 
+   // count <= count + 1;
+ // end
+//end
+//always @(posedge SCK or !RESET or posedge CNV)
+//begin
+	//if(!RESET)		
+	//		shift_reg[23:0]<=0;	  
+	//	  else if(CNV)	
+	//	  begin	
+	//	    case(k)
+		//    0:k=`C1;
+		//    `C1: k=`C2;
+		  //  `C2: k=`C3;
+		  //  `C3: k=`C1;		   
+		  //   default:
+			//			 k=0;
+			//		endcase  
+		//	shift_reg[23:0]<=b+k;
+		//	end	  
+		//  else
+		//	begin
+   // shift_reg[23:0]<= {shift_reg[22:0], 1.b0};
+      //    shift_reg[0]<=0;
+      ///    shift_reg[23:1]<=shift_reg[22:0];    
+      //    SDO_ADC<=shift_reg[23];
+        //  end     
+  //end  
+// optional sensitivity list                           
+// @(event1 or event2 or .... eventn) 
+//always                 
+//begin                                                  
+// code executes for every event on sensitivity list   
+// insert code here --> begin          
+ // #100; CLK = ~CLK;
+                                                       
+// @eachvec;                                              
+// --> end                                             
+///end                                                    
+//endmodule
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable>
+  <columns>
+   <connections preferredWidth="127" />
+   <irq preferredWidth="34" />
+   <name preferredWidth="207" />
+   <export preferredWidth="199" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="270" />
+   <clocksource preferredWidth="270" />
+   <frequency preferredWidth="252" />
+  </columns>
+ </clocktable>
+ <library expandedCategories="Library,Project" />
+ <window width="1104" height="800" x="-96" y="131" />
+ <generation path="cpu_ASK2" simulation="VERILOG" />
+</preferences>

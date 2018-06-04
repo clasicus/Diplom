@@ -1,0 +1,143 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\work\RADIONIX\KOORDINATOR\ALTERA_13\Controller_ASK2\AD7687\simulation\modelsim
+vAD7687
+IVT[;0<Xi7ji]nOeIfKz;L0
+VDl;nRYJU15=3V69f:Slj^3
+Z1 dD:\work\RADIONIX\KOORDINATOR\ALTERA_13\Controller_ASK2\AD7687\simulation\modelsim
+w1525943910
+8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/AD7687.v
+FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/AD7687.v
+L0 3
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+n@a@d7687
+!i10b 1
+!s100 ka35894RRRCD8T:^l25@S1
+!s85 0
+!s108 1527675162.504000
+!s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/AD7687.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/AD7687.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687 -O0
+vAD7687_vlg_tst
+!i10b 1
+!s100 oliil`g]LWHHPTfbeA@6_1
+I`<n2k^83zN05NIB:e=UIX1
+VnQ]Pmz6]7[Oe;z7iCDlic1
+R1
+w1525335842
+8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/simulation/modelsim/AD7687.vt
+FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/simulation/modelsim/AD7687.vt
+L0 28
+R2
+r1
+!s85 0
+31
+!s108 1527675168.253000
+!s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/simulation/modelsim/AD7687.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/simulation/modelsim|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/simulation/modelsim/AD7687.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/simulation/modelsim -O0
+n@a@d7687_vlg_tst
+Epll0
+Z4 w1525422042
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+R1
+Z7 8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/pll0.vhd
+Z8 FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/pll0.vhd
+l0
+L42
+VPY34>HdR^HH3GRiKb3Q;l1
+Z9 OV;C;10.1d;51
+31
+Z10 !s108 1527675168.109000
+Z11 !s90 -reportprogress|300|-93|-work|work|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/pll0.vhd|
+Z12 !s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/pll0.vhd|
+Z13 o-93 -work work -O0
+Z14 tExplicit 1
+!s100 0VAl>l`m<YTIc9:Tj=9S>3
+!i10b 1
+Asyn
+R5
+R6
+DEx4 work 4 pll0 0 22 PY34>HdR^HH3GRiKb3Q;l1
+l141
+L54
+V;bO;`:=e6zhW;5JB>fBGm3
+R9
+31
+R10
+R11
+R12
+R13
+R14
+!s100 ;gkV3M3gMP8iJh21;3<dQ3
+!i10b 1
+vpll0_altpll
+I7KS^eY[obj542zSGZQ;9h0
+Vm8lPJ2UiK7z>4EhPK@@1`2
+R1
+w1525360172
+8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/pll0_altpll.v
+FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/pll0_altpll.v
+L0 29
+R2
+r1
+31
+R3
+!i10b 1
+!s100 Hm[WRQ4BoPbT^e9ZDZjd>3
+!s85 0
+!s108 1527675162.761000
+!s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/pll0_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db/pll0_altpll.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/db -O0
+vpwm_ver
+IeA?bRS@0LWfdlh1O=SH8f2
+V;c=U^2ABzV34V=^^KeT:M1
+R1
+w1525957256
+8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/PWM_ver/pwm_ver.v
+FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/PWM_ver/pwm_ver.v
+L0 1
+R2
+r1
+31
+R3
+!i10b 1
+!s100 hgN;OdjWWeha`UDEIfeX52
+!s85 0
+!s108 1527675162.383000
+!s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/PWM_ver/pwm_ver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/PWM_ver|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/PWM_ver/pwm_ver.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/PWM_ver -O0
+vREST_Global
+IDQDiVhk`cD>WCHG1lo>b30
+VZzL^g^C3=F^oIhzFfdgYK1
+R1
+w1527674527
+8D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/REST_Global.v
+FD:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/REST_Global.v
+L0 10
+R2
+r1
+31
+R3
+n@r@e@s@t_@global
+!i10b 1
+!s100 XfJ]HfGF?nXCN=>nzafUH0
+!s85 0
+!s108 1527675162.650000
+!s107 D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/REST_Global.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2|D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/REST_Global.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2 -O0

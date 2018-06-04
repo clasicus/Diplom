@@ -1,0 +1,376 @@
+Info: Starting: Create simulation model
+Info: ip-generate --project-directory=D:/Controller_ASK2/Nios_cpu/ --output-directory=D:/Controller_ASK2/Nios_cpu/cpu_ASK2/simulation/ --file-set=SIM_VERILOG --report-file=sopcinfo:D:/Controller_ASK2/Nios_cpu/cpu_ASK2.sopcinfo --report-file=html:D:/Controller_ASK2/Nios_cpu/cpu_ASK2.html --report-file=sip:D:/Controller_ASK2/Nios_cpu/cpu_ASK2/simulation/cpu_ASK2.sip --report-file=csv:D:/Controller_ASK2/Nios_cpu/cpu_ASK2.csv --report-file=spd:D:/Controller_ASK2/Nios_cpu/cpu_ASK2.spd --report-file=cmp:D:/Controller_ASK2/Nios_cpu/cpu_ASK2.cmp --system-info=DEVICE_FAMILY="Cyclone III" --system-info=DEVICE=EP3C25E144I7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=D:/Controller_ASK2/Nios_cpu/cpu_ASK2.qsys
+Progress: Loading Nios_cpu/cpu_ASK2.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 13.0.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 13.0.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding pio_angle [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_angle
+Progress: Adding pio_lcd_data [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_lcd_data
+Progress: Adding pio_lcd_control [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_lcd_control
+Progress: Adding pio_res_nWr [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_res_nWr
+Progress: Adding pio_res_nRd [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_res_nRd
+Progress: Adding pio_res_nSample [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_res_nSample
+Progress: Adding pio_res_nSOE [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_res_nSOE
+Progress: Adding pio_res_nCS [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_res_nCS
+Progress: Adding pio_A1_A0 [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_A1_A0
+Progress: Adding pio_keyboard_SW6_SW1 [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_keyboard_SW6_SW1
+Progress: Adding pio_SDO_ADC [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_SDO_ADC
+Progress: Adding pio_I_max [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_I_max
+Progress: Adding pio_PWM_IN [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_PWM_IN
+Progress: Adding pio_LED2_LED1 [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_LED2_LED1
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: cpu_ASK2.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: cpu_ASK2.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: cpu_ASK2.pio_angle: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: cpu_ASK2.pio_lcd_data: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: cpu_ASK2.pio_res_nSOE: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: cpu_ASK2.pio_keyboard_SW6_SW1: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: cpu_ASK2.pio_SDO_ADC: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: cpu_ASK2: Generating cpu_ASK2 "cpu_ASK2" for SIM_VERILOG
+Info: pipeline_bridge_swap_transform: After transform: 19 modules, 58 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 39 modules, 121 connections
+Info: merlin_domain_transform: After transform: 78 modules, 338 connections
+Info: merlin_router_transform: After transform: 98 modules, 401 connections
+Info: merlin_traffic_limiter_transform: After transform: 99 modules, 406 connections
+Info: reset_adaptation_transform: After transform: 101 modules, 396 connections
+Info: merlin_network_to_switch_transform: After transform: 140 modules, 476 connections
+Info: limiter_update_transform: After transform: 140 modules, 477 connections
+Info: merlin_mm_transform: After transform: 140 modules, 477 connections
+Info: merlin_interrupt_mapper_transform: After transform: 141 modules, 480 connections
+Info: nios2_qsys_0: Starting RTL generation for module 'cpu_ASK2_nios2_qsys_0'
+Info: nios2_qsys_0:   Generation command is [exec D:/install/quartus_13/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I D:/install/quartus_13/quartus/common/ip/altera/common/perl/5.8.3 -I D:/install/quartus_13/quartus/sopc_builder/bin/europa -I D:/install/quartus_13/quartus/sopc_builder/bin/perl_lib -I D:/install/quartus_13/quartus/sopc_builder/bin -I D:/install/quartus_13/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I D:/install/quartus_13/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I D:/install/quartus_13/quartus/../ip/altera/nios2_ip/altera_nios2 -I D:/install/quartus_13/quartus/../ip/altera/nios2_ip/altera_nios2 -- D:/install/quartus_13/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=cpu_ASK2_nios2_qsys_0 --dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0001_nios2_qsys_0_gen/ --quartus_dir=D:/install/quartus_13/quartus --verilog --config=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0001_nios2_qsys_0_gen//cpu_ASK2_nios2_qsys_0_processor_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0001_nios2_qsys_0_gen/    --bogus  ]
+Info: nios2_qsys_0: # 2018.05.22 14:51:08 (*) Starting Nios II generation
+Info: nios2_qsys_0: # 2018.05.22 14:51:08 (*)   Checking for plaintext license.
+Info: nios2_qsys_0: # 2018.05.22 14:51:09 (*)   Plaintext license not found.
+Info: nios2_qsys_0: # 2018.05.22 14:51:09 (*)   Checking for encrypted license (non-evaluation).
+Info: nios2_qsys_0: # 2018.05.22 14:51:11 (*)   Encrypted license found.  SOF will not be time-limited.
+Info: nios2_qsys_0: # 2018.05.22 14:51:11 (*)   Elaborating CPU configuration settings
+Info: nios2_qsys_0: # 2018.05.22 14:51:11 (*)   Creating all objects for CPU
+Info: nios2_qsys_0: # 2018.05.22 14:51:14 (*)     Pipeline frontend
+Info: nios2_qsys_0: # 2018.05.22 14:51:18 (*)   Creating 'C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0001_nios2_qsys_0_gen//cpu_ASK2_nios2_qsys_0_nios2_waves.do'
+Info: nios2_qsys_0: # 2018.05.22 14:55:52 (*)   Generating RTL from CPU objects
+Info: nios2_qsys_0: # 2018.05.22 14:56:01 (*)   Creating encrypted RTL
+Info: nios2_qsys_0: # 2018.05.22 14:56:03 (*)   Creating IP functional simulation model
+Info: nios2_qsys_0: # 2018.05.22 14:56:33 (*) Done Nios II generation
+Info: nios2_qsys_0: Done RTL generation for module 'cpu_ASK2_nios2_qsys_0'
+Info: nios2_qsys_0: "cpu_ASK2" instantiated altera_nios2_qsys "nios2_qsys_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'cpu_ASK2_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec D:/install/quartus_13/quartus/bin/perl/bin/perl.exe -I D:/install/quartus_13/quartus/common/ip/altera/common/perl/5.8.3 -I D:/install/quartus_13/quartus/sopc_builder/bin/europa -I D:/install/quartus_13/quartus/sopc_builder/bin/perl_lib -I D:/install/quartus_13/quartus/sopc_builder/bin -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/common -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=cpu_ASK2_onchip_memory2_0 --dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0002_onchip_memory2_0_gen/ --quartus_dir=D:/install/quartus_13/quartus --verilog --config=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0002_onchip_memory2_0_gen//cpu_ASK2_onchip_memory2_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0002_onchip_memory2_0_gen/  ]
+Info: onchip_memory2_0: Done RTL generation for module 'cpu_ASK2_onchip_memory2_0'
+Info: onchip_memory2_0: "cpu_ASK2" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: jtag_uart_0: Starting RTL generation for module 'cpu_ASK2_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec D:/install/quartus_13/quartus/bin/perl/bin/perl.exe -I D:/install/quartus_13/quartus/common/ip/altera/common/perl/5.8.3 -I D:/install/quartus_13/quartus/sopc_builder/bin/europa -I D:/install/quartus_13/quartus/sopc_builder/bin/perl_lib -I D:/install/quartus_13/quartus/sopc_builder/bin -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/common -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=cpu_ASK2_jtag_uart_0 --dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0003_jtag_uart_0_gen/ --quartus_dir=D:/install/quartus_13/quartus --verilog --config=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0003_jtag_uart_0_gen//cpu_ASK2_jtag_uart_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0003_jtag_uart_0_gen/  ]
+Info: jtag_uart_0: Done RTL generation for module 'cpu_ASK2_jtag_uart_0'
+Info: jtag_uart_0: "cpu_ASK2" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: sysid_qsys_0: Generating Verilog simulation model
+Info: sysid_qsys_0: Generated simulation model cpu_ASK2_sysid_qsys_0.vo
+Info: sysid_qsys_0: "cpu_ASK2" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
+Info: pio_angle: Starting RTL generation for module 'cpu_ASK2_pio_angle'
+Info: pio_angle:   Generation command is [exec D:/install/quartus_13/quartus/bin/perl/bin/perl.exe -I D:/install/quartus_13/quartus/common/ip/altera/common/perl/5.8.3 -I D:/install/quartus_13/quartus/sopc_builder/bin/europa -I D:/install/quartus_13/quartus/sopc_builder/bin/perl_lib -I D:/install/quartus_13/quartus/sopc_builder/bin -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/common -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpu_ASK2_pio_angle --dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0007_pio_angle_gen/ --quartus_dir=D:/install/quartus_13/quartus --verilog --config=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0007_pio_angle_gen//cpu_ASK2_pio_angle_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0007_pio_angle_gen/  ]
+Info: pio_angle: Done RTL generation for module 'cpu_ASK2_pio_angle'
+Info: pio_angle: "cpu_ASK2" instantiated altera_avalon_pio "pio_angle"
+Info: pio_lcd_data: Starting RTL generation for module 'cpu_ASK2_pio_lcd_data'
+Info: pio_lcd_data:   Generation command is [exec D:/install/quartus_13/quartus/bin/perl/bin/perl.exe -I D:/install/quartus_13/quartus/common/ip/altera/common/perl/5.8.3 -I D:/install/quartus_13/quartus/sopc_builder/bin/europa -I D:/install/quartus_13/quartus/sopc_builder/bin/perl_lib -I D:/install/quartus_13/quartus/sopc_builder/bin -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/common -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpu_ASK2_pio_lcd_data --dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0008_pio_lcd_data_gen/ --quartus_dir=D:/install/quartus_13/quartus --verilog --config=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0008_pio_lcd_data_gen//cpu_ASK2_pio_lcd_data_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0008_pio_lcd_data_gen/  ]
+Info: pio_lcd_data: Done RTL generation for module 'cpu_ASK2_pio_lcd_data'
+Info: pio_lcd_data: "cpu_ASK2" instantiated altera_avalon_pio "pio_lcd_data"
+Info: pio_lcd_control: Starting RTL generation for module 'cpu_ASK2_pio_lcd_control'
+Info: pio_lcd_control:   Generation command is [exec D:/install/quartus_13/quartus/bin/perl/bin/perl.exe -I D:/install/quartus_13/quartus/common/ip/altera/common/perl/5.8.3 -I D:/install/quartus_13/quartus/sopc_builder/bin/europa -I D:/install/quartus_13/quartus/sopc_builder/bin/perl_lib -I D:/install/quartus_13/quartus/sopc_builder/bin -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/common -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpu_ASK2_pio_lcd_control --dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0009_pio_lcd_control_gen/ --quartus_dir=D:/install/quartus_13/quartus --verilog --config=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0009_pio_lcd_control_gen//cpu_ASK2_pio_lcd_control_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0009_pio_lcd_control_gen/  ]
+Info: pio_lcd_control: Done RTL generation for module 'cpu_ASK2_pio_lcd_control'
+Info: pio_lcd_control: "cpu_ASK2" instantiated altera_avalon_pio "pio_lcd_control"
+Info: pio_res_nWr: Starting RTL generation for module 'cpu_ASK2_pio_res_nWr'
+Info: pio_res_nWr:   Generation command is [exec D:/install/quartus_13/quartus/bin/perl/bin/perl.exe -I D:/install/quartus_13/quartus/common/ip/altera/common/perl/5.8.3 -I D:/install/quartus_13/quartus/sopc_builder/bin/europa -I D:/install/quartus_13/quartus/sopc_builder/bin/perl_lib -I D:/install/quartus_13/quartus/sopc_builder/bin -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/common -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpu_ASK2_pio_res_nWr --dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0010_pio_res_nWr_gen/ --quartus_dir=D:/install/quartus_13/quartus --verilog --config=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0010_pio_res_nWr_gen//cpu_ASK2_pio_res_nWr_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0010_pio_res_nWr_gen/  ]
+Info: pio_res_nWr: Done RTL generation for module 'cpu_ASK2_pio_res_nWr'
+Info: pio_res_nWr: "cpu_ASK2" instantiated altera_avalon_pio "pio_res_nWr"
+Info: pio_res_nSOE: Starting RTL generation for module 'cpu_ASK2_pio_res_nSOE'
+Info: pio_res_nSOE:   Generation command is [exec D:/install/quartus_13/quartus/bin/perl/bin/perl.exe -I D:/install/quartus_13/quartus/common/ip/altera/common/perl/5.8.3 -I D:/install/quartus_13/quartus/sopc_builder/bin/europa -I D:/install/quartus_13/quartus/sopc_builder/bin/perl_lib -I D:/install/quartus_13/quartus/sopc_builder/bin -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/common -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpu_ASK2_pio_res_nSOE --dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0011_pio_res_nSOE_gen/ --quartus_dir=D:/install/quartus_13/quartus --verilog --config=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0011_pio_res_nSOE_gen//cpu_ASK2_pio_res_nSOE_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0011_pio_res_nSOE_gen/  ]
+Info: pio_res_nSOE: Done RTL generation for module 'cpu_ASK2_pio_res_nSOE'
+Info: pio_res_nSOE: "cpu_ASK2" instantiated altera_avalon_pio "pio_res_nSOE"
+Info: pio_A1_A0: Starting RTL generation for module 'cpu_ASK2_pio_A1_A0'
+Info: pio_A1_A0:   Generation command is [exec D:/install/quartus_13/quartus/bin/perl/bin/perl.exe -I D:/install/quartus_13/quartus/common/ip/altera/common/perl/5.8.3 -I D:/install/quartus_13/quartus/sopc_builder/bin/europa -I D:/install/quartus_13/quartus/sopc_builder/bin/perl_lib -I D:/install/quartus_13/quartus/sopc_builder/bin -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/common -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpu_ASK2_pio_A1_A0 --dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0012_pio_A1_A0_gen/ --quartus_dir=D:/install/quartus_13/quartus --verilog --config=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0012_pio_A1_A0_gen//cpu_ASK2_pio_A1_A0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0012_pio_A1_A0_gen/  ]
+Info: pio_A1_A0: Done RTL generation for module 'cpu_ASK2_pio_A1_A0'
+Info: pio_A1_A0: "cpu_ASK2" instantiated altera_avalon_pio "pio_A1_A0"
+Info: pio_keyboard_SW6_SW1: Starting RTL generation for module 'cpu_ASK2_pio_keyboard_SW6_SW1'
+Info: pio_keyboard_SW6_SW1:   Generation command is [exec D:/install/quartus_13/quartus/bin/perl/bin/perl.exe -I D:/install/quartus_13/quartus/common/ip/altera/common/perl/5.8.3 -I D:/install/quartus_13/quartus/sopc_builder/bin/europa -I D:/install/quartus_13/quartus/sopc_builder/bin/perl_lib -I D:/install/quartus_13/quartus/sopc_builder/bin -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/common -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpu_ASK2_pio_keyboard_SW6_SW1 --dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0013_pio_keyboard_SW6_SW1_gen/ --quartus_dir=D:/install/quartus_13/quartus --verilog --config=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0013_pio_keyboard_SW6_SW1_gen//cpu_ASK2_pio_keyboard_SW6_SW1_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0013_pio_keyboard_SW6_SW1_gen/  ]
+Info: pio_keyboard_SW6_SW1: Done RTL generation for module 'cpu_ASK2_pio_keyboard_SW6_SW1'
+Info: pio_keyboard_SW6_SW1: "cpu_ASK2" instantiated altera_avalon_pio "pio_keyboard_SW6_SW1"
+Info: pio_SDO_ADC: Starting RTL generation for module 'cpu_ASK2_pio_SDO_ADC'
+Info: pio_SDO_ADC:   Generation command is [exec D:/install/quartus_13/quartus/bin/perl/bin/perl.exe -I D:/install/quartus_13/quartus/common/ip/altera/common/perl/5.8.3 -I D:/install/quartus_13/quartus/sopc_builder/bin/europa -I D:/install/quartus_13/quartus/sopc_builder/bin/perl_lib -I D:/install/quartus_13/quartus/sopc_builder/bin -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/common -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpu_ASK2_pio_SDO_ADC --dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0014_pio_SDO_ADC_gen/ --quartus_dir=D:/install/quartus_13/quartus --verilog --config=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0014_pio_SDO_ADC_gen//cpu_ASK2_pio_SDO_ADC_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0014_pio_SDO_ADC_gen/  ]
+Info: pio_SDO_ADC: Done RTL generation for module 'cpu_ASK2_pio_SDO_ADC'
+Info: pio_SDO_ADC: "cpu_ASK2" instantiated altera_avalon_pio "pio_SDO_ADC"
+Info: pio_I_max: Starting RTL generation for module 'cpu_ASK2_pio_I_max'
+Info: pio_I_max:   Generation command is [exec D:/install/quartus_13/quartus/bin/perl/bin/perl.exe -I D:/install/quartus_13/quartus/common/ip/altera/common/perl/5.8.3 -I D:/install/quartus_13/quartus/sopc_builder/bin/europa -I D:/install/quartus_13/quartus/sopc_builder/bin/perl_lib -I D:/install/quartus_13/quartus/sopc_builder/bin -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/common -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpu_ASK2_pio_I_max --dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0015_pio_I_max_gen/ --quartus_dir=D:/install/quartus_13/quartus --verilog --config=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0015_pio_I_max_gen//cpu_ASK2_pio_I_max_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0015_pio_I_max_gen/  ]
+Info: pio_I_max: Done RTL generation for module 'cpu_ASK2_pio_I_max'
+Info: pio_I_max: "cpu_ASK2" instantiated altera_avalon_pio "pio_I_max"
+Info: nios2_qsys_0_instruction_master_translator: "cpu_ASK2" instantiated altera_merlin_master_translator "nios2_qsys_0_instruction_master_translator"
+Info: nios2_qsys_0_jtag_debug_module_translator: "cpu_ASK2" instantiated altera_merlin_slave_translator "nios2_qsys_0_jtag_debug_module_translator"
+Info: nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent: "cpu_ASK2" instantiated altera_merlin_master_agent "nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent: "cpu_ASK2" instantiated altera_merlin_slave_agent "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "cpu_ASK2" instantiated altera_avalon_sc_fifo "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "cpu_ASK2" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "cpu_ASK2" instantiated altera_merlin_router "addr_router_001"
+Info: id_router: "cpu_ASK2" instantiated altera_merlin_router "id_router"
+Info: id_router_002: "cpu_ASK2" instantiated altera_merlin_router "id_router_002"
+Info: limiter: "cpu_ASK2" instantiated altera_merlin_traffic_limiter "limiter"
+Info: rst_controller: "cpu_ASK2" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "cpu_ASK2" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "cpu_ASK2" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_mux: "cpu_ASK2" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux: "cpu_ASK2" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_demux_002: "cpu_ASK2" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_mux: "cpu_ASK2" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file D:/Controller_ASK2/Nios_cpu/cpu_ASK2/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "cpu_ASK2" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file D:/Controller_ASK2/Nios_cpu/cpu_ASK2/simulation/submodules/altera_merlin_arbitrator.sv
+Info: irq_mapper: "cpu_ASK2" instantiated altera_irq_mapper "irq_mapper"
+Info: cpu_ASK2: Done cpu_ASK2" with 33 modules, 172 files, 3341217 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=D:/Controller_ASK2/Nios_cpu/cpu_ASK2.spd --output-directory=D:/Controller_ASK2/Nios_cpu/cpu_ASK2/simulation/
+Info: Doing: ip-make-simscript --spd=D:/Controller_ASK2/Nios_cpu/cpu_ASK2.spd --output-directory=D:/Controller_ASK2/Nios_cpu/cpu_ASK2/simulation/
+Info: Generating the following file(s) for MODELSIM simulator in D:/Controller_ASK2/Nios_cpu/cpu_ASK2/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for VCS simulator in D:/Controller_ASK2/Nios_cpu/cpu_ASK2/simulation/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for VCSMX simulator in D:/Controller_ASK2/Nios_cpu/cpu_ASK2/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in D:/Controller_ASK2/Nios_cpu/cpu_ASK2/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	32 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERAPRO simulator in D:/Controller_ASK2/Nios_cpu/cpu_ASK2/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=D:/Controller_ASK2/Nios_cpu/ --output-directory=D:/Controller_ASK2/Nios_cpu/cpu_ASK2/ --report-file=bsf:D:/Controller_ASK2/Nios_cpu/cpu_ASK2.bsf --system-info=DEVICE_FAMILY="Cyclone III" --system-info=DEVICE=EP3C25E144I7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=D:/Controller_ASK2/Nios_cpu/cpu_ASK2.qsys
+Progress: Loading Nios_cpu/cpu_ASK2.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 13.0.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 13.0.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding pio_angle [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_angle
+Progress: Adding pio_lcd_data [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_lcd_data
+Progress: Adding pio_lcd_control [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_lcd_control
+Progress: Adding pio_res_nWr [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_res_nWr
+Progress: Adding pio_res_nRd [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_res_nRd
+Progress: Adding pio_res_nSample [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_res_nSample
+Progress: Adding pio_res_nSOE [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_res_nSOE
+Progress: Adding pio_res_nCS [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_res_nCS
+Progress: Adding pio_A1_A0 [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_A1_A0
+Progress: Adding pio_keyboard_SW6_SW1 [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_keyboard_SW6_SW1
+Progress: Adding pio_SDO_ADC [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_SDO_ADC
+Progress: Adding pio_I_max [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_I_max
+Progress: Adding pio_PWM_IN [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_PWM_IN
+Progress: Adding pio_LED2_LED1 [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_LED2_LED1
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: cpu_ASK2.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: cpu_ASK2.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: cpu_ASK2.pio_angle: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: cpu_ASK2.pio_lcd_data: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: cpu_ASK2.pio_res_nSOE: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: cpu_ASK2.pio_keyboard_SW6_SW1: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: cpu_ASK2.pio_SDO_ADC: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=D:/Controller_ASK2/Nios_cpu/ --output-directory=D:/Controller_ASK2/Nios_cpu/cpu_ASK2/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:D:/Controller_ASK2/Nios_cpu/cpu_ASK2.sopcinfo --report-file=html:D:/Controller_ASK2/Nios_cpu/cpu_ASK2.html --report-file=qip:D:/Controller_ASK2/Nios_cpu/cpu_ASK2/synthesis/cpu_ASK2.qip --report-file=cmp:D:/Controller_ASK2/Nios_cpu/cpu_ASK2.cmp --system-info=DEVICE_FAMILY="Cyclone III" --system-info=DEVICE=EP3C25E144I7 --system-info=DEVICE_SPEEDGRADE=7 --component-file=D:/Controller_ASK2/Nios_cpu/cpu_ASK2.qsys --language=VERILOG
+Progress: Loading Nios_cpu/cpu_ASK2.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 13.0.1]
+Progress: Parameterizing module onchip_memory2_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 13.0.1]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding pio_angle [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_angle
+Progress: Adding pio_lcd_data [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_lcd_data
+Progress: Adding pio_lcd_control [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_lcd_control
+Progress: Adding pio_res_nWr [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_res_nWr
+Progress: Adding pio_res_nRd [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_res_nRd
+Progress: Adding pio_res_nSample [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_res_nSample
+Progress: Adding pio_res_nSOE [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_res_nSOE
+Progress: Adding pio_res_nCS [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_res_nCS
+Progress: Adding pio_A1_A0 [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_A1_A0
+Progress: Adding pio_keyboard_SW6_SW1 [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_keyboard_SW6_SW1
+Progress: Adding pio_SDO_ADC [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_SDO_ADC
+Progress: Adding pio_I_max [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_I_max
+Progress: Adding pio_PWM_IN [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_PWM_IN
+Progress: Adding pio_LED2_LED1 [altera_avalon_pio 13.0.1]
+Progress: Parameterizing module pio_LED2_LED1
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: cpu_ASK2.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: cpu_ASK2.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: cpu_ASK2.pio_angle: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: cpu_ASK2.pio_lcd_data: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: cpu_ASK2.pio_res_nSOE: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: cpu_ASK2.pio_keyboard_SW6_SW1: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: cpu_ASK2.pio_SDO_ADC: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: cpu_ASK2: Generating cpu_ASK2 "cpu_ASK2" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 19 modules, 58 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 39 modules, 121 connections
+Info: merlin_domain_transform: After transform: 78 modules, 338 connections
+Info: merlin_router_transform: After transform: 98 modules, 401 connections
+Info: merlin_traffic_limiter_transform: After transform: 99 modules, 406 connections
+Info: reset_adaptation_transform: After transform: 101 modules, 396 connections
+Info: merlin_network_to_switch_transform: After transform: 140 modules, 476 connections
+Info: limiter_update_transform: After transform: 140 modules, 477 connections
+Info: merlin_mm_transform: After transform: 140 modules, 477 connections
+Info: merlin_interrupt_mapper_transform: After transform: 141 modules, 480 connections
+Info: nios2_qsys_0: Starting RTL generation for module 'cpu_ASK2_nios2_qsys_0'
+Info: nios2_qsys_0:   Generation command is [exec D:/install/quartus_13/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I D:/install/quartus_13/quartus/common/ip/altera/common/perl/5.8.3 -I D:/install/quartus_13/quartus/sopc_builder/bin/europa -I D:/install/quartus_13/quartus/sopc_builder/bin/perl_lib -I D:/install/quartus_13/quartus/sopc_builder/bin -I D:/install/quartus_13/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I D:/install/quartus_13/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I D:/install/quartus_13/quartus/../ip/altera/nios2_ip/altera_nios2 -I D:/install/quartus_13/quartus/../ip/altera/nios2_ip/altera_nios2 -- D:/install/quartus_13/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=cpu_ASK2_nios2_qsys_0 --dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0035_nios2_qsys_0_gen/ --quartus_dir=D:/install/quartus_13/quartus --verilog --config=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0035_nios2_qsys_0_gen//cpu_ASK2_nios2_qsys_0_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: nios2_qsys_0: # 2018.05.22 14:57:03 (*) Starting Nios II generation
+Info: nios2_qsys_0: # 2018.05.22 14:57:03 (*)   Checking for plaintext license.
+Info: nios2_qsys_0: # 2018.05.22 14:57:04 (*)   Plaintext license not found.
+Info: nios2_qsys_0: # 2018.05.22 14:57:04 (*)   Checking for encrypted license (non-evaluation).
+Info: nios2_qsys_0: # 2018.05.22 14:57:06 (*)   Encrypted license found.  SOF will not be time-limited.
+Info: nios2_qsys_0: # 2018.05.22 14:57:06 (*)   Elaborating CPU configuration settings
+Info: nios2_qsys_0: # 2018.05.22 14:57:06 (*)   Creating all objects for CPU
+Info: nios2_qsys_0: # 2018.05.22 14:57:09 (*)     Pipeline frontend
+Info: nios2_qsys_0: # 2018.05.22 14:57:13 (*)   Generating RTL from CPU objects
+Info: nios2_qsys_0: # 2018.05.22 14:57:22 (*)   Creating encrypted RTL
+Info: nios2_qsys_0: # 2018.05.22 14:57:25 (*) Done Nios II generation
+Info: nios2_qsys_0: Done RTL generation for module 'cpu_ASK2_nios2_qsys_0'
+Info: nios2_qsys_0: "cpu_ASK2" instantiated altera_nios2_qsys "nios2_qsys_0"
+Info: onchip_memory2_0: Starting RTL generation for module 'cpu_ASK2_onchip_memory2_0'
+Info: onchip_memory2_0:   Generation command is [exec D:/install/quartus_13/quartus/bin/perl/bin/perl.exe -I D:/install/quartus_13/quartus/common/ip/altera/common/perl/5.8.3 -I D:/install/quartus_13/quartus/sopc_builder/bin/europa -I D:/install/quartus_13/quartus/sopc_builder/bin/perl_lib -I D:/install/quartus_13/quartus/sopc_builder/bin -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/common -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=cpu_ASK2_onchip_memory2_0 --dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0036_onchip_memory2_0_gen/ --quartus_dir=D:/install/quartus_13/quartus --verilog --config=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0036_onchip_memory2_0_gen//cpu_ASK2_onchip_memory2_0_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_memory2_0: Done RTL generation for module 'cpu_ASK2_onchip_memory2_0'
+Info: onchip_memory2_0: "cpu_ASK2" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: jtag_uart_0: Starting RTL generation for module 'cpu_ASK2_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec D:/install/quartus_13/quartus/bin/perl/bin/perl.exe -I D:/install/quartus_13/quartus/common/ip/altera/common/perl/5.8.3 -I D:/install/quartus_13/quartus/sopc_builder/bin/europa -I D:/install/quartus_13/quartus/sopc_builder/bin/perl_lib -I D:/install/quartus_13/quartus/sopc_builder/bin -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/common -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=cpu_ASK2_jtag_uart_0 --dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0037_jtag_uart_0_gen/ --quartus_dir=D:/install/quartus_13/quartus --verilog --config=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0037_jtag_uart_0_gen//cpu_ASK2_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'cpu_ASK2_jtag_uart_0'
+Info: jtag_uart_0: "cpu_ASK2" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: sysid_qsys_0: "cpu_ASK2" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
+Info: pio_angle: Starting RTL generation for module 'cpu_ASK2_pio_angle'
+Info: pio_angle:   Generation command is [exec D:/install/quartus_13/quartus/bin/perl/bin/perl.exe -I D:/install/quartus_13/quartus/common/ip/altera/common/perl/5.8.3 -I D:/install/quartus_13/quartus/sopc_builder/bin/europa -I D:/install/quartus_13/quartus/sopc_builder/bin/perl_lib -I D:/install/quartus_13/quartus/sopc_builder/bin -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/common -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpu_ASK2_pio_angle --dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0039_pio_angle_gen/ --quartus_dir=D:/install/quartus_13/quartus --verilog --config=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0039_pio_angle_gen//cpu_ASK2_pio_angle_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_angle: Done RTL generation for module 'cpu_ASK2_pio_angle'
+Info: pio_angle: "cpu_ASK2" instantiated altera_avalon_pio "pio_angle"
+Info: pio_lcd_data: Starting RTL generation for module 'cpu_ASK2_pio_lcd_data'
+Info: pio_lcd_data:   Generation command is [exec D:/install/quartus_13/quartus/bin/perl/bin/perl.exe -I D:/install/quartus_13/quartus/common/ip/altera/common/perl/5.8.3 -I D:/install/quartus_13/quartus/sopc_builder/bin/europa -I D:/install/quartus_13/quartus/sopc_builder/bin/perl_lib -I D:/install/quartus_13/quartus/sopc_builder/bin -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/common -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpu_ASK2_pio_lcd_data --dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0040_pio_lcd_data_gen/ --quartus_dir=D:/install/quartus_13/quartus --verilog --config=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0040_pio_lcd_data_gen//cpu_ASK2_pio_lcd_data_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_lcd_data: Done RTL generation for module 'cpu_ASK2_pio_lcd_data'
+Info: pio_lcd_data: "cpu_ASK2" instantiated altera_avalon_pio "pio_lcd_data"
+Info: pio_lcd_control: Starting RTL generation for module 'cpu_ASK2_pio_lcd_control'
+Info: pio_lcd_control:   Generation command is [exec D:/install/quartus_13/quartus/bin/perl/bin/perl.exe -I D:/install/quartus_13/quartus/common/ip/altera/common/perl/5.8.3 -I D:/install/quartus_13/quartus/sopc_builder/bin/europa -I D:/install/quartus_13/quartus/sopc_builder/bin/perl_lib -I D:/install/quartus_13/quartus/sopc_builder/bin -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/common -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpu_ASK2_pio_lcd_control --dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0041_pio_lcd_control_gen/ --quartus_dir=D:/install/quartus_13/quartus --verilog --config=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0041_pio_lcd_control_gen//cpu_ASK2_pio_lcd_control_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_lcd_control: Done RTL generation for module 'cpu_ASK2_pio_lcd_control'
+Info: pio_lcd_control: "cpu_ASK2" instantiated altera_avalon_pio "pio_lcd_control"
+Info: pio_res_nWr: Starting RTL generation for module 'cpu_ASK2_pio_res_nWr'
+Info: pio_res_nWr:   Generation command is [exec D:/install/quartus_13/quartus/bin/perl/bin/perl.exe -I D:/install/quartus_13/quartus/common/ip/altera/common/perl/5.8.3 -I D:/install/quartus_13/quartus/sopc_builder/bin/europa -I D:/install/quartus_13/quartus/sopc_builder/bin/perl_lib -I D:/install/quartus_13/quartus/sopc_builder/bin -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/common -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpu_ASK2_pio_res_nWr --dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0042_pio_res_nWr_gen/ --quartus_dir=D:/install/quartus_13/quartus --verilog --config=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0042_pio_res_nWr_gen//cpu_ASK2_pio_res_nWr_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_res_nWr: Done RTL generation for module 'cpu_ASK2_pio_res_nWr'
+Info: pio_res_nWr: "cpu_ASK2" instantiated altera_avalon_pio "pio_res_nWr"
+Info: pio_res_nSOE: Starting RTL generation for module 'cpu_ASK2_pio_res_nSOE'
+Info: pio_res_nSOE:   Generation command is [exec D:/install/quartus_13/quartus/bin/perl/bin/perl.exe -I D:/install/quartus_13/quartus/common/ip/altera/common/perl/5.8.3 -I D:/install/quartus_13/quartus/sopc_builder/bin/europa -I D:/install/quartus_13/quartus/sopc_builder/bin/perl_lib -I D:/install/quartus_13/quartus/sopc_builder/bin -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/common -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpu_ASK2_pio_res_nSOE --dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0043_pio_res_nSOE_gen/ --quartus_dir=D:/install/quartus_13/quartus --verilog --config=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0043_pio_res_nSOE_gen//cpu_ASK2_pio_res_nSOE_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_res_nSOE: Done RTL generation for module 'cpu_ASK2_pio_res_nSOE'
+Info: pio_res_nSOE: "cpu_ASK2" instantiated altera_avalon_pio "pio_res_nSOE"
+Info: pio_A1_A0: Starting RTL generation for module 'cpu_ASK2_pio_A1_A0'
+Info: pio_A1_A0:   Generation command is [exec D:/install/quartus_13/quartus/bin/perl/bin/perl.exe -I D:/install/quartus_13/quartus/common/ip/altera/common/perl/5.8.3 -I D:/install/quartus_13/quartus/sopc_builder/bin/europa -I D:/install/quartus_13/quartus/sopc_builder/bin/perl_lib -I D:/install/quartus_13/quartus/sopc_builder/bin -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/common -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpu_ASK2_pio_A1_A0 --dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0044_pio_A1_A0_gen/ --quartus_dir=D:/install/quartus_13/quartus --verilog --config=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0044_pio_A1_A0_gen//cpu_ASK2_pio_A1_A0_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_A1_A0: Done RTL generation for module 'cpu_ASK2_pio_A1_A0'
+Info: pio_A1_A0: "cpu_ASK2" instantiated altera_avalon_pio "pio_A1_A0"
+Info: pio_keyboard_SW6_SW1: Starting RTL generation for module 'cpu_ASK2_pio_keyboard_SW6_SW1'
+Info: pio_keyboard_SW6_SW1:   Generation command is [exec D:/install/quartus_13/quartus/bin/perl/bin/perl.exe -I D:/install/quartus_13/quartus/common/ip/altera/common/perl/5.8.3 -I D:/install/quartus_13/quartus/sopc_builder/bin/europa -I D:/install/quartus_13/quartus/sopc_builder/bin/perl_lib -I D:/install/quartus_13/quartus/sopc_builder/bin -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/common -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpu_ASK2_pio_keyboard_SW6_SW1 --dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0045_pio_keyboard_SW6_SW1_gen/ --quartus_dir=D:/install/quartus_13/quartus --verilog --config=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0045_pio_keyboard_SW6_SW1_gen//cpu_ASK2_pio_keyboard_SW6_SW1_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_keyboard_SW6_SW1: Done RTL generation for module 'cpu_ASK2_pio_keyboard_SW6_SW1'
+Info: pio_keyboard_SW6_SW1: "cpu_ASK2" instantiated altera_avalon_pio "pio_keyboard_SW6_SW1"
+Info: pio_SDO_ADC: Starting RTL generation for module 'cpu_ASK2_pio_SDO_ADC'
+Info: pio_SDO_ADC:   Generation command is [exec D:/install/quartus_13/quartus/bin/perl/bin/perl.exe -I D:/install/quartus_13/quartus/common/ip/altera/common/perl/5.8.3 -I D:/install/quartus_13/quartus/sopc_builder/bin/europa -I D:/install/quartus_13/quartus/sopc_builder/bin/perl_lib -I D:/install/quartus_13/quartus/sopc_builder/bin -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/common -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpu_ASK2_pio_SDO_ADC --dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0046_pio_SDO_ADC_gen/ --quartus_dir=D:/install/quartus_13/quartus --verilog --config=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0046_pio_SDO_ADC_gen//cpu_ASK2_pio_SDO_ADC_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_SDO_ADC: Done RTL generation for module 'cpu_ASK2_pio_SDO_ADC'
+Info: pio_SDO_ADC: "cpu_ASK2" instantiated altera_avalon_pio "pio_SDO_ADC"
+Info: pio_I_max: Starting RTL generation for module 'cpu_ASK2_pio_I_max'
+Info: pio_I_max:   Generation command is [exec D:/install/quartus_13/quartus/bin/perl/bin/perl.exe -I D:/install/quartus_13/quartus/common/ip/altera/common/perl/5.8.3 -I D:/install/quartus_13/quartus/sopc_builder/bin/europa -I D:/install/quartus_13/quartus/sopc_builder/bin/perl_lib -I D:/install/quartus_13/quartus/sopc_builder/bin -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/common -I D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- D:/install/quartus_13/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=cpu_ASK2_pio_I_max --dir=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0047_pio_I_max_gen/ --quartus_dir=D:/install/quartus_13/quartus --verilog --config=C:/Users/BELASH~1/AppData/Local/Temp/alt7673_5466535502694891742.dir/0047_pio_I_max_gen//cpu_ASK2_pio_I_max_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_I_max: Done RTL generation for module 'cpu_ASK2_pio_I_max'
+Info: pio_I_max: "cpu_ASK2" instantiated altera_avalon_pio "pio_I_max"
+Info: nios2_qsys_0_instruction_master_translator: "cpu_ASK2" instantiated altera_merlin_master_translator "nios2_qsys_0_instruction_master_translator"
+Info: nios2_qsys_0_jtag_debug_module_translator: "cpu_ASK2" instantiated altera_merlin_slave_translator "nios2_qsys_0_jtag_debug_module_translator"
+Info: nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent: "cpu_ASK2" instantiated altera_merlin_master_agent "nios2_qsys_0_instruction_master_translator_avalon_universal_master_0_agent"
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent: "cpu_ASK2" instantiated altera_merlin_slave_agent "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "cpu_ASK2" instantiated altera_avalon_sc_fifo "nios2_qsys_0_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "cpu_ASK2" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "cpu_ASK2" instantiated altera_merlin_router "addr_router_001"
+Info: id_router: "cpu_ASK2" instantiated altera_merlin_router "id_router"
+Info: id_router_002: "cpu_ASK2" instantiated altera_merlin_router "id_router_002"
+Info: limiter: "cpu_ASK2" instantiated altera_merlin_traffic_limiter "limiter"
+Info: rst_controller: "cpu_ASK2" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "cpu_ASK2" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "cpu_ASK2" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_mux: "cpu_ASK2" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux: "cpu_ASK2" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_demux_002: "cpu_ASK2" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_002"
+Info: rsp_xbar_mux: "cpu_ASK2" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file D:/Controller_ASK2/Nios_cpu/cpu_ASK2/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "cpu_ASK2" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file D:/Controller_ASK2/Nios_cpu/cpu_ASK2/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: irq_mapper: "cpu_ASK2" instantiated altera_irq_mapper "irq_mapper"
+Info: cpu_ASK2: Done cpu_ASK2" with 33 modules, 163 files, 3213113 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

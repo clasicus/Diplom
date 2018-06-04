@@ -1,0 +1,15 @@
+
+**** Build of configuration Nios II for project test_bsp ****
+
+make all 
+      0 [main] make 10812 find_fast_cwd: WARNING: Couldn't compute FAST_CWD pointer.  Please report this problem to
+the public mailing list cygwin@cygwin.com
+Building file: ../drivers/src/altera_avalon_jtag_uart_fd.c
+Invoking: Cygwin C Compiler
+gcc -I"D:\cygwin64\lib\gcc\i686-pc-cygwin\6.4.0\include" -I"D:\cygwin64\usr\include" -I"D:\cygwin64\usr\include\w32api" -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"drivers/src/altera_avalon_jtag_uart_fd.d" -MT"drivers/src/altera_avalon_jtag_uart_fd.d" -o "drivers/src/altera_avalon_jtag_uart_fd.o" "../drivers/src/altera_avalon_jtag_uart_fd.c"
+../drivers/src/altera_avalon_jtag_uart_fd.c:31:23: fatal error: alt_types.h: No such file or directory
+compilation terminated.
+drivers/src/subdir.mk:33: recipe for target `drivers/src/altera_avalon_jtag_uart_fd.o' failed
+make: *** [drivers/src/altera_avalon_jtag_uart_fd.o] Error 1
+
+**** Build Finished ****
