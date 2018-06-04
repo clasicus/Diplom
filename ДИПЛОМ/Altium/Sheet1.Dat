@@ -1,0 +1,202 @@
+﻿Field=#~Integer~#~50|Field=Designator~String~Designator~100|Field=LibRef~String~LibRef~100|Field=Manufacturer~String~Manufacturer~100|Field=Name~String~Name~100|Field=Package~String~Package~100|Field=Temp_Coef~String~Temp_Coef~100|Field=Tolerance~String~Tolerance~100|Field=Value~String~Value~100|Field=Voltage~String~Voltage~100|Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=DocumentName~String~DocumentName~100|Field=LogicalDesignator~String~LogicalDesignator~100|Field=PhysicalPath~String~PhysicalPath~100|Field=Project~String~Project~100|Field=Title~String~Title~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~АСК_2.PrjPcb|ReportField=ProjectFullPath~D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|ReportField=Title~Bill of Materials For Schematic Document [Sheet1.SchDoc]|ReportField=ReportTime~11:28:01|ReportField=ReportDate~04.06.2018|ReportField=ReportDateTime~04.06.2018 11:28:01|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=TotalQuantity~201|ReportField=TotalActualPrice~0|ReportField=TotalTargetPrice~0|ReportField=VersionControl_RevNumber~|ReportField=VersionControl_ProjFolderRevNumber~|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=Application_BuildNumber~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~04.06.2018|ReportField=CurrentTime~11:27:58|ReportField=Date~|ReportField=DecimalNumber~|ReportField=DecimalNumber_MIRROR~|ReportField=DocumentFullPathAndName~D:\git\Diplom\ДИПЛОМ\Altium\Sheet1.SchDoc|ReportField=DocumentName~Sheet1.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=HeadOfSector~|ReportField=ImagePath~|ReportField=MainDevice~|ReportField=ModifiedDate~04.06.2018|ReportField=Name~|ReportField=Organization~|ReportField=PageSetup~Record=PageOptions:CenterHorizontal=True:CenterVertical=True:PrintScale=0.98:XCorrection=1.00:YCorrection=1.00:PrintKind=1:BorderSize=5000000:LeftOffset=0:BottomOffset=0:Orientation=2:PaperLength=1000:PaperWidth=1000:Scale=100:PaperSource=15:PrintQuality=1200:MediaType=1:DitherType=10:PrintScaleMode=1:PaperKind=A3:PaperIndex=8|ReportField=ProjectName~АСК_2.PrjPcb|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~|ReportField=ЕСКД_Децимальний_номер~ДК41.468224.002|ReportField=ЕСКД_Децимальний_номер_Е3~ДК41.468224.002 Е3|ReportField=ЕСКД_Затвердив~Антонюк О.І.|ReportField=ЕСКД_Лист~|ReportField=ЕСКД_Листів~1|ReportField=ЕСКД_Маштаб~1:1|ReportField=ЕСКД_Назва_пристрою~Контролер управління|ReportField=ЕСКД_Назва_пристрою_1~|ReportField=ЕСКД_Назва_пристрою_2~|ReportField=ЕСКД_Назва_схеми~|ReportField=ЕСКД_Назва_схеми_1~Схема електрична|ReportField=ЕСКД_Назва_схеми_2~принципова|ReportField=ЕСКД_Норма_контроль~Лисенко О.І.|ReportField=ЕСКД_Організація~|ReportField=ЕСКД_Організація_1~КПІ ім. Ігоря Сікорського|ReportField=ЕСКД_Організація_2~ФЕЛ, КЕОА, ДК-41|ReportField=ЕСКД_Перевірив~Адаменко І.О.|ReportField=ЕСКД_Проект~|ReportField=ЕСКД_Розміщення~|ReportField=ЕСКД_Розробив~Білаш Б.О.|ReportField=ЕСКД_Тема~|ReportField=ЕСКД_Тема_1~|ReportField=ЕСКД_Тема_2~|ReportField=ЕСКД_Тема_повна~|ReportField=DataSourceFileName~Sheet1.SchDoc|ReportField=DataSourceFullPath~D:\git\Diplom\ДИПЛОМ\Altium\Sheet1.SchDoc|ReportField=PCBConfigurationName~Default Configuration|ReportField=Item~|ReportField=ItemRevision~|ReportField=ItemAndRevision~|ReportField=ItemRevisionBase~|ReportField=ItemRevisionLevel1~|ReportField=ItemRevisionLevel2~|ReportField=ItemRevisionLevel1AndBase~|ReportField=ItemRevisionLevel2AndLevel1~
+1||plata_1||Лак||||||plata_1||Sheet1.SchDoc|||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+2||plata||Плата друкована||||||plata||Sheet1.SchDoc|||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+3||plata||Плата друкована||||||plata||Sheet1.SchDoc|||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+4|1|Table||||||||Table||Sheet1.SchDoc|1||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+5|C1|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C1||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+6|C2|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C2||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+7|C3|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C3||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+8|C4|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C4||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+9|C5|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C5||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+10|C6|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C6||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+11|C7|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C7||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+12|C8|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|68 пФ|50 В|68 пФ|C_0.1mkF_0603|Sheet1.SchDoc|C8||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+13|C9|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|68 пФ|50 В|68 пФ|C_0.1mkF_0603|Sheet1.SchDoc|C9||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+14|C10|C_10mkF_1206|Yageo||C-1206|X7R|5%|10 мкФ|50 В|10 мкФ|C_10mkF_1206|Sheet1.SchDoc|C10||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+15|C11|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C11||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+16|C12|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C12||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+17|C13|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|68 пФ|50 В|68 пФ|C_0.1mkF_0603|Sheet1.SchDoc|C13||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+18|C14|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C14||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+19|C15|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C15||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+20|C16|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C16||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+21|C17|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|68 пФ|50 В|68 пФ|C_0.1mkF_0603|Sheet1.SchDoc|C17||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+22|C18|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C18||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+23|C19|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C19||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+24|C20|C_10mkF_1206|Yageo||C-1206|X7R|5%|10 мкФ|50 В|10 мкФ|C_10mkF_1206|Sheet1.SchDoc|C20||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+25|C21|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|68 пФ|50 В|68 пФ|C_0.1mkF_0603|Sheet1.SchDoc|C21||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+26|C22|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|68 пФ|50 В|68 пФ|C_0.1mkF_0603|Sheet1.SchDoc|C22||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+27|C23|C_10mkF_1206|Yageo||C-1206|X7R|5%|10 мкФ|50 В|10 мкФ|C_10mkF_1206|Sheet1.SchDoc|C23||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+28|C24|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C24||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+29|C25|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C25||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+30|C26|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C26||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+31|C27|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|1,8 нФ|50 В|1,8 нФ|C_0.1mkF_0603|Sheet1.SchDoc|C27||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+32|C28|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|1,8 нФ|50 В|1,8 нФ|C_0.1mkF_0603|Sheet1.SchDoc|C28||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+33|C29|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C29||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+34|C30|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C30||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+35|C31|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C31||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+36|C32|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C32||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+37|C33|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C33||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+38|C34|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C34||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+39|C35|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C35||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+40|C36|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C36||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+41|C37|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C37||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+42|C38|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C38||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+43|C39|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C39||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+44|C40|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C40||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+45|C41|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C41||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+46|C42|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C42||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+47|C43|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C43||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+48|C44|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C44||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+49|C45|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C45||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+50|C46|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C46||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+51|C47|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C47||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+52|C48|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C48||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+53|C49|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C49||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+54|C50|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C50||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+55|C51|C_10mkF_1206|Yageo||C-1206|X7R|5%|10 мкФ|50 В|10 мкФ|C_10mkF_1206|Sheet1.SchDoc|C51||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+56|C52|C_10mkF_1206|Yageo||C-1206|X7R|5%|10 мкФ|50 В|10 мкФ|C_10mkF_1206|Sheet1.SchDoc|C52||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+57|C53|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C53||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+58|C54|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C54||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+59|C55|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C55||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+60|C56|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C56||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+61|C57|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C57||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+62|C58|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C58||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+63|C59|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C59||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+64|C60|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C60||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+65|C61|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C61||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+66|C62|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C62||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+67|C63|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C63||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+68|C64|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C64||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+69|C65|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C65||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+70|C66|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C66||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+71|C67|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C67||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+72|C68|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C68||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+73|C69|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C69||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+74|C70|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C70||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+75|C71|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C71||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+76|C72|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C72||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+77|C73|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C73||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+78|C74|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C74||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+79|C75|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C75||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+80|C76|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C76||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+81|C77|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C77||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+82|C78|C_10mkF_1206|Yageo||C-1206|X7R|5%|10 мкФ|50 В|10 мкФ|C_10mkF_1206|Sheet1.SchDoc|C78||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+83|C79|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C79||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+84|C80|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|220 пФ|50 В|220 пФ|C_0.1mkF_0603|Sheet1.SchDoc|C80||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+85|C81|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C81||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+86|C82|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|220 пФ|50 В|220 пФ|C_0.1mkF_0603|Sheet1.SchDoc|C82||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+87|C83|C_10mkF_1206|Yageo||C-1206|X7R|5%|10 мкФ|50 В|10 мкФ|C_10mkF_1206|Sheet1.SchDoc|C83||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+88|C84|C_10mkF_1206|Yageo||C-1206|X7R|5%|10 мкФ|50 В|10 мкФ|C_10mkF_1206|Sheet1.SchDoc|C84||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+89|C85|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C85||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+90|C86|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C86||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+91|C87|C_10mkF_1206|Yageo||C-1206|X7R|5%|10 мкФ|50 В|10 мкФ|C_10mkF_1206|Sheet1.SchDoc|C87||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+92|C88|C_10mkF_1206|Yageo||C-1206|X7R|5%|10 мкФ|50 В|10 мкФ|C_10mkF_1206|Sheet1.SchDoc|C88||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+93|C89|C_10mkF_1206|Yageo||C-1206|X7R|5%|10 мкФ|50 В|10 мкФ|C_10mkF_1206|Sheet1.SchDoc|C89||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+94|C90|C_10mkF_1206|Yageo||C-1206|X7R|5%|10 мкФ|50 В|10 мкФ|C_10mkF_1206|Sheet1.SchDoc|C90||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+95|C91|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C91||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+96|C92|C_0.1mkF_0603|Yageo||C-0603|X7R|5%|0,1 мкФ|50 В|0,1 мкФ|C_0.1mkF_0603|Sheet1.SchDoc|C92||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+97|DA1|AD2S1210_QFP-48 0.5MM/WG9|Analog Devices|AD2S1210||||||AD2S1210_QFP-48 0.5MM/WG9|AD2S1210_QFP-48 0.5MM/WG9|Sheet1.SchDoc|DA1||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+98|DA2|THS4130IDGK (MSOP8)|Texas Instruments|THS4130IDGK||||||THS4130IDGK (MSOP8)|THS4130IDGK (MSOP8)|Sheet1.SchDoc|DA2||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+99|DA3|THS4130IDGK (MSOP8)|Texas Instruments|THS4130IDGK||||||THS4130IDGK (MSOP8)|THS4130IDGK (MSOP8)|Sheet1.SchDoc|DA3||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+100|DA4|AD7687BRMZ|Analog Devices|AD7687BRMZ||||||AD7687BRMZ|AD7687BRMZ|Sheet1.SchDoc|DA4||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+101|DA5|TPS62000DGS_VSSOP10|Texas Instruments|TPS62000DGS||||||TPS62000DGS_VSSOP10|TPS62000DGS_VSSOP10|Sheet1.SchDoc|DA5||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+102|DA6|TPS79325-Q1_SOT-23-5L|Texas Instruments|TPS79325||||||TPS79325-Q1_SOT-23-5L|TPS79325-Q1_SOT-23-5L|Sheet1.SchDoc|DA6||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+103|DA7|TPS62000DGS_VSSOP10|Texas Instruments|TPS62000DGS||||||TPS62000DGS_VSSOP10|TPS62000DGS_VSSOP10|Sheet1.SchDoc|DA7||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+104|DD1|FIN1001M5X|ON Semiconductor|FIN1001M5X||||||FIN1001M5X|FIN1001M5X|Sheet1.SchDoc|DD1||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+105|DD2|FIN1001M5X|ON Semiconductor|FIN1001M5X||||||FIN1001M5X|FIN1001M5X|Sheet1.SchDoc|DD2||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+106|DD3|FIN1001M5X|ON Semiconductor|FIN1001M5X||||||FIN1001M5X|FIN1001M5X|Sheet1.SchDoc|DD3||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+107|DD4|EPCS16SI16N_SOIC-16 155 WIDE|Altera|EPCS16SI16N||||||EPCS16SI16N_SOIC-16 155 WIDE|EPCS16SI16N_SOIC-16 155 WIDE|Sheet1.SchDoc|DD4||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+108|DD5|EP3C25E144I7_QFP-144 0.5MM/WG22|Altera|EP3C25E144I7||||||EP3C25E144I7_QFP-144 0.5MM/WG22|EP3C25E144I7_QFP-144 0.5MM/WG22|Sheet1.SchDoc|DD5||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+109|DD6|ECS-3963_ECS-3963(5.2X3.2)|ECS Inc.|ECS-3963||||||ECS-3963_ECS-3963(5.2X3.2)|ECS-3963_ECS-3963(5.2X3.2)|Sheet1.SchDoc|DD6||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+110|L1|L_22mkH_1210R-223H-ND|Murata Manufacturing|L-1210 22 мкГн 223H-ND||||||L_22mkH_1210R-223H-ND||Sheet1.SchDoc|L1||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+111|L2|L_22mkH_1210R-223H-ND|Murata Manufacturing|L-1210 22 мкГн 223H-ND||||||L_22mkH_1210R-223H-ND||Sheet1.SchDoc|L2||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+112|R1|R_100_0603|Yageo||R-0603||1%|10 кОм||10 кОм|R_100_0603|Sheet1.SchDoc|R1||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+113|R2|R_100_0603|Yageo||R-0603||1%|10 кОм||10 кОм|R_100_0603|Sheet1.SchDoc|R2||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+114|R3|R_100_0603|Yageo||R-0603||1%|27 Ом||27 Ом|R_100_0603|Sheet1.SchDoc|R3||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+115|R4|R_100_0603|Yageo||R-0603||1%|100 кОм||100 кОм|R_100_0603|Sheet1.SchDoc|R4||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+116|R5|R_100_0603|Yageo||R-0603||1%|1 кОм||1 кОм|R_100_0603|Sheet1.SchDoc|R5||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+117|R6|R_100_0603|Yageo||R-0603||1%|100 кОм||100 кОм|R_100_0603|Sheet1.SchDoc|R6||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+118|R7|R_100_0603|Yageo||R-0603||1%|1 кОм||1 кОм|R_100_0603|Sheet1.SchDoc|R7||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+119|R8|R_100_0603|Yageo||R-0603||1%|100 кОм||100 кОм|R_100_0603|Sheet1.SchDoc|R8||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+120|R9|R_100_0603|Yageo||R-0603||1%|1 кОм||1 кОм|R_100_0603|Sheet1.SchDoc|R9||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+121|R10|R_100_0603|Yageo||R-0603||1%|51 кОм||51 кОм|R_100_0603|Sheet1.SchDoc|R10||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+122|R11|R_100_0603|Yageo||R-0603||1%|51 кОм||51 кОм|R_100_0603|Sheet1.SchDoc|R11||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+123|R12|R_100_0603|Yageo||R-0603||1%|11,3 кОм||11,3 кОм|R_100_0603|Sheet1.SchDoc|R12||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+124|R13|R_100_0603|Yageo||R-0603||1%|11,3 кОм||11,3 кОм|R_100_0603|Sheet1.SchDoc|R13||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+125|R14|R_100_0603|Yageo||R-0603||1%|24,3 кОм||24,3 кОм|R_100_0603|Sheet1.SchDoc|R14||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+126|R15|R_100_0603|Yageo||R-0603||1%|24,3 кОм||24,3 кОм|R_100_0603|Sheet1.SchDoc|R15||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+127|R16|R_100_0603|Yageo||R-0603||1%|51 кОм||51 кОм|R_100_0603|Sheet1.SchDoc|R16||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+128|R17|R_100_0603|Yageo||R-0603||1%|51 кОм||51 кОм|R_100_0603|Sheet1.SchDoc|R17||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+129|R18|R_100_0603|Yageo||R-0603||1%|100 кОм||100 кОм|R_100_0603|Sheet1.SchDoc|R18||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+130|R19|R_100_0603|Yageo||R-0603||1%|1 кОм||1 кОм|R_100_0603|Sheet1.SchDoc|R19||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+131|R20|R_100_0603|Yageo||R-0603||1%|100 кОм||100 кОм|R_100_0603|Sheet1.SchDoc|R20||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+132|R21|R_100_0603|Yageo||R-0603||1%|1 кОм||1 кОм|R_100_0603|Sheet1.SchDoc|R21||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+133|R22|R_100_0603|Yageo||R-0603||1%|100 кОм||100 кОм|R_100_0603|Sheet1.SchDoc|R22||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+134|R23|R_100_0603|Yageo||R-0603||1%|1 кОм||1 кОм|R_100_0603|Sheet1.SchDoc|R23||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+135|R24|R_100_0603|Yageo||R-0603||1%|51 кОм||51 кОм|R_100_0603|Sheet1.SchDoc|R24||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+136|R25|R_100_0603|Yageo||R-0603||1%|51 кОм||51 кОм|R_100_0603|Sheet1.SchDoc|R25||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+137|R26|R_100_0603|Yageo||R-0603||1%|11,3 кОм||11,3 кОм|R_100_0603|Sheet1.SchDoc|R26||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+138|R27|R_100_0603|Yageo||R-0603||1%|11,3 кОм||11,3 кОм|R_100_0603|Sheet1.SchDoc|R27||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+139|R28|R_10k_0603|Yageo||R-0603||1%|10k||10k|R_10k_0603|Sheet1.SchDoc|R28||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+140|R29|R_10k_0603|Yageo||R-0603||1%|27 Ом||27 Ом|R_10k_0603|Sheet1.SchDoc|R29||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+141|R30|R_10k_0603|Yageo||R-0603||1%|27 Ом||27 Ом|R_10k_0603|Sheet1.SchDoc|R30||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+142|R31|R_10k_0603|Yageo||R-0603||1%|27 Ом||27 Ом|R_10k_0603|Sheet1.SchDoc|R31||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+143|R32|R_10k_0603|Yageo||R-0603||1%|27 Ом||27 Ом|R_10k_0603|Sheet1.SchDoc|R32||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+144|R33|R_10k_0603|Yageo||R-0603||1%|27 Ом||27 Ом|R_10k_0603|Sheet1.SchDoc|R33||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+145|R34|R_10k_0603|Yageo||R-0603||1%|27 Ом||27 Ом|R_10k_0603|Sheet1.SchDoc|R34||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+146|R35|R_10k_0603|Yageo||R-0603||1%|27 Ом||27 Ом|R_10k_0603|Sheet1.SchDoc|R35||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+147|R36|R_10k_0603|Yageo||R-0603||1%|27 Ом||27 Ом|R_10k_0603|Sheet1.SchDoc|R36||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+148|R37|R_10_1206|Yageo||R-1206||1%|27||27|R_10_1206|Sheet1.SchDoc|R37||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+149|R38|R_10k_0603|Yageo||R-0603||1%|47 Ом||47 Ом|R_10k_0603|Sheet1.SchDoc|R38||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+150|R39|R_10k_0603|Yageo||R-0603||1%|27 Ом||27 Ом|R_10k_0603|Sheet1.SchDoc|R39||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+151|R40|R_10k_0603|Yageo||R-0603||1%|27 Ом||27 Ом|R_10k_0603|Sheet1.SchDoc|R40||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+152|R41|R_10k_0603|Yageo||R-0603||1%|27 Ом||27 Ом|R_10k_0603|Sheet1.SchDoc|R41||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+153|R42|R_10k_0603|Yageo||R-0603||1%|27 Ом||27 Ом|R_10k_0603|Sheet1.SchDoc|R42||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+154|R43|R_10k_0603|Yageo||R-0603||1%|27 Ом||27 Ом|R_10k_0603|Sheet1.SchDoc|R43||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+155|R44|R_10k_0603|Yageo||R-0603||1%|24,3 кОм||24,3 кОм|R_10k_0603|Sheet1.SchDoc|R44||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+156|R45|R_10k_0603|Yageo||R-0603||1%|24,3 кОм||24,3 кОм|R_10k_0603|Sheet1.SchDoc|R45||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+157|R46|R_10k_0603|Yageo||R-0603||1%|47 Ом||47 Ом|R_10k_0603|Sheet1.SchDoc|R46||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+158|R47|R_10k_0603|Yageo||R-0603||1%|47 Ом||47 Ом|R_10k_0603|Sheet1.SchDoc|R47||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+159|R48|R_10k_0603|Yageo||R-0603||1%|27 Ом||27 Ом|R_10k_0603|Sheet1.SchDoc|R48||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+160|R49|R_10k_0603|Yageo||R-0603||1%|27 Ом||27 Ом|R_10k_0603|Sheet1.SchDoc|R49||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+161|R50|R_10k_0603|Yageo||R-0603||1%|47 Ом||47 Ом|R_10k_0603|Sheet1.SchDoc|R50||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+162|R51|R_10k_0603|Yageo||R-0603||1%|100 Ом||100 Ом|R_10k_0603|Sheet1.SchDoc|R51||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+163|R52|R_10k_0603|Yageo||R-0603||1%|100 Ом||100 Ом|R_10k_0603|Sheet1.SchDoc|R52||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+164|R53|R_10k_0603|Yageo||R-0603||1%|100 Ом||100 Ом|R_10k_0603|Sheet1.SchDoc|R53||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+165|R54|R_10_1206|Yageo||R-1206||1%|27||27|R_10_1206|Sheet1.SchDoc|R54||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+166|R55|R_10_1206|Yageo||R-1206||1%|47 кОм||47 кОм|R_10_1206|Sheet1.SchDoc|R55||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+167|R56|R_100_0603|Yageo||R-0603||1%|10 кОм||10 кОм|R_100_0603|Sheet1.SchDoc|R56||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+168|R57|R_10_1206|Yageo||R-1206||1%|27||27|R_10_1206|Sheet1.SchDoc|R57||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+169|R58|R_100_0603|Yageo||R-0603||1%|10 кОм||10 кОм|R_100_0603|Sheet1.SchDoc|R58||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+170|R59|R_100_0603|Yageo||R-0603||1%|10 кОм||10 кОм|R_100_0603|Sheet1.SchDoc|R59||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+171|R60|R_10_1206|Yageo||R-1206||1%|15 кОм||15 кОм|R_10_1206|Sheet1.SchDoc|R60||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+172|R61|R_10_1206|Yageo||R-1206||1%|100 кОм||100 кОм|R_10_1206|Sheet1.SchDoc|R61||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+173|R62|R_100_0603|Yageo||R-0603||1%|10 кОм||10 кОм|R_100_0603|Sheet1.SchDoc|R62||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+174|R63|R_100_0603|Yageo||R-0603||1%|10 кОм||10 кОм|R_100_0603|Sheet1.SchDoc|R63||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+175|R64|R_100_0603|Yageo||R-0603||1%|10 кОм||10 кОм|R_100_0603|Sheet1.SchDoc|R64||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+176|R65|R_100_0603|Yageo||R-0603||1%|10 кОм||10 кОм|R_100_0603|Sheet1.SchDoc|R65||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+177|R66|R_10_1206|Yageo||R-1206||1%|95,3 кОм||95,3 кОм|R_10_1206|Sheet1.SchDoc|R66||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+178|R67|R_10_1206|Yageo||R-1206||1%|165 кОм||165 кОм|R_10_1206|Sheet1.SchDoc|R67||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+179|R68|R_100_0603|Yageo||R-0603||1%|10 кОм||10 кОм|R_100_0603|Sheet1.SchDoc|R68||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+180|R69|R_10_1206|Yageo||R-1206||1%|0 Ом||0 Ом|R_10_1206|Sheet1.SchDoc|R69||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+181|R70|R_10_1206|Yageo||R-1206||1%|0 Ом||0 Ом|R_10_1206|Sheet1.SchDoc|R70||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+182|R71|R_10_1206|Yageo||R-1206||1%|0 Ом||0 Ом|R_10_1206|Sheet1.SchDoc|R71||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+183|R72|R_100_0603|Yageo||R-0603||1%|27 Ом||27 Ом|R_100_0603|Sheet1.SchDoc|R72||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+184|R73|R_100_0603|Yageo||R-0603||1%|27 Ом||27 Ом|R_100_0603|Sheet1.SchDoc|R73||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+185|R74|R_100_0603|Yageo||R-0603||1%|27 Ом||27 Ом|R_100_0603|Sheet1.SchDoc|R74||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+186|R75|R_100_0603|Yageo||R-0603||1%|27 Ом||27 Ом|R_100_0603|Sheet1.SchDoc|R75||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+187|RP1|R_10k_RES_TRIMMER||||||10k||10k|R_10k_RES_TRIMMER_3361P-1-103GLF|Sheet1.SchDoc|RP1||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+188|VT1|BC846B|ON Semiconductor|BC846B||||||BC846B|BC846B|Sheet1.SchDoc|VT1||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+189|VT2|BC846B|ON Semiconductor|BC846B||||||BC846B|BC846B|Sheet1.SchDoc|VT2||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+190|XP1|DB_15|AMP Connectors|5747841-2||||||DB_15||Sheet1.SchDoc|XP1||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+191|XP2|M20-9770242||||||||M20-9770242||Sheet1.SchDoc|XP2||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+192|XP3|M20-9770242||||||||M20-9770242||Sheet1.SchDoc|XP3||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+193|XP4|M20-9770242||||||||M20-9770242||Sheet1.SchDoc|XP4||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+194|XP5|M20-9770242||||||||M20-9770242||Sheet1.SchDoc|XP5||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+195|XP6|M20-9770242||||||||M20-9770242||Sheet1.SchDoc|XP6||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+196|XP7|M20-9770242||||||||M20-9770242||Sheet1.SchDoc|XP7||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+197|XP8|M20-9770242||||||||M20-9770242||Sheet1.SchDoc|XP8||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+198|XP9|M20-9770242||||||||M20-9770242||Sheet1.SchDoc|XP9||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+199|XP10|A-DF 09 A/KG-T2S|Assmann WSW Components|A-DF 09 A/KG-T2S||||||A-DF 09 A/KG-T2S||Sheet1.SchDoc|XP10||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+200|XP11|KLS1-2-5||||||||KLS1-2-5||Sheet1.SchDoc|XP11||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
+201|XP12|M80-5101042|Harwin Inc.|M80-5101042||||||M80-5101042||Sheet1.SchDoc|XP12||D:\git\Diplom\ДИПЛОМ\Altium\АСК_2.PrjPcb|
