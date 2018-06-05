@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Controller_ASK2
-Wed May 30 13:04:58 2018
+Tue Jun 05 10:54:37 2018
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Full Version
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed May 30 13:04:58 2018 ;
+; EDA Netlist Writer Status ; Successful - Tue Jun 05 10:54:37 2018 ;
 ; Revision Name             ; Controller_ASK2                       ;
 ; Top-level Entity Name     ; Controller_ASK2                       ;
 ; Family                    ; Cyclone III                           ;
@@ -66,20 +66,20 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                            ;
-+-----------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                       ;
-+-----------------------------------------------------------------------------------------------------------------------+
-; D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/simulation/modelsim/Controller_ASK2_7_1200mv_100c_slow.vo      ;
-; D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/simulation/modelsim/Controller_ASK2_7_1200mv_-40c_slow.vo      ;
-; D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/simulation/modelsim/Controller_ASK2_min_1200mv_-40c_fast.vo    ;
-; D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/simulation/modelsim/Controller_ASK2.vo                         ;
-; D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/simulation/modelsim/Controller_ASK2_7_1200mv_100c_v_slow.sdo   ;
-; D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/simulation/modelsim/Controller_ASK2_7_1200mv_-40c_v_slow.sdo   ;
-; D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/simulation/modelsim/Controller_ASK2_min_1200mv_-40c_v_fast.sdo ;
-; D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/simulation/modelsim/Controller_ASK2_v.sdo                      ;
-+-----------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                                   ;
++------------------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                              ;
++------------------------------------------------------------------------------------------------------------------------------+
+; D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/simulation/modelsim/Controller_ASK2_7_1200mv_100c_slow.vo      ;
+; D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/simulation/modelsim/Controller_ASK2_7_1200mv_-40c_slow.vo      ;
+; D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/simulation/modelsim/Controller_ASK2_min_1200mv_-40c_fast.vo    ;
+; D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/simulation/modelsim/Controller_ASK2.vo                         ;
+; D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/simulation/modelsim/Controller_ASK2_7_1200mv_100c_v_slow.sdo   ;
+; D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/simulation/modelsim/Controller_ASK2_7_1200mv_-40c_v_slow.sdo   ;
+; D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/simulation/modelsim/Controller_ASK2_min_1200mv_-40c_v_fast.sdo ;
+; D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/simulation/modelsim/Controller_ASK2_v.sdo                      ;
++------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -88,20 +88,20 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Full Version
-    Info: Processing started: Wed May 30 13:04:48 2018
+    Info: Processing started: Tue Jun 05 10:54:27 2018
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Controller_ASK2 -c Controller_ASK2
-Info (204019): Generated file Controller_ASK2_7_1200mv_100c_slow.vo in folder "D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Controller_ASK2_7_1200mv_-40c_slow.vo in folder "D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Controller_ASK2_min_1200mv_-40c_fast.vo in folder "D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Controller_ASK2.vo in folder "D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Controller_ASK2_7_1200mv_100c_v_slow.sdo in folder "D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Controller_ASK2_7_1200mv_-40c_v_slow.sdo in folder "D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Controller_ASK2_min_1200mv_-40c_v_fast.sdo in folder "D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file Controller_ASK2_v.sdo in folder "D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Controller_ASK2_7_1200mv_100c_slow.vo in folder "D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Controller_ASK2_7_1200mv_-40c_slow.vo in folder "D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Controller_ASK2_min_1200mv_-40c_fast.vo in folder "D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Controller_ASK2.vo in folder "D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Controller_ASK2_7_1200mv_100c_v_slow.sdo in folder "D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Controller_ASK2_7_1200mv_-40c_v_slow.sdo in folder "D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Controller_ASK2_min_1200mv_-40c_v_fast.sdo in folder "D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file Controller_ASK2_v.sdo in folder "D:/work/RADIONIX/KOORDINATOR/ALTERA_13/Controller_ASK2/AD7687/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 430 megabytes
-    Info: Processing ended: Wed May 30 13:04:58 2018
-    Info: Elapsed time: 00:00:10
+    Info: Peak virtual memory: 439 megabytes
+    Info: Processing ended: Tue Jun 05 10:54:38 2018
+    Info: Elapsed time: 00:00:11
     Info: Total CPU time (on all processors): 00:00:10
 
 

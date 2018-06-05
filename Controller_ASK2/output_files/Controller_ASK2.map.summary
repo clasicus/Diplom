@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Wed May 30 13:03:52 2018
+Analysis & Synthesis Status : Successful - Tue Jun 05 10:53:14 2018
 Quartus II 64-Bit Version : 13.0.0 Build 156 04/24/2013 SJ Full Version
 Revision Name : Controller_ASK2
 Top-level Entity Name : Controller_ASK2
 Family : Cyclone III
-Total logic elements : 3,043
-    Total combinational functions : 2,574
+Total logic elements : 3,042
+    Total combinational functions : 2,573
     Dedicated logic registers : 1,909
 Total registers : 1909
 Total pins : 51
